@@ -6,6 +6,7 @@ target :TVDB do
 pod 'AFNetworking'
 pod 'ReactiveCocoa', '2.5'
 pod 'Typhoon'
+pod 'ViperMcFlurry'
 pod 'Mantle'
 pod 'MTLManagedObjectAdapter'
 pod 'Fabric'

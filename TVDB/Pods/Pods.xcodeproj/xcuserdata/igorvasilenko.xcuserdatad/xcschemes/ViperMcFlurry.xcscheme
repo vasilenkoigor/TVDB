@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF5920242BA006C82399C414"
-               BuildableName = "Pods_TVDB.framework"
-               BlueprintName = "Pods-TVDB"
+               BlueprintIdentifier = "EF7958F7EE40825A506C966D"
+               BuildableName = "ViperMcFlurry.framework"
+               BlueprintName = "ViperMcFlurry"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

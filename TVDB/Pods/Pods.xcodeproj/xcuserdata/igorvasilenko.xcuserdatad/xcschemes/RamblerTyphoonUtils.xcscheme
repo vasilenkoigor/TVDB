@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5682220DFD757038CF206D5E"
+               BlueprintIdentifier = "4D9F5C50F4737D7BBF0D60B7"
                BuildableName = "RamblerTyphoonUtils.framework"
                BlueprintName = "RamblerTyphoonUtils"
                ReferencedContainer = "container:Pods.xcodeproj">

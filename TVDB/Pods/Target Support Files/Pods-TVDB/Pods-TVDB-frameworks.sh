@@ -59,6 +59,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-TVDB/ReactiveCocoa.framework'
   install_framework 'Pods-TVDB/SVProgressHUD.framework'
   install_framework 'Pods-TVDB/Typhoon.framework'
+  install_framework 'Pods-TVDB/ViperMcFlurry.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-TVDB/AFNetworking.framework'
@@ -68,4 +69,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-TVDB/ReactiveCocoa.framework'
   install_framework 'Pods-TVDB/SVProgressHUD.framework'
   install_framework 'Pods-TVDB/Typhoon.framework'
+  install_framework 'Pods-TVDB/ViperMcFlurry.framework'
 fi

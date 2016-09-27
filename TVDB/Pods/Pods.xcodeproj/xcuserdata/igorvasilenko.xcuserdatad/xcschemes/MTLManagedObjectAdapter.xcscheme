@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF86C47C14244809340445AA"
+               BlueprintIdentifier = "6ACB04C26CB05B3F2A9A3FAA"
                BuildableName = "MTLManagedObjectAdapter.framework"
                BlueprintName = "MTLManagedObjectAdapter"
                ReferencedContainer = "container:Pods.xcodeproj">

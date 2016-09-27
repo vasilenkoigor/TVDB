@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0A8773CEF0141FE7BB6C31B4 /* Pods_TVDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D1E4A96C0D96DD84A7D9A5 /* Pods_TVDB.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389C497C9C32E509D13B /* AppDelegate.m */; };
+		74AD34A9BC42DB2A4FF9B4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD33A1E6FB1958A96CC03A /* Main.storyboard */; };
 		74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */; };
+		74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */; };
 		B77EE2041D9A8AC8006FB640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE2031D9A8AC8006FB640 /* main.m */; };
-		B77EE2101D9A8AC8006FB640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77EE20E1D9A8AC8006FB640 /* Main.storyboard */; };
-		B77EE2151D9A8AC8006FB640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77EE2131D9A8AC8006FB640 /* LaunchScreen.storyboard */; };
 		B77EE2201D9A8AC8006FB640 /* TVDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */; };
 		C99C5CD1746CFB902BCA4A1C /* Pods_TVDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902A40F4E34A7B92CC0159C /* Pods_TVDBTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -31,6 +31,8 @@
 		55D1E4A96C0D96DD84A7D9A5 /* Pods_TVDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6902A40F4E34A7B92CC0159C /* Pods_TVDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AD312AFC195273E65DC6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		74AD3177A0F557B2A2F54915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		74AD31CEA66E17DE07503F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		74AD3235268D60C8EE3A99DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74AD389C497C9C32E509D13B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,8 +40,6 @@
 		91B3915730D872C24017C5D1 /* Pods-TVDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDB/Pods-TVDB.debug.xcconfig"; sourceTree = "<group>"; };
 		B77EE1FF1D9A8AC8006FB640 /* TVDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE2031D9A8AC8006FB640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B77EE20F1D9A8AC8006FB640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B77EE2141D9A8AC8006FB640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B77EE21B1D9A8AC8006FB640 /* TVDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVDBTests.m; sourceTree = "<group>"; };
 		B77EE2211D9A8AC8006FB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,11 +86,101 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		74AD30556560A81878528A4C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74AD312E795AD1E690FAEEB2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */,
+				74AD33A1E6FB1958A96CC03A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		74AD31A694FD6F203A414A58 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		74AD3266FE91015911A26C41 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		74AD32DD3487AD3DA2BE1286 /* SerialsUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				74AD3A36E80409A481A10451 /* Modules */,
+				74AD312E795AD1E690FAEEB2 /* Storyboard */,
+			);
+			path = SerialsUserStory;
+			sourceTree = "<group>";
+		};
+		74AD3364F57845BBFBB19C9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74AD3392843570E1750C2D0D /* SavedSerialsModule */ = {
+			isa = PBXGroup;
+			children = (
+				74AD3DFC394BED31A985964B /* Assembly */,
+				74AD3364F57845BBFBB19C9B /* View */,
+				74AD34AF2E1B3891219727D9 /* ViewModel */,
+				74AD35724576E798B40E25E1 /* Router */,
+			);
+			path = SavedSerialsModule;
+			sourceTree = "<group>";
+		};
+		74AD33D7A218AF262AF45C9B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				74AD3CFA1D84EF16D3EDCB31 /* UserAuthorizationModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		74AD341658D98A9DD7D8FF66 /* ModuleAssemblyBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModuleAssemblyBase;
+			sourceTree = "<group>";
+		};
+		74AD3422D94A84CE23551C6B /* NewSerialsModule */ = {
+			isa = PBXGroup;
+			children = (
+				74AD368A18D5A14DD92E924E /* Assembly */,
+				74AD37B0B2C4A8D98F87BF25 /* View */,
+				74AD30556560A81878528A4C /* ViewModel */,
+				74AD3830D09E4A9CA9A1BDD3 /* Router */,
+			);
+			path = NewSerialsModule;
+			sourceTree = "<group>";
+		};
+		74AD347220ADF903F6202340 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		74AD34AF2E1B3891219727D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		74AD34F5261A2435715959FE /* AppDelegate */ = {
@@ -110,11 +200,32 @@
 			path = NetworkClients;
 			sourceTree = "<group>";
 		};
+		74AD35724576E798B40E25E1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		74AD35B8B427950085DBD546 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		74AD3621974538AE543A9CC9 /* ConcreteServices */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ConcreteServices;
+			sourceTree = "<group>";
+		};
+		74AD368A18D5A14DD92E924E /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		74AD3696AAF7EA9524307CCB /* CoreLayer */ = {
@@ -144,11 +255,54 @@
 			path = Assemblies;
 			sourceTree = "<group>";
 		};
-		74AD38685F7C21836B208445 /* Assemblies */ = {
+		74AD37B0B2C4A8D98F87BF25 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74AD3830D09E4A9CA9A1BDD3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		74AD38685F7C21836B208445 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				74AD341658D98A9DD7D8FF66 /* ModuleAssemblyBase */,
+			);
 			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		74AD39A91D1DAF48D7417336 /* SerialInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				74AD347220ADF903F6202340 /* Assembly */,
+				74AD3E3C76E9DD70C094DA9E /* View */,
+				74AD35B8B427950085DBD546 /* ViewModel */,
+				74AD3C95D2732A07C8C3270A /* Router */,
+			);
+			path = SerialInfoModule;
+			sourceTree = "<group>";
+		};
+		74AD3A36E80409A481A10451 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				74AD3422D94A84CE23551C6B /* NewSerialsModule */,
+				74AD3392843570E1750C2D0D /* SavedSerialsModule */,
+				74AD39A91D1DAF48D7417336 /* SerialInfoModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		74AD3A50F1C00A1C2F026E44 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		74AD3A8CFFF7ED1FBA01F174 /* CoreComponents */ = {
@@ -171,6 +325,8 @@
 		74AD3ABC52596F7DFA439FF6 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				74AD32DD3487AD3DA2BE1286 /* SerialsUserStory */,
+				74AD3ED47618CCEAE2EB8FC5 /* AuthorizationUserStory */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -205,6 +361,20 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		74AD3B4F70D09FFE1AE99313 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		74AD3B8479C8B0BF6F9942EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		74AD3BA639545F48A3A2C522 /* NetworkClientsFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +399,13 @@
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
 		};
+		74AD3C95D2732A07C8C3270A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		74AD3CA3CB4628704469C4D0 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +418,24 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		74AD3CFA1D84EF16D3EDCB31 /* UserAuthorizationModule */ = {
+			isa = PBXGroup;
+			children = (
+				74AD31A694FD6F203A414A58 /* Assembly */,
+				74AD3B8479C8B0BF6F9942EF /* View */,
+				74AD3A50F1C00A1C2F026E44 /* ViewModel */,
+				74AD3D46C2FCBD0E22E6D379 /* Router */,
+			);
+			path = UserAuthorizationModule;
+			sourceTree = "<group>";
+		};
+		74AD3D46C2FCBD0E22E6D379 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		74AD3D536C00358D957CB04E /* Assemblies */ = {
@@ -257,6 +452,13 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		74AD3DFC394BED31A985964B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		74AD3E09D52F240055CBDB4A /* ConcreteClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,11 +466,27 @@
 			path = ConcreteClasses;
 			sourceTree = "<group>";
 		};
+		74AD3E3C76E9DD70C094DA9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		74AD3ED28949C2EA412BF2EC /* ServiceComponentsAssembly */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ServiceComponentsAssembly;
+			sourceTree = "<group>";
+		};
+		74AD3ED47618CCEAE2EB8FC5 /* AuthorizationUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				74AD33D7A218AF262AF45C9B /* Modules */,
+				74AD3B4F70D09FFE1AE99313 /* Storyboard */,
+			);
+			path = AuthorizationUserStory;
 			sourceTree = "<group>";
 		};
 		74AD3F1000EDC69D9AAB410E /* Assemblies */ = {
@@ -302,8 +520,6 @@
 		B77EE2011D9A8AC8006FB640 /* TVDB */ = {
 			isa = PBXGroup;
 			children = (
-				B77EE20E1D9A8AC8006FB640 /* Main.storyboard */,
-				B77EE2131D9A8AC8006FB640 /* LaunchScreen.storyboard */,
 				B77EE2021D9A8AC8006FB640 /* Supporting Files */,
 				74AD3AC60895DF8DD68D447D /* Classes */,
 				74AD3BCFB3FECAEB3C98491E /* Resources */,
@@ -430,9 +646,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B77EE2151D9A8AC8006FB640 /* LaunchScreen.storyboard in Resources */,
-				B77EE2101D9A8AC8006FB640 /* Main.storyboard in Resources */,
 				74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */,
+				74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */,
+				74AD34A9BC42DB2A4FF9B4AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,18 +783,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B77EE20E1D9A8AC8006FB640 /* Main.storyboard */ = {
+		74AD33A1E6FB1958A96CC03A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B77EE20F1D9A8AC8006FB640 /* Base */,
+				74AD31CEA66E17DE07503F5B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B77EE2131D9A8AC8006FB640 /* LaunchScreen.storyboard */ = {
+		74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B77EE2141D9A8AC8006FB640 /* Base */,
+				74AD3177A0F557B2A2F54915 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
