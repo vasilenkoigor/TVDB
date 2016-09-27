@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B77EE2041D9A8AC8006FB640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE2031D9A8AC8006FB640 /* main.m */; };
+		B77EE2071D9A8AC8006FB640 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE2061D9A8AC8006FB640 /* AppDelegate.m */; };
+		B77EE20A1D9A8AC8006FB640 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE2091D9A8AC8006FB640 /* FirstViewController.m */; };
+		B77EE20D1D9A8AC8006FB640 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE20C1D9A8AC8006FB640 /* SecondViewController.m */; };
+		B77EE2101D9A8AC8006FB640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77EE20E1D9A8AC8006FB640 /* Main.storyboard */; };
+		B77EE2121D9A8AC8006FB640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77EE2111D9A8AC8006FB640 /* Assets.xcassets */; };
+		B77EE2151D9A8AC8006FB640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77EE2131D9A8AC8006FB640 /* LaunchScreen.storyboard */; };
+		B77EE2201D9A8AC8006FB640 /* TVDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B77EE21C1D9A8AC8006FB640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77EE1F71D9A8AC8006FB640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B77EE1FE1D9A8AC8006FB640;
+			remoteInfo = TVDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B77EE1FF1D9A8AC8006FB640 /* TVDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77EE2031D9A8AC8006FB640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B77EE2051D9A8AC8006FB640 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B77EE2061D9A8AC8006FB640 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B77EE2081D9A8AC8006FB640 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B77EE2091D9A8AC8006FB640 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B77EE20B1D9A8AC8006FB640 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B77EE20C1D9A8AC8006FB640 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B77EE20F1D9A8AC8006FB640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B77EE2111D9A8AC8006FB640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B77EE2141D9A8AC8006FB640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B77EE2161D9A8AC8006FB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B77EE21B1D9A8AC8006FB640 /* TVDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVDBTests.m; sourceTree = "<group>"; };
+		B77EE2211D9A8AC8006FB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B77EE1FC1D9A8AC8006FB640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77EE2181D9A8AC8006FB640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B77EE1F61D9A8AC8006FB640 = {
+			isa = PBXGroup;
+			children = (
+				B77EE2011D9A8AC8006FB640 /* TVDB */,
+				B77EE21E1D9A8AC8006FB640 /* TVDBTests */,
+				B77EE2001D9A8AC8006FB640 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B77EE2001D9A8AC8006FB640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B77EE1FF1D9A8AC8006FB640 /* TVDB.app */,
+				B77EE21B1D9A8AC8006FB640 /* TVDBTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B77EE2011D9A8AC8006FB640 /* TVDB */ = {
+			isa = PBXGroup;
+			children = (
+				B77EE2051D9A8AC8006FB640 /* AppDelegate.h */,
+				B77EE2061D9A8AC8006FB640 /* AppDelegate.m */,
+				B77EE2081D9A8AC8006FB640 /* FirstViewController.h */,
+				B77EE2091D9A8AC8006FB640 /* FirstViewController.m */,
+				B77EE20B1D9A8AC8006FB640 /* SecondViewController.h */,
+				B77EE20C1D9A8AC8006FB640 /* SecondViewController.m */,
+				B77EE20E1D9A8AC8006FB640 /* Main.storyboard */,
+				B77EE2111D9A8AC8006FB640 /* Assets.xcassets */,
+				B77EE2131D9A8AC8006FB640 /* LaunchScreen.storyboard */,
+				B77EE2161D9A8AC8006FB640 /* Info.plist */,
+				B77EE2021D9A8AC8006FB640 /* Supporting Files */,
+			);
+			path = TVDB;
+			sourceTree = "<group>";
+		};
+		B77EE2021D9A8AC8006FB640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B77EE2031D9A8AC8006FB640 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B77EE21E1D9A8AC8006FB640 /* TVDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */,
+				B77EE2211D9A8AC8006FB640 /* Info.plist */,
+			);
+			path = TVDBTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B77EE1FE1D9A8AC8006FB640 /* TVDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B77EE2241D9A8AC8006FB640 /* Build configuration list for PBXNativeTarget "TVDB" */;
+			buildPhases = (
+				B77EE1FB1D9A8AC8006FB640 /* Sources */,
+				B77EE1FC1D9A8AC8006FB640 /* Frameworks */,
+				B77EE1FD1D9A8AC8006FB640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVDB;
+			productName = TVDB;
+			productReference = B77EE1FF1D9A8AC8006FB640 /* TVDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B77EE21A1D9A8AC8006FB640 /* TVDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B77EE2271D9A8AC8006FB640 /* Build configuration list for PBXNativeTarget "TVDBTests" */;
+			buildPhases = (
+				B77EE2171D9A8AC8006FB640 /* Sources */,
+				B77EE2181D9A8AC8006FB640 /* Frameworks */,
+				B77EE2191D9A8AC8006FB640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B77EE21D1D9A8AC8006FB640 /* PBXTargetDependency */,
+			);
+			name = TVDBTests;
+			productName = TVDBTests;
+			productReference = B77EE21B1D9A8AC8006FB640 /* TVDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B77EE1F71D9A8AC8006FB640 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Igor Vasilenko";
+				TargetAttributes = {
+					B77EE1FE1D9A8AC8006FB640 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XQ9P3KDDUW;
+						ProvisioningStyle = Automatic;
+					};
+					B77EE21A1D9A8AC8006FB640 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XQ9P3KDDUW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B77EE1FE1D9A8AC8006FB640;
+					};
+				};
+			};
+			buildConfigurationList = B77EE1FA1D9A8AC8006FB640 /* Build configuration list for PBXProject "TVDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B77EE1F61D9A8AC8006FB640;
+			productRefGroup = B77EE2001D9A8AC8006FB640 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B77EE1FE1D9A8AC8006FB640 /* TVDB */,
+				B77EE21A1D9A8AC8006FB640 /* TVDBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B77EE1FD1D9A8AC8006FB640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77EE2151D9A8AC8006FB640 /* LaunchScreen.storyboard in Resources */,
+				B77EE2121D9A8AC8006FB640 /* Assets.xcassets in Resources */,
+				B77EE2101D9A8AC8006FB640 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77EE2191D9A8AC8006FB640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B77EE1FB1D9A8AC8006FB640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77EE20D1D9A8AC8006FB640 /* SecondViewController.m in Sources */,
+				B77EE2071D9A8AC8006FB640 /* AppDelegate.m in Sources */,
+				B77EE20A1D9A8AC8006FB640 /* FirstViewController.m in Sources */,
+				B77EE2041D9A8AC8006FB640 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77EE2171D9A8AC8006FB640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77EE2201D9A8AC8006FB640 /* TVDBTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B77EE21D1D9A8AC8006FB640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B77EE1FE1D9A8AC8006FB640 /* TVDB */;
+			targetProxy = B77EE21C1D9A8AC8006FB640 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B77EE20E1D9A8AC8006FB640 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B77EE20F1D9A8AC8006FB640 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B77EE2131D9A8AC8006FB640 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B77EE2141D9A8AC8006FB640 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B77EE2221D9A8AC8006FB640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B77EE2231D9A8AC8006FB640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B77EE2251D9A8AC8006FB640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XQ9P3KDDUW;
+				INFOPLIST_FILE = TVDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IgorVasilenko.com.TVDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B77EE2261D9A8AC8006FB640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XQ9P3KDDUW;
+				INFOPLIST_FILE = TVDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IgorVasilenko.com.TVDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B77EE2281D9A8AC8006FB640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XQ9P3KDDUW;
+				INFOPLIST_FILE = TVDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IgorVasilenko.com.TVDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVDB.app/TVDB";
+			};
+			name = Debug;
+		};
+		B77EE2291D9A8AC8006FB640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XQ9P3KDDUW;
+				INFOPLIST_FILE = TVDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IgorVasilenko.com.TVDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVDB.app/TVDB";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B77EE1FA1D9A8AC8006FB640 /* Build configuration list for PBXProject "TVDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77EE2221D9A8AC8006FB640 /* Debug */,
+				B77EE2231D9A8AC8006FB640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B77EE2241D9A8AC8006FB640 /* Build configuration list for PBXNativeTarget "TVDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77EE2251D9A8AC8006FB640 /* Debug */,
+				B77EE2261D9A8AC8006FB640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B77EE2271D9A8AC8006FB640 /* Build configuration list for PBXNativeTarget "TVDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77EE2281D9A8AC8006FB640 /* Debug */,
+				B77EE2291D9A8AC8006FB640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B77EE1F71D9A8AC8006FB640 /* Project object */;
+}
