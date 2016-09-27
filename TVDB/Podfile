@@ -1,0 +1,19 @@
+platform :ios, '10.0'
+inhibit_all_warnings!
+use_frameworks!
+
+target :TVDB do
+pod 'AFNetworking'
+pod 'ReactiveCocoa', '2.5'
+pod 'Typhoon'
+pod 'Mantle'
+pod 'Fabric'
+pod 'TwitterKit'
+pod 'Nimbus/Models', :git => 'https://github.com/rambler-ios/nimbus'
+pod 'SVProgressHUD'
+end
+
+target :TVDBTests do    
+    pod 'OCMock'    
+    pod 'RamblerTyphoonUtils/AssemblyTesting'
+end
