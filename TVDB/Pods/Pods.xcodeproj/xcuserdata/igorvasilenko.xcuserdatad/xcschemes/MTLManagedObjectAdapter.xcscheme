@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B406F54565000D407D68AC2C"
-               BuildableName = "SVProgressHUD.framework"
-               BlueprintName = "SVProgressHUD"
+               BlueprintIdentifier = "FF86C47C14244809340445AA"
+               BuildableName = "MTLManagedObjectAdapter.framework"
+               BlueprintName = "MTLManagedObjectAdapter"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

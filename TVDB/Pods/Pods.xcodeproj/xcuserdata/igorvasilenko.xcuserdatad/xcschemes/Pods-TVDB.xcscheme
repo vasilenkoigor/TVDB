@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "10A05BF38ACF42416DC2E6DC"
+               BlueprintIdentifier = "08A2AA1F49C447453D8E49B7"
                BuildableName = "Pods_TVDB.framework"
                BlueprintName = "Pods-TVDB"
                ReferencedContainer = "container:Pods.xcodeproj">

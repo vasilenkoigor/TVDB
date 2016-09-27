@@ -18,6 +18,11 @@ PODS:
   - Mantle (2.0.7):
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
+  - MTLManagedObjectAdapter (1.0.3):
+    - Mantle (~> 2.0)
+    - MTLManagedObjectAdapter/extobjc (= 1.0.3)
+  - MTLManagedObjectAdapter/extobjc (1.0.3):
+    - Mantle (~> 2.0)
   - Nimbus/Core (1.2.2)
   - Nimbus/Models (1.2.2):
     - Nimbus/Core
@@ -43,6 +48,7 @@ DEPENDENCIES:
   - AFNetworking
   - Fabric
   - Mantle
+  - MTLManagedObjectAdapter
   - Nimbus/Models (from `https://github.com/rambler-ios/nimbus`)
   - OCMock
   - RamblerTyphoonUtils/AssemblyTesting
@@ -64,6 +70,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Fabric: bc5bec42cef4bcf1ee3ce0e218fc518e4b44dfbb
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  MTLManagedObjectAdapter: 631a53432675dcf03a9d90624afb3cececf54631
   Nimbus: 355131d4656498bf072fecc142752a9f343eb59b
   OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
   RamblerTyphoonUtils: 38dd906775ca5f7138752a531c4ffdc50b5f1927

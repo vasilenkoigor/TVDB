@@ -53,6 +53,7 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-TVDB/AFNetworking.framework'
+  install_framework 'Pods-TVDB/MTLManagedObjectAdapter.framework'
   install_framework 'Pods-TVDB/Mantle.framework'
   install_framework 'Pods-TVDB/Nimbus.framework'
   install_framework 'Pods-TVDB/ReactiveCocoa.framework'
@@ -61,6 +62,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-TVDB/AFNetworking.framework'
+  install_framework 'Pods-TVDB/MTLManagedObjectAdapter.framework'
   install_framework 'Pods-TVDB/Mantle.framework'
   install_framework 'Pods-TVDB/Nimbus.framework'
   install_framework 'Pods-TVDB/ReactiveCocoa.framework'
