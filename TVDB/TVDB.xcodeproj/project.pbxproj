@@ -583,6 +583,7 @@
 				B77EE1FD1D9A8AC8006FB640 /* Resources */,
 				0166DAB4AD46D57123F0835F /* Embed Pods Frameworks */,
 				440C39EA04EA3A617A41A87C /* Copy Pods Resources */,
+				B7B160ED1D9BC0B900F68B90 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -751,6 +752,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B7B160ED1D9BC0B900F68B90 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/Fabric/run c5660adff07ae601833a2f6b45dc8fcc99f17329 b8aec356bf73d92f767abb9b884a8fd4f7dd3688d9e0925d051eda8e6bc5bf53";
 		};
 		B94E702F52034B3D59E6DD62 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

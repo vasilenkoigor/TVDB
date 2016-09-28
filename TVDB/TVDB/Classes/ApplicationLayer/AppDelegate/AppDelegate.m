@@ -8,15 +8,23 @@
 
 #import "AppDelegate.h"
 
+#import "Fabric.h"
+#import "Twitter.h"
+#import "StringConstants.h"
+
 @interface AppDelegate ()
+
+@property (strong, nonatomic, readwrite) Twitter *twitter;
 
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [Fabric with:@[[Twitter class]]];
+    
     return YES;
 }
 

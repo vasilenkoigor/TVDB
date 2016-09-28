@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class Twitter;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic, readonly) Twitter *twitter;
 
 @end
 
