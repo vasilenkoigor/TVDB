@@ -7,3 +7,4 @@
 
 extern NSString *const kTwitterConsumerAPIKey;
 extern NSString *const kTwitterConsumerAPISecret;
+extern NSString *const kTVDBAPIKey;
