@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		0A8773CEF0141FE7BB6C31B4 /* Pods_TVDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D1E4A96C0D96DD84A7D9A5 /* Pods_TVDB.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389C497C9C32E509D13B /* AppDelegate.m */; };
-		74AD34A9BC42DB2A4FF9B4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD33A1E6FB1958A96CC03A /* Main.storyboard */; };
+		74AD34A9BC42DB2A4FF9B4AE /* SerialsUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD33A1E6FB1958A96CC03A /* SerialsUserStoryStoryboard.storyboard */; };
 		74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */; };
 		74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */; };
+		74AD3FEE1C477A7C5D885BF5 /* StringConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3EEBC5BE15A654FF9F56 /* StringConstants.m */; };
 		B77EE2041D9A8AC8006FB640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE2031D9A8AC8006FB640 /* main.m */; };
 		B77EE2201D9A8AC8006FB640 /* TVDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */; };
+		B7B160EC1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B160EB1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard */; };
 		C99C5CD1746CFB902BCA4A1C /* Pods_TVDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902A40F4E34A7B92CC0159C /* Pods_TVDBTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -32,10 +34,12 @@
 		6902A40F4E34A7B92CC0159C /* Pods_TVDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AD312AFC195273E65DC6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		74AD3177A0F557B2A2F54915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		74AD31CEA66E17DE07503F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		74AD31CEA66E17DE07503F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/SerialsUserStoryStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		74AD3235268D60C8EE3A99DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74AD34BC8CE41759D26B4438 /* StringConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringConstants.h; sourceTree = "<group>"; };
 		74AD389C497C9C32E509D13B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74AD3EEBC5BE15A654FF9F56 /* StringConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringConstants.m; sourceTree = "<group>"; };
 		7C5C0B8B2A6D09D2F94BB5D5 /* Pods-TVDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.release.xcconfig"; sourceTree = "<group>"; };
 		91B3915730D872C24017C5D1 /* Pods-TVDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDB/Pods-TVDB.debug.xcconfig"; sourceTree = "<group>"; };
 		B77EE1FF1D9A8AC8006FB640 /* TVDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +47,7 @@
 		B77EE21B1D9A8AC8006FB640 /* TVDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVDBTests.m; sourceTree = "<group>"; };
 		B77EE2211D9A8AC8006FB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B160EB1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthorizationUserStoryStoryboard.storyboard; sourceTree = "<group>"; };
 		D023D65CF80AD63E174C773C /* Pods-TVDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F70B407D341B9CF217786C94 /* Pods-TVDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDB/Pods-TVDB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */,
-				74AD33A1E6FB1958A96CC03A /* Main.storyboard */,
+				74AD33A1E6FB1958A96CC03A /* SerialsUserStoryStoryboard.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -325,8 +330,8 @@
 		74AD3ABC52596F7DFA439FF6 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				74AD32DD3487AD3DA2BE1286 /* SerialsUserStory */,
 				74AD3ED47618CCEAE2EB8FC5 /* AuthorizationUserStory */,
+				74AD32DD3487AD3DA2BE1286 /* SerialsUserStory */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -337,11 +342,20 @@
 				74AD3ABB17AE3E58D56919DD /* ApplicationLayer */,
 				74AD3C94274C5056286C8C8C /* BusinessLogicLayer */,
 				74AD3696AAF7EA9524307CCB /* CoreLayer */,
-				74AD3CBE0D1228EF9D37515A /* Models */,
 				74AD36B5AE57D218D0A82FC0 /* PresentationLayer */,
+				74AD3CBE0D1228EF9D37515A /* Models */,
 				74AD3CA3CB4628704469C4D0 /* Constants */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		74AD3AC783F0CF740CD67609 /* StringConstants */ = {
+			isa = PBXGroup;
+			children = (
+				74AD3EEBC5BE15A654FF9F56 /* StringConstants.m */,
+				74AD34BC8CE41759D26B4438 /* StringConstants.h */,
+			);
+			path = StringConstants;
 			sourceTree = "<group>";
 		};
 		74AD3ADC156BF45BBF8C04A8 /* CellObjects */ = {
@@ -364,6 +378,7 @@
 		74AD3B4F70D09FFE1AE99313 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				B7B160EB1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -409,6 +424,7 @@
 		74AD3CA3CB4628704469C4D0 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				74AD3AC783F0CF740CD67609 /* StringConstants */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -520,9 +536,9 @@
 		B77EE2011D9A8AC8006FB640 /* TVDB */ = {
 			isa = PBXGroup;
 			children = (
-				B77EE2021D9A8AC8006FB640 /* Supporting Files */,
 				74AD3AC60895DF8DD68D447D /* Classes */,
 				74AD3BCFB3FECAEB3C98491E /* Resources */,
+				B77EE2021D9A8AC8006FB640 /* Supporting Files */,
 			);
 			path = TVDB;
 			sourceTree = "<group>";
@@ -631,8 +647,6 @@
 			mainGroup = B77EE1F61D9A8AC8006FB640;
 			productRefGroup = B77EE2001D9A8AC8006FB640 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				B77EE1FE1D9A8AC8006FB640 /* TVDB */,
@@ -646,9 +660,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B160EC1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard in Resources */,
 				74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */,
 				74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */,
-				74AD34A9BC42DB2A4FF9B4AE /* Main.storyboard in Resources */,
+				74AD34A9BC42DB2A4FF9B4AE /* SerialsUserStoryStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +776,7 @@
 			files = (
 				B77EE2041D9A8AC8006FB640 /* main.m in Sources */,
 				74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */,
+				74AD3FEE1C477A7C5D885BF5 /* StringConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,12 +799,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		74AD33A1E6FB1958A96CC03A /* Main.storyboard */ = {
+		74AD33A1E6FB1958A96CC03A /* SerialsUserStoryStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				74AD31CEA66E17DE07503F5B /* Base */,
 			);
-			name = Main.storyboard;
+			name = SerialsUserStoryStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */ = {
@@ -965,6 +981,7 @@
 				B77EE2261D9A8AC8006FB640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B77EE2271D9A8AC8006FB640 /* Build configuration list for PBXNativeTarget "TVDBTests" */ = {
 			isa = XCConfigurationList;
@@ -973,6 +990,7 @@
 				B77EE2291D9A8AC8006FB640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
