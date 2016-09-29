@@ -10,6 +10,8 @@
 		0A8773CEF0141FE7BB6C31B4 /* Pods_TVDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D1E4A96C0D96DD84A7D9A5 /* Pods_TVDB.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389C497C9C32E509D13B /* AppDelegate.m */; };
 		74AD34A9BC42DB2A4FF9B4AE /* SerialsUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD33A1E6FB1958A96CC03A /* SerialsUserStoryStoryboard.storyboard */; };
+		74AD366EB96040FFC655746E /* NetworkClientResponseSerializerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD35EC7F1FA31EFE480321 /* NetworkClientResponseSerializerImpl.m */; };
+		74AD380EB8C003CE78166B0A /* NetworkClientImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD33E634506C3C1611C714 /* NetworkClientImpl.m */; };
 		74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */; };
 		74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */; };
 		74AD3FEE1C477A7C5D885BF5 /* StringConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3EEBC5BE15A654FF9F56 /* StringConstants.m */; };
@@ -36,10 +38,16 @@
 		74AD3177A0F557B2A2F54915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		74AD31CEA66E17DE07503F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/SerialsUserStoryStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		74AD3235268D60C8EE3A99DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74AD33E634506C3C1611C714 /* NetworkClientImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClientImpl.m; sourceTree = "<group>"; };
 		74AD34BC8CE41759D26B4438 /* StringConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringConstants.h; sourceTree = "<group>"; };
+		74AD35EC7F1FA31EFE480321 /* NetworkClientResponseSerializerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClientResponseSerializerImpl.m; sourceTree = "<group>"; };
+		74AD3730FD001016F9A89497 /* NetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
 		74AD389C497C9C32E509D13B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74AD3DE609985F8136282339 /* NetworkClientImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClientImpl.h; sourceTree = "<group>"; };
 		74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74AD3ED472710F04968CB1BB /* NetworkClientResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClientResponseSerializer.h; sourceTree = "<group>"; };
 		74AD3EEBC5BE15A654FF9F56 /* StringConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringConstants.m; sourceTree = "<group>"; };
+		74AD3F89FEF0B882EF16B9E8 /* NetworkClientResponseSerializerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClientResponseSerializerImpl.h; sourceTree = "<group>"; };
 		7C5C0B8B2A6D09D2F94BB5D5 /* Pods-TVDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.release.xcconfig"; sourceTree = "<group>"; };
 		91B3915730D872C24017C5D1 /* Pods-TVDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDB/Pods-TVDB.debug.xcconfig"; sourceTree = "<group>"; };
 		B77EE1FF1D9A8AC8006FB640 /* TVDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -447,6 +455,16 @@
 			path = UserAuthorizationModule;
 			sourceTree = "<group>";
 		};
+		74AD3D3B8EADEE0BC40EF80A /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				74AD3DE609985F8136282339 /* NetworkClientImpl.h */,
+				74AD33E634506C3C1611C714 /* NetworkClientImpl.m */,
+				74AD3730FD001016F9A89497 /* NetworkClient.h */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
 		74AD3D46C2FCBD0E22E6D379 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +496,8 @@
 		74AD3E09D52F240055CBDB4A /* ConcreteClasses */ = {
 			isa = PBXGroup;
 			children = (
+				74AD3D3B8EADEE0BC40EF80A /* NetworkClient */,
+				74AD3E77825CBED9C09466B2 /* NetworkClientResponseSerializer */,
 			);
 			path = ConcreteClasses;
 			sourceTree = "<group>";
@@ -487,6 +507,16 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		74AD3E77825CBED9C09466B2 /* NetworkClientResponseSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				74AD3F89FEF0B882EF16B9E8 /* NetworkClientResponseSerializerImpl.h */,
+				74AD35EC7F1FA31EFE480321 /* NetworkClientResponseSerializerImpl.m */,
+				74AD3ED472710F04968CB1BB /* NetworkClientResponseSerializer.h */,
+			);
+			path = NetworkClientResponseSerializer;
 			sourceTree = "<group>";
 		};
 		74AD3ED28949C2EA412BF2EC /* ServiceComponentsAssembly */ = {
@@ -792,6 +822,8 @@
 				B77EE2041D9A8AC8006FB640 /* main.m in Sources */,
 				74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */,
 				74AD3FEE1C477A7C5D885BF5 /* StringConstants.m in Sources */,
+				74AD380EB8C003CE78166B0A /* NetworkClientImpl.m in Sources */,
+				74AD366EB96040FFC655746E /* NetworkClientResponseSerializerImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
