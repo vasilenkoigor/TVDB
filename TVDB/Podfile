@@ -9,10 +9,9 @@ pod 'Typhoon'
 pod 'ViperMcFlurry'
 pod 'Mantle'
 pod 'MTLManagedObjectAdapter'
-pod 'Fabric'
-pod 'TwitterKit'
 pod 'Nimbus/Models', :git => 'https://github.com/rambler-ios/nimbus'
 pod 'SVProgressHUD'
+pod 'UICKeyChainStore'
 end
 
 target :TVDBTests do    

@@ -8,13 +8,10 @@
 
 #import "AppDelegate.h"
 
-#import "Fabric.h"
-#import "Twitter.h"
 #import "StringConstants.h"
 
 @interface AppDelegate ()
 
-@property (strong, nonatomic, readwrite) Twitter *twitter;
 
 @end
 
@@ -23,8 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Fabric with:@[[Twitter class]]];
-    
     return YES;
 }
 

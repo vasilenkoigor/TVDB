@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A8773CEF0141FE7BB6C31B4 /* Pods_TVDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D1E4A96C0D96DD84A7D9A5 /* Pods_TVDB.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2F33ADAD0926848DDAF4A85E /* Pods_TVDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4464E42BC1B11FC6705DB2 /* Pods_TVDB.framework */; };
+		62B7808116B07BDDFE115471 /* TokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78C19DB8B459B030C25FE /* TokenModel.m */; };
+		62B782286D9815A367C9D1DB /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */; };
+		62B7835BA7672CAFD42F9767 /* ServiceComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */; };
+		62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */; };
+		62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */; };
+		62B78A217EC7801E85F16706 /* AuthenticationServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */; };
+		62B78BF4B95887944CFE4E60 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */; };
 		74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389C497C9C32E509D13B /* AppDelegate.m */; };
 		74AD34A9BC42DB2A4FF9B4AE /* SerialsUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD33A1E6FB1958A96CC03A /* SerialsUserStoryStoryboard.storyboard */; };
 		74AD366EB96040FFC655746E /* NetworkClientResponseSerializerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD35EC7F1FA31EFE480321 /* NetworkClientResponseSerializerImpl.m */; };
@@ -15,10 +22,10 @@
 		74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */; };
 		74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */; };
 		74AD3FEE1C477A7C5D885BF5 /* StringConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3EEBC5BE15A654FF9F56 /* StringConstants.m */; };
+		B3EBA5D00AD52ED3D87C1463 /* Pods_TVDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CC7E985ACC0E80C1EE27D7 /* Pods_TVDBTests.framework */; };
 		B77EE2041D9A8AC8006FB640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE2031D9A8AC8006FB640 /* main.m */; };
 		B77EE2201D9A8AC8006FB640 /* TVDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */; };
 		B7B160EC1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B160EB1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard */; };
-		C99C5CD1746CFB902BCA4A1C /* Pods_TVDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902A40F4E34A7B92CC0159C /* Pods_TVDBTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +39,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55D1E4A96C0D96DD84A7D9A5 /* Pods_TVDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6902A40F4E34A7B92CC0159C /* Pods_TVDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		174868A93D24E936CCE693B8 /* Pods-TVDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreComponentsAssembly.m; sourceTree = "<group>"; };
+		62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = ServiceComponentsResource.plist; sourceTree = "<group>"; };
+		62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = CoreComponentsResource.plist; sourceTree = "<group>"; };
+		62B78803986AF287B567EF50 /* CoreComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsFactory.h; sourceTree = "<group>"; };
+		62B788F1E60E30117465EC4C /* TokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenModel.h; sourceTree = "<group>"; };
+		62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceComponentsAssembly.m; sourceTree = "<group>"; };
+		62B78C19DB8B459B030C25FE /* TokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenModel.m; sourceTree = "<group>"; };
+		62B78C9254153E87FEDA544A /* ServiceComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsFactory.h; sourceTree = "<group>"; };
+		62B78C98AD4E5494CD9C18CB /* CoreComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssembly.h; sourceTree = "<group>"; };
+		62B78CA4EF5126F3A7233C23 /* AuthenticationServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationServiceImpl.h; sourceTree = "<group>"; };
+		62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationServiceImpl.m; sourceTree = "<group>"; };
+		62B78D7B8CDDA4B8EADECC7A /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
+		62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
+		62B78E53DD2347C94B8C748B /* AuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationService.h; sourceTree = "<group>"; };
+		62B78FA9FC2E704587231E1B /* ServiceComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsAssembly.h; sourceTree = "<group>"; };
+		6B4464E42BC1B11FC6705DB2 /* Pods_TVDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AD312AFC195273E65DC6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		74AD3177A0F557B2A2F54915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		74AD31CEA66E17DE07503F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/SerialsUserStoryStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
@@ -48,55 +70,145 @@
 		74AD3ED472710F04968CB1BB /* NetworkClientResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClientResponseSerializer.h; sourceTree = "<group>"; };
 		74AD3EEBC5BE15A654FF9F56 /* StringConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringConstants.m; sourceTree = "<group>"; };
 		74AD3F89FEF0B882EF16B9E8 /* NetworkClientResponseSerializerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClientResponseSerializerImpl.h; sourceTree = "<group>"; };
-		7C5C0B8B2A6D09D2F94BB5D5 /* Pods-TVDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.release.xcconfig"; sourceTree = "<group>"; };
-		91B3915730D872C24017C5D1 /* Pods-TVDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDB/Pods-TVDB.debug.xcconfig"; sourceTree = "<group>"; };
+		93D6DEC1423CD8FC9ABE72F8 /* Pods-TVDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDB/Pods-TVDB.release.xcconfig"; sourceTree = "<group>"; };
+		973D9BDC1DA1701E003D4F47 /* TVDB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TVDB.entitlements; sourceTree = "<group>"; };
+		AF8A3D2FE7F5E41ABBF0987E /* Pods-TVDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDB/Pods-TVDB.debug.xcconfig"; sourceTree = "<group>"; };
 		B77EE1FF1D9A8AC8006FB640 /* TVDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE2031D9A8AC8006FB640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B77EE21B1D9A8AC8006FB640 /* TVDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVDBTests.m; sourceTree = "<group>"; };
 		B77EE2211D9A8AC8006FB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7B160EB1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthorizationUserStoryStoryboard.storyboard; sourceTree = "<group>"; };
-		D023D65CF80AD63E174C773C /* Pods-TVDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F70B407D341B9CF217786C94 /* Pods-TVDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDB/Pods-TVDB.release.xcconfig"; sourceTree = "<group>"; };
+		D7CC7E985ACC0E80C1EE27D7 /* Pods_TVDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FE473AFA8B9CD38D0189BC /* Pods-TVDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B77EE1FC1D9A8AC8006FB640 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A8773CEF0141FE7BB6C31B4 /* Pods_TVDB.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B77EE2181D9A8AC8006FB640 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99C5CD1746CFB902BCA4A1C /* Pods_TVDBTests.framework in Frameworks */,
+				B3EBA5D00AD52ED3D87C1463 /* Pods_TVDBTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE297D7C55591EB02EAAB82E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F33ADAD0926848DDAF4A85E /* Pods_TVDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D401E5861B57232D6A9ABDA /* Pods */ = {
+		62B78111E6CF0C35E5D6632C /* SessionModel */ = {
 			isa = PBXGroup;
 			children = (
-				91B3915730D872C24017C5D1 /* Pods-TVDB.debug.xcconfig */,
-				F70B407D341B9CF217786C94 /* Pods-TVDB.release.xcconfig */,
-				D023D65CF80AD63E174C773C /* Pods-TVDBTests.debug.xcconfig */,
-				7C5C0B8B2A6D09D2F94BB5D5 /* Pods-TVDBTests.release.xcconfig */,
+				62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */,
+				62B78D7B8CDDA4B8EADECC7A /* SessionModel.h */,
 			);
-			name = Pods;
+			path = SessionModel;
 			sourceTree = "<group>";
 		};
-		74AD300E7737DB74E750BF7B /* Services */ = {
+		62B781ECD053D4F3CDD8CA4C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				74AD3621974538AE543A9CC9 /* ConcreteServices */,
+				62B78721571E9AEB77C38B40 /* ConcreteClasses */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		62B783A3B9DC6DB33E74DBC8 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				62B78D05DE3C90A3CF65DBD7 /* CoreComponentsFactory */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		62B786402BD9F6522DA866D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62B78E3596AD15AAFBA179CB /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62B7865E79084B350E83539D /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				62B78EF1D4C5FDEE360C9713 /* Assemblies */,
+				62B781ECD053D4F3CDD8CA4C /* Services */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		62B78721571E9AEB77C38B40 /* ConcreteClasses */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B4593877D415074C02D /* AuthenticationService */,
+			);
+			path = ConcreteClasses;
+			sourceTree = "<group>";
+		};
+		62B78B1183D0589083045D8B /* TokenModel */ = {
+			isa = PBXGroup;
+			children = (
+				62B78C19DB8B459B030C25FE /* TokenModel.m */,
+				62B788F1E60E30117465EC4C /* TokenModel.h */,
+			);
+			path = TokenModel;
+			sourceTree = "<group>";
+		};
+		62B78B4593877D415074C02D /* AuthenticationService */ = {
+			isa = PBXGroup;
+			children = (
+				62B78E53DD2347C94B8C748B /* AuthenticationService.h */,
+				62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */,
+				62B78CA4EF5126F3A7233C23 /* AuthenticationServiceImpl.h */,
+			);
+			path = AuthenticationService;
+			sourceTree = "<group>";
+		};
+		62B78D05DE3C90A3CF65DBD7 /* CoreComponentsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				62B78803986AF287B567EF50 /* CoreComponentsFactory.h */,
+				62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */,
+				62B78C98AD4E5494CD9C18CB /* CoreComponentsAssembly.h */,
+				62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */,
+			);
+			path = CoreComponentsFactory;
+			sourceTree = "<group>";
+		};
+		62B78E1F2E8D1EE803EDAD6D /* ServiceComponentsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				62B78C9254153E87FEDA544A /* ServiceComponentsFactory.h */,
+				62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */,
+				62B78FA9FC2E704587231E1B /* ServiceComponentsAssembly.h */,
+				62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */,
+			);
+			path = ServiceComponentsFactory;
+			sourceTree = "<group>";
+		};
+		62B78E3596AD15AAFBA179CB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B1183D0589083045D8B /* TokenModel */,
+				62B78111E6CF0C35E5D6632C /* SessionModel */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		62B78EF1D4C5FDEE360C9713 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				62B78E1F2E8D1EE803EDAD6D /* ServiceComponentsFactory */,
+			);
+			path = Assemblies;
 			sourceTree = "<group>";
 		};
 		74AD30556560A81878528A4C /* ViewModel */ = {
@@ -227,13 +339,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		74AD3621974538AE543A9CC9 /* ConcreteServices */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ConcreteServices;
-			sourceTree = "<group>";
-		};
 		74AD368A18D5A14DD92E924E /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,8 +349,8 @@
 		74AD3696AAF7EA9524307CCB /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
-				74AD3F1000EDC69D9AAB410E /* Assemblies */,
 				74AD3A8CFFF7ED1FBA01F174 /* CoreComponents */,
+				62B783A3B9DC6DB33E74DBC8 /* Assemblies */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -258,14 +363,6 @@
 				74AD38685F7C21836B208445 /* Assemblies */,
 			);
 			path = PresentationLayer;
-			sourceTree = "<group>";
-		};
-		74AD373CEA45442A20270179 /* Assemblies */ = {
-			isa = PBXGroup;
-			children = (
-				74AD3ED28949C2EA412BF2EC /* ServiceComponentsAssembly */,
-			);
-			path = Assemblies;
 			sourceTree = "<group>";
 		};
 		74AD37B0B2C4A8D98F87BF25 /* View */ = {
@@ -330,7 +427,6 @@
 			isa = PBXGroup;
 			children = (
 				74AD34F5261A2435715959FE /* AppDelegate */,
-				74AD3D536C00358D957CB04E /* Assemblies */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -348,11 +444,11 @@
 			isa = PBXGroup;
 			children = (
 				74AD3ABB17AE3E58D56919DD /* ApplicationLayer */,
-				74AD3C94274C5056286C8C8C /* BusinessLogicLayer */,
 				74AD3696AAF7EA9524307CCB /* CoreLayer */,
 				74AD36B5AE57D218D0A82FC0 /* PresentationLayer */,
-				74AD3CBE0D1228EF9D37515A /* Models */,
 				74AD3CA3CB4628704469C4D0 /* Constants */,
+				62B786402BD9F6522DA866D3 /* Models */,
+				62B7865E79084B350E83539D /* BusinessLogicLayer */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -398,28 +494,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		74AD3BA639545F48A3A2C522 /* NetworkClientsFactory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetworkClientsFactory;
-			sourceTree = "<group>";
-		};
 		74AD3BCFB3FECAEB3C98491E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		74AD3C94274C5056286C8C8C /* BusinessLogicLayer */ = {
-			isa = PBXGroup;
-			children = (
-				74AD373CEA45442A20270179 /* Assemblies */,
-				74AD300E7737DB74E750BF7B /* Services */,
-			);
-			path = BusinessLogicLayer;
 			sourceTree = "<group>";
 		};
 		74AD3C95D2732A07C8C3270A /* Router */ = {
@@ -435,13 +515,6 @@
 				74AD3AC783F0CF740CD67609 /* StringConstants */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		74AD3CBE0D1228EF9D37515A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		74AD3CFA1D84EF16D3EDCB31 /* UserAuthorizationModule */ = {
@@ -470,13 +543,6 @@
 			children = (
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		74AD3D536C00358D957CB04E /* Assemblies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assemblies;
 			sourceTree = "<group>";
 		};
 		74AD3D7E59CE640B44671ECB /* Cells */ = {
@@ -519,13 +585,6 @@
 			path = NetworkClientResponseSerializer;
 			sourceTree = "<group>";
 		};
-		74AD3ED28949C2EA412BF2EC /* ServiceComponentsAssembly */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ServiceComponentsAssembly;
-			sourceTree = "<group>";
-		};
 		74AD3ED47618CCEAE2EB8FC5 /* AuthorizationUserStory */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,22 +594,14 @@
 			path = AuthorizationUserStory;
 			sourceTree = "<group>";
 		};
-		74AD3F1000EDC69D9AAB410E /* Assemblies */ = {
-			isa = PBXGroup;
-			children = (
-				74AD3BA639545F48A3A2C522 /* NetworkClientsFactory */,
-			);
-			path = Assemblies;
-			sourceTree = "<group>";
-		};
 		B77EE1F61D9A8AC8006FB640 = {
 			isa = PBXGroup;
 			children = (
 				B77EE2011D9A8AC8006FB640 /* TVDB */,
 				B77EE21E1D9A8AC8006FB640 /* TVDBTests */,
 				B77EE2001D9A8AC8006FB640 /* Products */,
-				4D401E5861B57232D6A9ABDA /* Pods */,
 				E800AFAA6ACC5B136CE3B77A /* Frameworks */,
+				D031C6A936681A89AFEE83C7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -566,6 +617,7 @@
 		B77EE2011D9A8AC8006FB640 /* TVDB */ = {
 			isa = PBXGroup;
 			children = (
+				973D9BDC1DA1701E003D4F47 /* TVDB.entitlements */,
 				74AD3AC60895DF8DD68D447D /* Classes */,
 				74AD3BCFB3FECAEB3C98491E /* Resources */,
 				B77EE2021D9A8AC8006FB640 /* Supporting Files */,
@@ -591,11 +643,22 @@
 			path = TVDBTests;
 			sourceTree = "<group>";
 		};
+		D031C6A936681A89AFEE83C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF8A3D2FE7F5E41ABBF0987E /* Pods-TVDB.debug.xcconfig */,
+				93D6DEC1423CD8FC9ABE72F8 /* Pods-TVDB.release.xcconfig */,
+				174868A93D24E936CCE693B8 /* Pods-TVDBTests.debug.xcconfig */,
+				F5FE473AFA8B9CD38D0189BC /* Pods-TVDBTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E800AFAA6ACC5B136CE3B77A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55D1E4A96C0D96DD84A7D9A5 /* Pods_TVDB.framework */,
-				6902A40F4E34A7B92CC0159C /* Pods_TVDBTests.framework */,
+				6B4464E42BC1B11FC6705DB2 /* Pods_TVDB.framework */,
+				D7CC7E985ACC0E80C1EE27D7 /* Pods_TVDBTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -607,13 +670,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B77EE2241D9A8AC8006FB640 /* Build configuration list for PBXNativeTarget "TVDB" */;
 			buildPhases = (
-				B94E702F52034B3D59E6DD62 /* Check Pods Manifest.lock */,
+				E51377B05836F99262D9ECB5 /* [CP] Check Pods Manifest.lock */,
 				B77EE1FB1D9A8AC8006FB640 /* Sources */,
-				B77EE1FC1D9A8AC8006FB640 /* Frameworks */,
 				B77EE1FD1D9A8AC8006FB640 /* Resources */,
-				0166DAB4AD46D57123F0835F /* Embed Pods Frameworks */,
-				440C39EA04EA3A617A41A87C /* Copy Pods Resources */,
-				B7B160ED1D9BC0B900F68B90 /* Run Script */,
+				DE297D7C55591EB02EAAB82E /* Frameworks */,
+				E7F00D83883AABDED0162128 /* [CP] Embed Pods Frameworks */,
+				34AA85BD85329DCA65FC0664 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -628,12 +690,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B77EE2271D9A8AC8006FB640 /* Build configuration list for PBXNativeTarget "TVDBTests" */;
 			buildPhases = (
-				0A191C33D7EF1C278915EAF8 /* Check Pods Manifest.lock */,
+				0A191C33D7EF1C278915EAF8 /* [CP] Check Pods Manifest.lock */,
 				B77EE2171D9A8AC8006FB640 /* Sources */,
 				B77EE2181D9A8AC8006FB640 /* Frameworks */,
 				B77EE2191D9A8AC8006FB640 /* Resources */,
-				8F3DE7B106F9CF083C3E2CE8 /* Embed Pods Frameworks */,
-				AA0171E67600AD1E0A0DB36E /* Copy Pods Resources */,
+				8F3DE7B106F9CF083C3E2CE8 /* [CP] Embed Pods Frameworks */,
+				AA0171E67600AD1E0A0DB36E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -658,6 +720,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = XQ9P3KDDUW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					B77EE21A1D9A8AC8006FB640 = {
 						CreatedOnToolsVersion = 8.0;
@@ -695,6 +765,8 @@
 				74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */,
 				74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */,
 				74AD34A9BC42DB2A4FF9B4AE /* SerialsUserStoryStoryboard.storyboard in Resources */,
+				62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */,
+				62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,29 +780,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0166DAB4AD46D57123F0835F /* Embed Pods Frameworks */ = {
+		0A191C33D7EF1C278915EAF8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDB/Pods-TVDB-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0A191C33D7EF1C278915EAF8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,14 +795,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		440C39EA04EA3A617A41A87C /* Copy Pods Resources */ = {
+		34AA85BD85329DCA65FC0664 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,14 +810,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDB/Pods-TVDB-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F3DE7B106F9CF083C3E2CE8 /* Embed Pods Frameworks */ = {
+		8F3DE7B106F9CF083C3E2CE8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -768,14 +825,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA0171E67600AD1E0A0DB36E /* Copy Pods Resources */ = {
+		AA0171E67600AD1E0A0DB36E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -783,33 +840,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B7B160ED1D9BC0B900F68B90 /* Run Script */ = {
+		E51377B05836F99262D9ECB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/Fabric/run c5660adff07ae601833a2f6b45dc8fcc99f17329 b8aec356bf73d92f767abb9b884a8fd4f7dd3688d9e0925d051eda8e6bc5bf53";
-		};
-		B94E702F52034B3D59E6DD62 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F00D83883AABDED0162128 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDB/Pods-TVDB-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -824,6 +882,11 @@
 				74AD3FEE1C477A7C5D885BF5 /* StringConstants.m in Sources */,
 				74AD380EB8C003CE78166B0A /* NetworkClientImpl.m in Sources */,
 				74AD366EB96040FFC655746E /* NetworkClientResponseSerializerImpl.m in Sources */,
+				62B782286D9815A367C9D1DB /* CoreComponentsAssembly.m in Sources */,
+				62B78A217EC7801E85F16706 /* AuthenticationServiceImpl.m in Sources */,
+				62B7808116B07BDDFE115471 /* TokenModel.m in Sources */,
+				62B78BF4B95887944CFE4E60 /* SessionModel.m in Sources */,
+				62B7835BA7672CAFD42F9767 /* ServiceComponentsAssembly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -957,9 +1020,10 @@
 		};
 		B77EE2251D9A8AC8006FB640 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91B3915730D872C24017C5D1 /* Pods-TVDB.debug.xcconfig */;
+			baseConfigurationReference = AF8A3D2FE7F5E41ABBF0987E /* Pods-TVDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TVDB/TVDB.entitlements;
 				DEVELOPMENT_TEAM = XQ9P3KDDUW;
 				INFOPLIST_FILE = TVDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -970,9 +1034,10 @@
 		};
 		B77EE2261D9A8AC8006FB640 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F70B407D341B9CF217786C94 /* Pods-TVDB.release.xcconfig */;
+			baseConfigurationReference = 93D6DEC1423CD8FC9ABE72F8 /* Pods-TVDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TVDB/TVDB.entitlements;
 				DEVELOPMENT_TEAM = XQ9P3KDDUW;
 				INFOPLIST_FILE = TVDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -983,7 +1048,7 @@
 		};
 		B77EE2281D9A8AC8006FB640 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D023D65CF80AD63E174C773C /* Pods-TVDBTests.debug.xcconfig */;
+			baseConfigurationReference = 174868A93D24E936CCE693B8 /* Pods-TVDBTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = XQ9P3KDDUW;
@@ -997,7 +1062,7 @@
 		};
 		B77EE2291D9A8AC8006FB640 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C5C0B8B2A6D09D2F94BB5D5 /* Pods-TVDBTests.release.xcconfig */;
+			baseConfigurationReference = F5FE473AFA8B9CD38D0189BC /* Pods-TVDBTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = XQ9P3KDDUW;

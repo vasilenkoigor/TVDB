@@ -15,6 +15,6 @@
 @property (strong, nonatomic, readonly) id <NetworkClientResponseSerializer> networkClientResponseSerializer;
 
 - (instancetype)initWithBaseURL:(NSURL *)baseURL
-           sessionConfiguration:(NSURLSessionConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
+           sessionConfiguration:(NSURLSessionConfiguration *)configuration;
 
 @end

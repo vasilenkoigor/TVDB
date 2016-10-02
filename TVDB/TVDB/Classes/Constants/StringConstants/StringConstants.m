@@ -5,6 +5,7 @@
 
 #import "StringConstants.h"
 
-NSString *const kTwitterConsumerAPIKey = @"xZ1VwG2r6FybVqRDLzFeC5oGB";
-NSString *const kTwitterConsumerAPISecret = @"5gAprfdFiHW0O8iVSiZuSLjSU0V2Q6eKcGmttFO0wCC8OLNc6e";
-NSString *const kTVDBAPIKey = @"3349F1D32F314DE9";
+NSString *const kTheMovieDBAPIKey = @"0315406fedcffb650f19ffe870ccb71c";
+
+NSString *const kTokenKeychainKey = @"keychain_token_the_movie_db";
+NSString *const kSessionKeychainKey = @"keychain_session_the_movie_db";

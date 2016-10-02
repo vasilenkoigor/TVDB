@@ -5,6 +5,7 @@
 //  Copyright (c) 2015 Igor Vasilenko. All rights reserved.
 //
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "NetworkClientImpl.h"
 
 #import "NetworkClientResponseSerializerImpl.h"
@@ -33,8 +34,8 @@
 - (NSURLSessionDataTask *)method:(VASHTTPMethod)method
                        URLString:(NSString *)URLString
                       parameters:(id)parameters
-                         success:(SessionManagerCompletionBlockWithSuccess)success
-                         failure:(SessionManagerCompletionBlockWithFailure)failure
+                         success:(NetworkClientCompletionBlockWithSuccess)success
+                         failure:(NetworkClientCompletionBlockWithFailure)failure
 {
     return [self dataTaskWithMethod:method
                           URLString:URLString
@@ -48,8 +49,8 @@
                       parameters:(id)parameters
                      resultClass:(Class)resultClass
                           forKey:(NSString *)key
-                         success:(SessionManagerCompletionBlockWithSuccess)success
-                         failure:(SessionManagerCompletionBlockWithFailure)failure
+                         success:(NetworkClientCompletionBlockWithSuccess)success
+                         failure:(NetworkClientCompletionBlockWithFailure)failure
 {
     __weak __typeof(self)weakSelf = self;
 
@@ -66,72 +67,104 @@
                 } failure:failure];
 }
 
+- (RACSignal *)rac_method:(VASHTTPMethod)method
+                URLString:(NSString *)URLString
+               parameters:(id)parameters
+{
+    return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+        [[self method:method
+           URLString:URLString
+          parameters:parameters
+             success:^(NSURLSessionDataTask *task, id responseObject) {
+                 [subscriber sendNext:responseObject];
+             } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                    [subscriber sendError:error];
+                }] resume];
+        return nil;
+    }];
+}
+
+- (RACSignal *)rac_method:(VASHTTPMethod)method
+                URLString:(NSString *)URLString
+               parameters:(id)parameters
+              resultClass:(Class)resultClass
+                   forKey:(NSString *)key
+{
+    return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+        [[self method:method
+           URLString:URLString
+          parameters:parameters
+         resultClass:resultClass
+              forKey:key
+             success:^(NSURLSessionDataTask *task, id responseObject) {
+                 [subscriber sendNext:responseObject];
+             } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                    [subscriber sendError:error];
+                }] resume];
+        return nil;
+    }];
+}
+
+
 #pragma mark - HTTP Methods Data Tasks
 
 - (NSURLSessionDataTask *)dataTaskWithMethod:(VASHTTPMethod)method
                                    URLString:(NSString *)URLString
                                   parameters:(id)parameters
-                                     success:(SessionManagerCompletionBlockWithSuccess)success
-                                     failure:(SessionManagerCompletionBlockWithFailure)failure
+                                     success:(NetworkClientCompletionBlockWithSuccess)success
+                                     failure:(NetworkClientCompletionBlockWithFailure)failure
 {
     NSURLRequest *urlRequest;
+    NSURL *requestURL = [[NSURL alloc] initWithString:URLString relativeToURL:self.baseURL];
+    NSString *requestURLString = requestURL.absoluteString;
 
     switch (method) {
         case VASHTTPMethodGET:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET"
-                                                                       URLString:URLString
+                                                                       URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
         case VASHTTPMethodPOST:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST"
-                                                                       URLString:URLString
+                                                                       URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
         case VASHTTPMethodPUT:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"PUT"
-                                                                       URLString:URLString
+                                                                       URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
         case VASHTTPMethodPATCH:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"PATCH"
-                                                                       URLString:URLString
+                                                                       URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
         case VASHTTPMethodDELETE:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"DELETE"
-                                                                       URLString:URLString
+                                                                       URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
 
         default:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET"
-                                                                       URLString:URLString
+                                                                       URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
     }
 
-    NSMutableURLRequest *modifiedRequest = urlRequest.mutableCopy;
-    AFNetworkReachabilityManager *reachability = [AFNetworkReachabilityManager sharedManager];
-    if (!reachability.isReachable) {
-        modifiedRequest.cachePolicy = NSURLRequestReturnCacheDataDontLoad;
-    }
-
-    NSURLSessionDataTask *dataTask = [self dataTaskWithRequest:modifiedRequest
-                                             completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-                                                 if (error)
-                                                 {
-                                                     failure(dataTask, error);
-                                                 }
-                                                 else
-                                                 {
-                                                     success(dataTask, responseObject);
-                                                 }
-                                             }];
+    __block NSURLSessionDataTask *dataTask = [self dataTaskWithRequest:urlRequest
+                                                     completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+                                                         if (error) {
+                                                             failure(dataTask, error);
+                                                         } else {
+                                                             success(dataTask, responseObject);
+                                                         }
+                                                     }];
     return dataTask;
 }
 

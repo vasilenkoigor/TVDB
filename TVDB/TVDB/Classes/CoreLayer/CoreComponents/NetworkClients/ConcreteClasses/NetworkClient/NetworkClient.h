@@ -7,8 +7,8 @@
 
 @class RACSignal;
 
-typedef void(^SessionManagerCompletionBlockWithSuccess)(NSURLSessionDataTask *task, id responseObject);
-typedef void(^SessionManagerCompletionBlockWithFailure)(NSURLSessionDataTask *task, NSError *error);
+typedef void(^NetworkClientCompletionBlockWithSuccess)(NSURLSessionDataTask *task, id responseObject);
+typedef void(^NetworkClientCompletionBlockWithFailure)(NSURLSessionDataTask *task, NSError *error);
 
 typedef NS_ENUM(NSUInteger, VASHTTPMethod) {
     VASHTTPMethodGET,
@@ -23,15 +23,31 @@ typedef NS_ENUM(NSUInteger, VASHTTPMethod) {
 - (NSURLSessionDataTask *)method:(VASHTTPMethod)method
                        URLString:(NSString *)URLString
                       parameters:(id)parameters
-                         success:(SessionManagerCompletionBlockWithSuccess)success
-                         failure:(SessionManagerCompletionBlockWithFailure)failure;
+                         success:(NetworkClientCompletionBlockWithSuccess)success
+                         failure:(NetworkClientCompletionBlockWithFailure)failure;
 
 - (NSURLSessionDataTask *)method:(VASHTTPMethod)method
                        URLString:(NSString *)URLString
                       parameters:(id)parameters
                      resultClass:(Class)resultClass
                           forKey:(NSString *)key
-                         success:(SessionManagerCompletionBlockWithSuccess)success
-                         failure:(SessionManagerCompletionBlockWithFailure)failure;
+                         success:(NetworkClientCompletionBlockWithSuccess)success
+                         failure:(NetworkClientCompletionBlockWithFailure)failure;
+
+#pragma mark - ReactiveCocoa extended
+
+/*
+ * Note: RACSignal is immediately resume data task.
+ */
+
+- (RACSignal *)rac_method:(VASHTTPMethod)method
+                URLString:(NSString *)URLString
+               parameters:(id)parameters;
+
+- (RACSignal *)rac_method:(VASHTTPMethod)method
+                URLString:(NSString *)URLString
+               parameters:(id)parameters
+              resultClass:(Class)resultClass
+                   forKey:(NSString *)key;
 
 @end

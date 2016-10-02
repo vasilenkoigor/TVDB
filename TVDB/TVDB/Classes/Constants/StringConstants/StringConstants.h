@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const kTwitterConsumerAPIKey;
-extern NSString *const kTwitterConsumerAPISecret;
-extern NSString *const kTVDBAPIKey;
+extern NSString *const kTheMovieDBAPIKey;
+
+extern NSString *const kTokenKeychainKey;
+extern NSString *const kSessionKeychainKey;
