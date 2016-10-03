@@ -6,7 +6,10 @@
 #import "TVShowsServiceImpl.h"
 #import "NetworkClient.h"
 #import "KeychainService.h"
-#import "CoreDataStack.h"
+#import "СoreLayerConstants.h"
+#import "TVDiscoverResult.h"
+
+static NSString *const kDiscoverTVShowsTheMovieDBURL = @"discover/tv";
 
 @interface TVShowsServiceImpl ()
 
@@ -29,6 +32,24 @@
         self.coreDataStack = coreDataStack;
     }
     return self;
+}
+
+#pragma mark - TVShowsService protocol
+
+- (RACSignal *)recentsTVShows
+{
+    return [self.networkClient rac_method:HTTPMethodGET
+                                URLString:kDiscoverTVShowsTheMovieDBURL
+                               parameters:
+                                       @{
+                                               @"api_key" : kTheMovieDBAPIKey,
+                                               @"language" : @"en-US",
+                                               @"sort_by" : @"popularity.desc",
+                                               @"first_air_date_year" : @"2015"
+
+                                       }
+                              resultClass:[TVDiscoverResult class]
+                                   forKey:nil];
 }
 
 @end

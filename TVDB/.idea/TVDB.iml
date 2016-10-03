@@ -21,6 +21,16 @@
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/AuthenticationUserStory/Modules/UserAuthenticationModule/Assembly/UserAuthenticationAssembly.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/AuthenticationUserStory/Modules/UserAuthenticationModule/Assembly/UserAuthenticationAssembly.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Storyboard/TVShowsDiscoverUserStoryStoryboard.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/Router/PopularTVShowsRouter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/Router/PopularTVShowsRouter.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/Router/PopularTVShowsRouterInput.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/View/PopularTVShowsViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/View/PopularTVShowsViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/ViewModel/PopularTVShowsViewModelInput.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/ViewModel/PopularTVShowsViewModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/ViewModel/PopularTVShowsViewModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/Assembly/PopularTVShowsAssembly.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/PresentationLayer/UserStories/TVShowsDiscoverUserStory/Modules/PopularTVShowsModule/Assembly/PopularTVShowsAssembly.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsFactory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsAssembly.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsResource.plist" isTestSource="false" />
@@ -54,6 +64,8 @@
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/Models/API/TVEpisode/TVEpisode.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/Models/API/Genre/Genre.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/Models/API/Genre/Genre.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/Models/API/TVDiscoverResult/TVDiscoverResult.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/Models/API/TVDiscoverResult/TVDiscoverResult.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/Models/API/TVSeason/TVSeason.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/Models/API/TVSeason/TVSeason.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TVDB/Classes/ApplicationLayer/AppDelegate/AppDelegate.h" isTestSource="false" />

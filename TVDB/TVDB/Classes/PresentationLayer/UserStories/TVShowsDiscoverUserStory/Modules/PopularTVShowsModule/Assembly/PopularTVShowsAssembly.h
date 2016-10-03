@@ -5,12 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class NSFetchedResultsController;
-@class RACSignal;
-@class TVShow;
 
-@protocol TVShowsService <NSObject>
-
-- (RACSignal *)recentsTVShows;
-
+@interface PopularTVShowsAssembly : NSObject
 @end
