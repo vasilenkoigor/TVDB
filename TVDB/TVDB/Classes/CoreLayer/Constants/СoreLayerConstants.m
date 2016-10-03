@@ -6,3 +6,5 @@
 #import "СoreLayerConstants.h"
 
 NSString *const kTheMovieDBAPIKey = @"0315406fedcffb650f19ffe870ccb71c";
+NSURL *const kTheMovieDBSmallImageBasePath = [[NSURL alloc] initWithString:@"https://image.tmdb.org/t/p/w92/"];
+NSURL *const kTheMovieDBMediumImageBasePath = [[NSURL alloc] initWithString:@"https://image.tmdb.org/t/p/w185/"];

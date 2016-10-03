@@ -11,6 +11,7 @@
 #import "RACDisposable.h"
 #import "RACDynamicSignal.h"
 #import "RACEmptySignal.h"
+#import "TVShow.h"
 #import "RACErrorSignal.h"
 #import "RACMulticastConnection.h"
 #import "RACReplaySubject.h"

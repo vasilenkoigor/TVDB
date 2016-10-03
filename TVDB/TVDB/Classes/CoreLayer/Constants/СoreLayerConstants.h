@@ -6,3 +6,5 @@
 #import <Foundation/Foundation.h>
 
 extern NSString *const kTheMovieDBAPIKey;
+extern NSURL *const kTheMovieDBSmallImageBasePath;
+extern NSURL *const kTheMovieDBMediumImageBasePath;

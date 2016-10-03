@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		62B7808116B07BDDFE115471 /* TokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78C19DB8B459B030C25FE /* TokenModel.m */; };
+		62B780B1E8109786A7213D6F /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780DD05A7B5316B5F8F89 /* Genre.m */; };
+		62B7813EE12974A8E157CC76 /* TVShowsServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78001EC199DB14C325ACB /* TVShowsServiceImpl.m */; };
 		62B78166F5B62D034994E445 /* StoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */; };
 		62B781A35779FF35A686CDFA /* ModuleAssemblyBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */; };
+		62B781F9CC7C340DA83EB19E /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78FBA925C019E15B79146 /* Network.m */; };
 		62B782286D9815A367C9D1DB /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */; };
 		62B7835BA7672CAFD42F9767 /* ServiceComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */; };
+		62B78403F63170FF97E4123F /* Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78F726F41AE386615A3BA /* Cast.m */; };
+		62B784AA70AEAB7ABA1E38DD /* CoreDataStackImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7838ADC0EE64EB74BA48D /* CoreDataStackImpl.m */; };
+		62B787670BCB962A8E0B8602 /* ProductionCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780758F4646207B1BB0F2 /* ProductionCompany.m */; };
+		62B7880ADF924C6AA84035E8 /* TVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78596AAC0E5C02AF38ED6 /* TVShow.m */; };
 		62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */; };
 		62B7888B7E4B7765D4594E29 /* СoreLayerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78305738685B06AC86076 /* СoreLayerConstants.m */; };
 		62B7890E7A5B05AF3197014D /* UserAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78DC9C6E5CD929B696EEE /* UserAuthenticationViewController.m */; };
@@ -19,7 +26,10 @@
 		62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */; };
 		62B78A217EC7801E85F16706 /* AuthenticationServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */; };
 		62B78AEC65209659C28B5B3C /* UserAuthenticationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78EC6BE0D557CE3396DE0 /* UserAuthenticationRouter.m */; };
+		62B78B88327519EE8D567819 /* Creator.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78752C3D1415AB851BA5A /* Creator.m */; };
 		62B78BF4B95887944CFE4E60 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */; };
+		62B78C68635D62BDF58BF0EB /* TVSeason.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B6FF3EBD26243E755BB /* TVSeason.m */; };
+		62B78C78CAE36C113872F94B /* TVEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B783801491A388307B5A66 /* TVEpisode.m */; };
 		62B78CF7FDDBDD6F46ED0D75 /* KeychainServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A2FC4E3959F6E42B1BE /* KeychainServiceImpl.m */; };
 		62B78DA7A7B8E353341C13FD /* TVShowsDiscoverUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B78AE4EFD378BC953F380B /* TVShowsDiscoverUserStoryStoryboard.storyboard */; };
 		62B78F0EBFE2765487DAFC58 /* UserAuthenticationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7886391D9D0601859CD96 /* UserAuthenticationAssembly.m */; };
@@ -47,34 +57,54 @@
 /* Begin PBXFileReference section */
 		0375AF4AFEC73F1342472498 /* libPods-TVDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABBC0EB1F89DEF3F3D1F22C /* libPods-TVDBTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVDBTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B78001EC199DB14C325ACB /* TVShowsServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowsServiceImpl.m; sourceTree = "<group>"; };
 		62B780103E319EB17673F5CC /* KeychainServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainServiceImpl.h; sourceTree = "<group>"; };
 		62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreComponentsAssembly.m; sourceTree = "<group>"; };
+		62B780758F4646207B1BB0F2 /* ProductionCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductionCompany.m; sourceTree = "<group>"; };
+		62B780C6EC081B00A58462A9 /* Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cast.h; sourceTree = "<group>"; };
+		62B780DD05A7B5316B5F8F89 /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		62B780E5425923B2C12CF1A3 /* CoreDataStackImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStackImpl.h; sourceTree = "<group>"; };
 		62B7814594B047926FE69FEB /* StoryboardAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardAssembly.h; sourceTree = "<group>"; };
 		62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = ServiceComponentsResource.plist; sourceTree = "<group>"; };
 		62B78305738685B06AC86076 /* СoreLayerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "СoreLayerConstants.m"; sourceTree = "<group>"; };
 		62B78321C0936258E24C3BDB /* UserAuthenticationRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouter.h; sourceTree = "<group>"; };
+		62B783801491A388307B5A66 /* TVEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVEpisode.m; sourceTree = "<group>"; };
+		62B7838ADC0EE64EB74BA48D /* CoreDataStackImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStackImpl.m; sourceTree = "<group>"; };
 		62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = CoreComponentsResource.plist; sourceTree = "<group>"; };
+		62B784534D141EF1C6FB6133 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		62B784B024A6E7EF8FE88294 /* UserAuthenticationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewModel.m; sourceTree = "<group>"; };
+		62B784B24075EB50121D6E40 /* Creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creator.h; sourceTree = "<group>"; };
 		62B785240689C18E82C523F0 /* ModuleAssemblyBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleAssemblyBase.h; sourceTree = "<group>"; };
 		62B7854BA5823126DFF05D31 /* UserAuthenticationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationAssembly.h; sourceTree = "<group>"; };
+		62B78596AAC0E5C02AF38ED6 /* TVShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShow.m; sourceTree = "<group>"; };
 		62B78603A4406E90F47066F9 /* UserAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewController.h; sourceTree = "<group>"; };
 		62B78694DA7D2C99F1043DBB /* SegueIdentifiersConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueIdentifiersConstants.m; sourceTree = "<group>"; };
+		62B786A3A74A3403B3E74194 /* TVShowsServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowsServiceImpl.h; sourceTree = "<group>"; };
+		62B786B8437DE9BC829CC8B7 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		62B786C0B1186D15221FC7D6 /* СoreLayerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "СoreLayerConstants.h"; sourceTree = "<group>"; };
 		62B786D4799C75A2F6C44A30 /* KeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainService.h; sourceTree = "<group>"; };
+		62B78752C3D1415AB851BA5A /* Creator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creator.m; sourceTree = "<group>"; };
 		62B78803986AF287B567EF50 /* CoreComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsFactory.h; sourceTree = "<group>"; };
+		62B7883072D674B59DA6549F /* TVSeason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSeason.h; sourceTree = "<group>"; };
 		62B7886391D9D0601859CD96 /* UserAuthenticationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationAssembly.m; sourceTree = "<group>"; };
+		62B788CCBFD6EF65058B5BA0 /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		62B788DA430EC69E41449443 /* ProductionCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductionCompany.h; sourceTree = "<group>"; };
 		62B788F1E60E30117465EC4C /* TokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenModel.h; sourceTree = "<group>"; };
 		62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleAssemblyBase.m; sourceTree = "<group>"; };
+		62B789CAEB7AB2420AC00A9E /* TVShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShow.h; sourceTree = "<group>"; };
 		62B78A2FC4E3959F6E42B1BE /* KeychainServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainServiceImpl.m; sourceTree = "<group>"; };
 		62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceComponentsAssembly.m; sourceTree = "<group>"; };
 		62B78AE105F0F09307FFD9BB /* UserAuthenticationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModel.h; sourceTree = "<group>"; };
 		62B78AE4EFD378BC953F380B /* TVShowsDiscoverUserStoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVShowsDiscoverUserStoryStoryboard.storyboard; sourceTree = "<group>"; };
 		62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardAssembly.m; sourceTree = "<group>"; };
+		62B78B6FF3EBD26243E755BB /* TVSeason.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSeason.m; sourceTree = "<group>"; };
+		62B78B85C46F40D12642F903 /* TVShowsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowsService.h; sourceTree = "<group>"; };
 		62B78C19DB8B459B030C25FE /* TokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenModel.m; sourceTree = "<group>"; };
 		62B78C9254153E87FEDA544A /* ServiceComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsFactory.h; sourceTree = "<group>"; };
 		62B78C98AD4E5494CD9C18CB /* CoreComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssembly.h; sourceTree = "<group>"; };
 		62B78CA4EF5126F3A7233C23 /* AuthenticationServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationServiceImpl.h; sourceTree = "<group>"; };
 		62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationServiceImpl.m; sourceTree = "<group>"; };
+		62B78D7413C22BD68E3BAC90 /* TVEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVEpisode.h; sourceTree = "<group>"; };
 		62B78D7B8CDDA4B8EADECC7A /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
 		62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
 		62B78DC9C6E5CD929B696EEE /* UserAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewController.m; sourceTree = "<group>"; };
@@ -82,8 +112,10 @@
 		62B78EC6BE0D557CE3396DE0 /* UserAuthenticationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationRouter.m; sourceTree = "<group>"; };
 		62B78EE48986A36F2D84459C /* SegueIdentifiersConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueIdentifiersConstants.h; sourceTree = "<group>"; };
 		62B78F269A81D139555CA644 /* UserAuthenticationViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModelInput.h; sourceTree = "<group>"; };
+		62B78F726F41AE386615A3BA /* Cast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cast.m; sourceTree = "<group>"; };
 		62B78F9F87F4BE56E1458FFD /* UserAuthenticationRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouterInput.h; sourceTree = "<group>"; };
 		62B78FA9FC2E704587231E1B /* ServiceComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsAssembly.h; sourceTree = "<group>"; };
+		62B78FBA925C019E15B79146 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		74AD312AFC195273E65DC6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		74AD3235268D60C8EE3A99DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74AD33E634506C3C1611C714 /* NetworkClientImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClientImpl.m; sourceTree = "<group>"; };
@@ -158,6 +190,15 @@
 			children = (
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		62B78160C010104C4C9D2C79 /* TVSeason */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B6FF3EBD26243E755BB /* TVSeason.m */,
+				62B7883072D674B59DA6549F /* TVSeason.h */,
+			);
+			path = TVSeason;
 			sourceTree = "<group>";
 		};
 		62B781DF73D6CDBC4A0455C2 /* Router */ = {
@@ -244,6 +285,15 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		62B784FEF140D25E34E51140 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				62B78FBA925C019E15B79146 /* Network.m */,
+				62B786B8437DE9BC829CC8B7 /* Network.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		62B78591E9372B6DA3ED68C1 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +309,25 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62B7860F283AA79BE687D119 /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				62B78752C3D1415AB851BA5A /* Creator.m */,
+				62B784B24075EB50121D6E40 /* Creator.h */,
+			);
+			path = Creator;
+			sourceTree = "<group>";
+		};
+		62B786205A7CA630391FA55E /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				62B784534D141EF1C6FB6133 /* CoreDataStack.h */,
+				62B7838ADC0EE64EB74BA48D /* CoreDataStackImpl.m */,
+				62B780E5425923B2C12CF1A3 /* CoreDataStackImpl.h */,
+			);
+			path = CoreDataStack;
 			sourceTree = "<group>";
 		};
 		62B78626B36B0D22A50EAAAB /* FavoritesTVShowsModule */ = {
@@ -289,6 +358,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		62B7865418BBDC5730048233 /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				62B780DD05A7B5316B5F8F89 /* Genre.m */,
+				62B788CCBFD6EF65058B5BA0 /* Genre.h */,
+			);
+			path = Genre;
+			sourceTree = "<group>";
+		};
 		62B7865E79084B350E83539D /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,8 +390,19 @@
 			children = (
 				62B78B4593877D415074C02D /* AuthenticationService */,
 				62B783A6D4998347E968A888 /* KeychainService */,
+				62B787670D5B0B29F18D14FF /* TVShowsService */,
 			);
 			path = ConcreteClasses;
+			sourceTree = "<group>";
+		};
+		62B787670D5B0B29F18D14FF /* TVShowsService */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B85C46F40D12642F903 /* TVShowsService.h */,
+				62B78001EC199DB14C325ACB /* TVShowsServiceImpl.m */,
+				62B786A3A74A3403B3E74194 /* TVShowsServiceImpl.h */,
+			);
+			path = TVShowsService;
 			sourceTree = "<group>";
 		};
 		62B787F9ACE5D7AEDD5182C6 /* Assembly */ = {
@@ -323,6 +412,15 @@
 				62B7854BA5823126DFF05D31 /* UserAuthenticationAssembly.h */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		62B78833F688593C572DF200 /* Cast */ = {
+			isa = PBXGroup;
+			children = (
+				62B78F726F41AE386615A3BA /* Cast.m */,
+				62B780C6EC081B00A58462A9 /* Cast.h */,
+			);
+			path = Cast;
 			sourceTree = "<group>";
 		};
 		62B7883CCFADF56AAE969458 /* View */ = {
@@ -378,6 +476,15 @@
 				62B788F1E60E30117465EC4C /* TokenModel.h */,
 			);
 			path = TokenModel;
+			sourceTree = "<group>";
+		};
+		62B78B2E0B97A12A99DD04FF /* TVEpisode */ = {
+			isa = PBXGroup;
+			children = (
+				62B783801491A388307B5A66 /* TVEpisode.m */,
+				62B78D7413C22BD68E3BAC90 /* TVEpisode.h */,
+			);
+			path = TVEpisode;
 			sourceTree = "<group>";
 		};
 		62B78B36CB4EED4280147139 /* Router */ = {
@@ -460,8 +567,25 @@
 			children = (
 				62B78B1183D0589083045D8B /* TokenModel */,
 				62B78111E6CF0C35E5D6632C /* SessionModel */,
+				62B78E4C18CBDCF2C4E10008 /* TVShow */,
+				62B78160C010104C4C9D2C79 /* TVSeason */,
+				62B78B2E0B97A12A99DD04FF /* TVEpisode */,
+				62B784FEF140D25E34E51140 /* Network */,
+				62B7865418BBDC5730048233 /* Genre */,
+				62B78FD7FC1D2C7D63B9C3EF /* ProductionCompany */,
+				62B7860F283AA79BE687D119 /* Creator */,
+				62B78833F688593C572DF200 /* Cast */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		62B78E4C18CBDCF2C4E10008 /* TVShow */ = {
+			isa = PBXGroup;
+			children = (
+				62B78596AAC0E5C02AF38ED6 /* TVShow.m */,
+				62B789CAEB7AB2420AC00A9E /* TVShow.h */,
+			);
+			path = TVShow;
 			sourceTree = "<group>";
 		};
 		62B78E8F5660EA12ADE41F27 /* StoryboardAssembly */ = {
@@ -495,6 +619,15 @@
 				62B78E8F5660EA12ADE41F27 /* StoryboardAssembly */,
 			);
 			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		62B78FD7FC1D2C7D63B9C3EF /* ProductionCompany */ = {
+			isa = PBXGroup;
+			children = (
+				62B780758F4646207B1BB0F2 /* ProductionCompany.m */,
+				62B788DA430EC69E41449443 /* ProductionCompany.h */,
+			);
+			path = ProductionCompany;
 			sourceTree = "<group>";
 		};
 		74AD34F5261A2435715959FE /* AppDelegate */ = {
@@ -538,6 +671,7 @@
 			isa = PBXGroup;
 			children = (
 				74AD354237B44AD517247F1B /* NetworkClients */,
+				62B786205A7CA630391FA55E /* CoreDataStack */,
 			);
 			path = CoreComponents;
 			sourceTree = "<group>";
@@ -875,6 +1009,16 @@
 				62B789AD61B760C8EDA075F2 /* UserAuthenticationViewModel.m in Sources */,
 				62B78AEC65209659C28B5B3C /* UserAuthenticationRouter.m in Sources */,
 				62B78FF89404422F56FF7070 /* SegueIdentifiersConstants.m in Sources */,
+				62B7880ADF924C6AA84035E8 /* TVShow.m in Sources */,
+				62B78C68635D62BDF58BF0EB /* TVSeason.m in Sources */,
+				62B78C78CAE36C113872F94B /* TVEpisode.m in Sources */,
+				62B781F9CC7C340DA83EB19E /* Network.m in Sources */,
+				62B780B1E8109786A7213D6F /* Genre.m in Sources */,
+				62B787670BCB962A8E0B8602 /* ProductionCompany.m in Sources */,
+				62B78B88327519EE8D567819 /* Creator.m in Sources */,
+				62B78403F63170FF97E4123F /* Cast.m in Sources */,
+				62B7813EE12974A8E157CC76 /* TVShowsServiceImpl.m in Sources */,
+				62B784AA70AEAB7ABA1E38DD /* CoreDataStackImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

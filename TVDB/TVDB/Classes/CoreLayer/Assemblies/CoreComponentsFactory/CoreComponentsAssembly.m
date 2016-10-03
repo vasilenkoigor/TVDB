@@ -8,6 +8,8 @@
 #import "CoreComponentsAssembly.h"
 #import "NetworkClientImpl.h"
 #import "NetworkClientResponseSerializerImpl.h"
+#import "CoreDataStack.h"
+#import "CoreDataStackImpl.h"
 
 static NSString *const kCoreComponentsResourceFile = @"CoreComponentsResource.plist";
 static NSString *const kCoreComponentsRootURL = @"RootURL";
@@ -24,6 +26,13 @@ static NSString *const kCoreComponentsRootURL = @"RootURL";
             [initializer injectParameterWith:[self defaultSessionConfiguration]];
         }];
         [definition injectProperty:@selector(networkClientResponseSerializer) with:[self networkClientResponseSerializer]];
+    }];
+}
+
+- (id <CoreDataStack>)coreDataStack
+{
+    return [TyphoonDefinition withClass:[CoreDataStackImpl class] configuration:^(TyphoonDefinition *definition) {
+        definition.scope = TyphoonScopeSingleton;
     }];
 }
 

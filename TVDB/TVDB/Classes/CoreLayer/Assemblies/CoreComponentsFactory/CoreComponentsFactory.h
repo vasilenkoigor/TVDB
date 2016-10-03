@@ -6,9 +6,11 @@
 #import <Foundation/Foundation.h>
 
 @protocol NetworkClient;
+@protocol CoreDataStack;
 
 @protocol CoreComponentsFactory <NSObject>
 
 - (id <NetworkClient>)networkClient;
+- (id <CoreDataStack>)coreDataStack;
 
 @end
