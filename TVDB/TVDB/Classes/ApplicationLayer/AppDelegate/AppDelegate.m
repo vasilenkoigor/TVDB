@@ -6,6 +6,7 @@
 //  Copyright © 2016 Igor Vasilenko. All rights reserved.
 //
 
+#import <RamblerTyphoonUtils/RamblerInitialAssemblyCollector.h>
 #import "AppDelegate.h"
 
 #import "СoreLayerConstants.h"
@@ -23,6 +24,11 @@
     return YES;
 }
 
+- (NSArray *)initialAssemblies
+{
+    RamblerInitialAssemblyCollector *assemblyCollector = [RamblerInitialAssemblyCollector new];
+    return [assemblyCollector collectInitialAssemblyClasses];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

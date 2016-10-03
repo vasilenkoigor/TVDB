@@ -26,6 +26,7 @@ PODS:
   - Nimbus/Models (1.2.2):
     - Nimbus/Core
   - OCMock (3.3.1)
+  - RamblerTyphoonUtils/AssemblyCollector (1.4.0)
   - RamblerTyphoonUtils/AssemblyTesting (1.4.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -52,6 +53,7 @@ DEPENDENCIES:
   - MTLManagedObjectAdapter
   - Nimbus/Models (from `https://github.com/rambler-ios/nimbus`)
   - OCMock
+  - RamblerTyphoonUtils/AssemblyCollector
   - RamblerTyphoonUtils/AssemblyTesting
   - ReactiveCocoa (= 2.5)
   - SVProgressHUD
@@ -81,6 +83,6 @@ SPEC CHECKSUMS:
   UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
   ViperMcFlurry: 4988827744fa35e45862ef2485789278379fe394
 
-PODFILE CHECKSUM: 0c44ee224cdb47f08bbfe746566594978c04b6f0
+PODFILE CHECKSUM: 62185afb227c6650b014c5033641c63f43bbc416
 
 COCOAPODS: 1.0.1

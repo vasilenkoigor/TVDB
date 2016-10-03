@@ -9,24 +9,28 @@
 /* Begin PBXBuildFile section */
 		2F33ADAD0926848DDAF4A85E /* Pods_TVDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4464E42BC1B11FC6705DB2 /* Pods_TVDB.framework */; };
 		62B7808116B07BDDFE115471 /* TokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78C19DB8B459B030C25FE /* TokenModel.m */; };
+		62B78166F5B62D034994E445 /* StoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */; };
+		62B781A35779FF35A686CDFA /* ModuleAssemblyBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */; };
 		62B782286D9815A367C9D1DB /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */; };
 		62B7835BA7672CAFD42F9767 /* ServiceComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */; };
+		62B783AFBF549C571F9D4C5F /* UserAuthenticationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780028422E3D32C04DE46 /* UserAuthenticationViewModel.m */; };
 		62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */; };
 		62B7888B7E4B7765D4594E29 /* СoreLayerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78305738685B06AC86076 /* СoreLayerConstants.m */; };
 		62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */; };
 		62B78A217EC7801E85F16706 /* AuthenticationServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */; };
+		62B78AF0EF15136040F120AE /* UserAuthenticationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78298CA1EDF7DDB4B7767 /* UserAuthenticationRouter.m */; };
 		62B78BF4B95887944CFE4E60 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */; };
 		62B78CF7FDDBDD6F46ED0D75 /* KeychainServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A2FC4E3959F6E42B1BE /* KeychainServiceImpl.m */; };
+		62B78DB7958BF5DA00344954 /* UserAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B782C2FEDFB7621F6BEDAD /* UserAuthenticationViewController.m */; };
+		62B78DF0AFD20A9A4F74786A /* UserAuthenticationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78BCAA9C9964B775BCF94 /* UserAuthenticationAssembly.m */; };
 		74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389C497C9C32E509D13B /* AppDelegate.m */; };
-		74AD34A9BC42DB2A4FF9B4AE /* SerialsUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD33A1E6FB1958A96CC03A /* SerialsUserStoryStoryboard.storyboard */; };
 		74AD366EB96040FFC655746E /* NetworkClientResponseSerializerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD35EC7F1FA31EFE480321 /* NetworkClientResponseSerializerImpl.m */; };
 		74AD380EB8C003CE78166B0A /* NetworkClientImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD33E634506C3C1611C714 /* NetworkClientImpl.m */; };
 		74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */; };
-		74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */; };
 		B3EBA5D00AD52ED3D87C1463 /* Pods_TVDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CC7E985ACC0E80C1EE27D7 /* Pods_TVDBTests.framework */; };
 		B77EE2041D9A8AC8006FB640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE2031D9A8AC8006FB640 /* main.m */; };
 		B77EE2201D9A8AC8006FB640 /* TVDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */; };
-		B7B160EC1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B160EB1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard */; };
+		B7B160EC1D9B1DB900F68B90 /* AuthenticationUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B160EB1D9B1DB900F68B90 /* AuthenticationUserStoryStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,17 +45,29 @@
 
 /* Begin PBXFileReference section */
 		174868A93D24E936CCE693B8 /* Pods-TVDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		62B780028422E3D32C04DE46 /* UserAuthenticationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewModel.m; sourceTree = "<group>"; };
 		62B780103E319EB17673F5CC /* KeychainServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainServiceImpl.h; sourceTree = "<group>"; };
 		62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreComponentsAssembly.m; sourceTree = "<group>"; };
+		62B7814594B047926FE69FEB /* StoryboardAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardAssembly.h; sourceTree = "<group>"; };
+		62B781993F225E8622E86A02 /* UserAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewController.h; sourceTree = "<group>"; };
 		62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = ServiceComponentsResource.plist; sourceTree = "<group>"; };
+		62B78298CA1EDF7DDB4B7767 /* UserAuthenticationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationRouter.m; sourceTree = "<group>"; };
+		62B782C2FEDFB7621F6BEDAD /* UserAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewController.m; sourceTree = "<group>"; };
 		62B78305738685B06AC86076 /* СoreLayerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "СoreLayerConstants.m"; sourceTree = "<group>"; };
+		62B7837A4EE4D757223E306C /* UserAuthenticationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationAssembly.h; sourceTree = "<group>"; };
 		62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = CoreComponentsResource.plist; sourceTree = "<group>"; };
+		62B785240689C18E82C523F0 /* ModuleAssemblyBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleAssemblyBase.h; sourceTree = "<group>"; };
 		62B786C0B1186D15221FC7D6 /* СoreLayerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "СoreLayerConstants.h"; sourceTree = "<group>"; };
 		62B786D4799C75A2F6C44A30 /* KeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainService.h; sourceTree = "<group>"; };
+		62B78771E87B1B923E84D102 /* UserAuthenticationRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouter.h; sourceTree = "<group>"; };
 		62B78803986AF287B567EF50 /* CoreComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsFactory.h; sourceTree = "<group>"; };
 		62B788F1E60E30117465EC4C /* TokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenModel.h; sourceTree = "<group>"; };
+		62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleAssemblyBase.m; sourceTree = "<group>"; };
 		62B78A2FC4E3959F6E42B1BE /* KeychainServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainServiceImpl.m; sourceTree = "<group>"; };
 		62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceComponentsAssembly.m; sourceTree = "<group>"; };
+		62B78B3347C8038018764F3F /* UserAuthenticationViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModelInput.h; sourceTree = "<group>"; };
+		62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardAssembly.m; sourceTree = "<group>"; };
+		62B78BCAA9C9964B775BCF94 /* UserAuthenticationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationAssembly.m; sourceTree = "<group>"; };
 		62B78C19DB8B459B030C25FE /* TokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenModel.m; sourceTree = "<group>"; };
 		62B78C9254153E87FEDA544A /* ServiceComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsFactory.h; sourceTree = "<group>"; };
 		62B78C98AD4E5494CD9C18CB /* CoreComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssembly.h; sourceTree = "<group>"; };
@@ -60,11 +76,11 @@
 		62B78D7B8CDDA4B8EADECC7A /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
 		62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
 		62B78E53DD2347C94B8C748B /* AuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationService.h; sourceTree = "<group>"; };
+		62B78E68079398A22EA84237 /* UserAuthenticationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModel.h; sourceTree = "<group>"; };
+		62B78F9581E943C3D2967504 /* UserAuthenticationRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouterInput.h; sourceTree = "<group>"; };
 		62B78FA9FC2E704587231E1B /* ServiceComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsAssembly.h; sourceTree = "<group>"; };
 		6B4464E42BC1B11FC6705DB2 /* Pods_TVDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AD312AFC195273E65DC6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		74AD3177A0F557B2A2F54915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		74AD31CEA66E17DE07503F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TVDB/Base.lproj/SerialsUserStoryStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		74AD3235268D60C8EE3A99DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74AD33E634506C3C1611C714 /* NetworkClientImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClientImpl.m; sourceTree = "<group>"; };
 		74AD35EC7F1FA31EFE480321 /* NetworkClientResponseSerializerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClientResponseSerializerImpl.m; sourceTree = "<group>"; };
@@ -82,7 +98,7 @@
 		B77EE21B1D9A8AC8006FB640 /* TVDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVDBTests.m; sourceTree = "<group>"; };
 		B77EE2211D9A8AC8006FB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7B160EB1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthorizationUserStoryStoryboard.storyboard; sourceTree = "<group>"; };
+		B7B160EB1D9B1DB900F68B90 /* AuthenticationUserStoryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthenticationUserStoryStoryboard.storyboard; sourceTree = "<group>"; };
 		D7CC7E985ACC0E80C1EE27D7 /* Pods_TVDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FE473AFA8B9CD38D0189BC /* Pods-TVDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +132,15 @@
 			path = SessionModel;
 			sourceTree = "<group>";
 		};
+		62B78124FCC7D44BB36BE6B5 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				62B78BCAA9C9964B775BCF94 /* UserAuthenticationAssembly.m */,
+				62B7837A4EE4D757223E306C /* UserAuthenticationAssembly.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		62B781ECD053D4F3CDD8CA4C /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +167,15 @@
 			path = KeychainService;
 			sourceTree = "<group>";
 		};
+		62B783E39651BED624827B9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62B782C2FEDFB7621F6BEDAD /* UserAuthenticationViewController.m */,
+				62B781993F225E8622E86A02 /* UserAuthenticationViewController.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		62B786402BD9F6522DA866D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +193,16 @@
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
 		};
+		62B786C76EFE453B4378C305 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B3347C8038018764F3F /* UserAuthenticationViewModelInput.h */,
+				62B780028422E3D32C04DE46 /* UserAuthenticationViewModel.m */,
+				62B78E68079398A22EA84237 /* UserAuthenticationViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		62B78721571E9AEB77C38B40 /* ConcreteClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +210,17 @@
 				62B783A6D4998347E968A888 /* KeychainService */,
 			);
 			path = ConcreteClasses;
+			sourceTree = "<group>";
+		};
+		62B7896CEEDE653A0D9124F5 /* UserAuthenticationModule */ = {
+			isa = PBXGroup;
+			children = (
+				62B78124FCC7D44BB36BE6B5 /* Assembly */,
+				62B783E39651BED624827B9A /* View */,
+				62B786C76EFE453B4378C305 /* ViewModel */,
+				62B78BCD11B5E0200184FDB3 /* Router */,
+			);
+			path = UserAuthenticationModule;
 			sourceTree = "<group>";
 		};
 		62B78B1183D0589083045D8B /* TokenModel */ = {
@@ -185,6 +240,25 @@
 				62B78CA4EF5126F3A7233C23 /* AuthenticationServiceImpl.h */,
 			);
 			path = AuthenticationService;
+			sourceTree = "<group>";
+		};
+		62B78BCD11B5E0200184FDB3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				62B78F9581E943C3D2967504 /* UserAuthenticationRouterInput.h */,
+				62B78298CA1EDF7DDB4B7767 /* UserAuthenticationRouter.m */,
+				62B78771E87B1B923E84D102 /* UserAuthenticationRouter.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		62B78C3849A868FEEEC2DE5E /* ModuleAssemblyBase */ = {
+			isa = PBXGroup;
+			children = (
+				62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */,
+				62B785240689C18E82C523F0 /* ModuleAssemblyBase.h */,
+			);
+			path = ModuleAssemblyBase;
 			sourceTree = "<group>";
 		};
 		62B78CEEE18C143F518BCB76 /* Constants */ = {
@@ -227,6 +301,15 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		62B78E8F5660EA12ADE41F27 /* StoryboardAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */,
+				62B7814594B047926FE69FEB /* StoryboardAssembly.h */,
+			);
+			path = StoryboardAssembly;
+			sourceTree = "<group>";
+		};
 		62B78EF1D4C5FDEE360C9713 /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,101 +318,13 @@
 			path = Assemblies;
 			sourceTree = "<group>";
 		};
-		74AD30556560A81878528A4C /* ViewModel */ = {
+		62B78F2F62A27A65B91AC00B /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
+				62B78C3849A868FEEEC2DE5E /* ModuleAssemblyBase */,
+				62B78E8F5660EA12ADE41F27 /* StoryboardAssembly */,
 			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		74AD312E795AD1E690FAEEB2 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */,
-				74AD33A1E6FB1958A96CC03A /* SerialsUserStoryStoryboard.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		74AD31A694FD6F203A414A58 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		74AD3266FE91015911A26C41 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		74AD32DD3487AD3DA2BE1286 /* SerialsUserStory */ = {
-			isa = PBXGroup;
-			children = (
-				74AD3A36E80409A481A10451 /* Modules */,
-				74AD312E795AD1E690FAEEB2 /* Storyboard */,
-			);
-			path = SerialsUserStory;
-			sourceTree = "<group>";
-		};
-		74AD3364F57845BBFBB19C9B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		74AD3392843570E1750C2D0D /* SavedSerialsModule */ = {
-			isa = PBXGroup;
-			children = (
-				74AD3DFC394BED31A985964B /* Assembly */,
-				74AD3364F57845BBFBB19C9B /* View */,
-				74AD34AF2E1B3891219727D9 /* ViewModel */,
-				74AD35724576E798B40E25E1 /* Router */,
-			);
-			path = SavedSerialsModule;
-			sourceTree = "<group>";
-		};
-		74AD33D7A218AF262AF45C9B /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				74AD3CFA1D84EF16D3EDCB31 /* UserAuthorizationModule */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		74AD341658D98A9DD7D8FF66 /* ModuleAssemblyBase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ModuleAssemblyBase;
-			sourceTree = "<group>";
-		};
-		74AD3422D94A84CE23551C6B /* NewSerialsModule */ = {
-			isa = PBXGroup;
-			children = (
-				74AD368A18D5A14DD92E924E /* Assembly */,
-				74AD37B0B2C4A8D98F87BF25 /* View */,
-				74AD30556560A81878528A4C /* ViewModel */,
-				74AD3830D09E4A9CA9A1BDD3 /* Router */,
-			);
-			path = NewSerialsModule;
-			sourceTree = "<group>";
-		};
-		74AD347220ADF903F6202340 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		74AD34AF2E1B3891219727D9 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
+			path = Assemblies;
 			sourceTree = "<group>";
 		};
 		74AD34F5261A2435715959FE /* AppDelegate */ = {
@@ -349,27 +344,6 @@
 			path = NetworkClients;
 			sourceTree = "<group>";
 		};
-		74AD35724576E798B40E25E1 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		74AD35B8B427950085DBD546 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		74AD368A18D5A14DD92E924E /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
 		74AD3696AAF7EA9524307CCB /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,61 +357,10 @@
 		74AD36B5AE57D218D0A82FC0 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				74AD3AE0A6DA4FE14F73D7A1 /* Common */,
 				74AD3ABC52596F7DFA439FF6 /* UserStories */,
-				74AD38685F7C21836B208445 /* Assemblies */,
+				62B78F2F62A27A65B91AC00B /* Assemblies */,
 			);
 			path = PresentationLayer;
-			sourceTree = "<group>";
-		};
-		74AD37B0B2C4A8D98F87BF25 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		74AD3830D09E4A9CA9A1BDD3 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		74AD38685F7C21836B208445 /* Assemblies */ = {
-			isa = PBXGroup;
-			children = (
-				74AD341658D98A9DD7D8FF66 /* ModuleAssemblyBase */,
-			);
-			path = Assemblies;
-			sourceTree = "<group>";
-		};
-		74AD39A91D1DAF48D7417336 /* SerialInfoModule */ = {
-			isa = PBXGroup;
-			children = (
-				74AD347220ADF903F6202340 /* Assembly */,
-				74AD3E3C76E9DD70C094DA9E /* View */,
-				74AD35B8B427950085DBD546 /* ViewModel */,
-				74AD3C95D2732A07C8C3270A /* Router */,
-			);
-			path = SerialInfoModule;
-			sourceTree = "<group>";
-		};
-		74AD3A36E80409A481A10451 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				74AD3422D94A84CE23551C6B /* NewSerialsModule */,
-				74AD3392843570E1750C2D0D /* SavedSerialsModule */,
-				74AD39A91D1DAF48D7417336 /* SerialInfoModule */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		74AD3A50F1C00A1C2F026E44 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		74AD3A8CFFF7ED1FBA01F174 /* CoreComponents */ = {
@@ -459,8 +382,7 @@
 		74AD3ABC52596F7DFA439FF6 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				74AD3ED47618CCEAE2EB8FC5 /* AuthorizationUserStory */,
-				74AD32DD3487AD3DA2BE1286 /* SerialsUserStory */,
+				74AD3ED47618CCEAE2EB8FC5 /* AuthenticationUserStory */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -477,36 +399,12 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		74AD3ADC156BF45BBF8C04A8 /* CellObjects */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CellObjects;
-			sourceTree = "<group>";
-		};
-		74AD3AE0A6DA4FE14F73D7A1 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				74AD3D7E59CE640B44671ECB /* Cells */,
-				74AD3ADC156BF45BBF8C04A8 /* CellObjects */,
-				74AD3266FE91015911A26C41 /* Protocols */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		74AD3B4F70D09FFE1AE99313 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				B7B160EB1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard */,
+				B7B160EB1D9B1DB900F68B90 /* AuthenticationUserStoryStoryboard.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		74AD3B8479C8B0BF6F9942EF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		74AD3BCFB3FECAEB3C98491E /* Resources */ = {
@@ -515,24 +413,6 @@
 				74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		74AD3C95D2732A07C8C3270A /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		74AD3CFA1D84EF16D3EDCB31 /* UserAuthorizationModule */ = {
-			isa = PBXGroup;
-			children = (
-				74AD31A694FD6F203A414A58 /* Assembly */,
-				74AD3B8479C8B0BF6F9942EF /* View */,
-				74AD3A50F1C00A1C2F026E44 /* ViewModel */,
-				74AD3D46C2FCBD0E22E6D379 /* Router */,
-			);
-			path = UserAuthorizationModule;
 			sourceTree = "<group>";
 		};
 		74AD3D3B8EADEE0BC40EF80A /* NetworkClient */ = {
@@ -545,27 +425,6 @@
 			path = NetworkClient;
 			sourceTree = "<group>";
 		};
-		74AD3D46C2FCBD0E22E6D379 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		74AD3D7E59CE640B44671ECB /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		74AD3DFC394BED31A985964B /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
 		74AD3E09D52F240055CBDB4A /* ConcreteClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,13 +432,6 @@
 				74AD3E77825CBED9C09466B2 /* NetworkClientResponseSerializer */,
 			);
 			path = ConcreteClasses;
-			sourceTree = "<group>";
-		};
-		74AD3E3C76E9DD70C094DA9E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		74AD3E77825CBED9C09466B2 /* NetworkClientResponseSerializer */ = {
@@ -592,13 +444,13 @@
 			path = NetworkClientResponseSerializer;
 			sourceTree = "<group>";
 		};
-		74AD3ED47618CCEAE2EB8FC5 /* AuthorizationUserStory */ = {
+		74AD3ED47618CCEAE2EB8FC5 /* AuthenticationUserStory */ = {
 			isa = PBXGroup;
 			children = (
-				74AD33D7A218AF262AF45C9B /* Modules */,
 				74AD3B4F70D09FFE1AE99313 /* Storyboard */,
+				62B7896CEEDE653A0D9124F5 /* UserAuthenticationModule */,
 			);
-			path = AuthorizationUserStory;
+			path = AuthenticationUserStory;
 			sourceTree = "<group>";
 		};
 		B77EE1F61D9A8AC8006FB640 = {
@@ -768,10 +620,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7B160EC1D9B1DB900F68B90 /* AuthorizationUserStoryStoryboard.storyboard in Resources */,
+				B7B160EC1D9B1DB900F68B90 /* AuthenticationUserStoryStoryboard.storyboard in Resources */,
 				74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */,
-				74AD3CD598BE722C65B59B66 /* LaunchScreen.storyboard in Resources */,
-				74AD34A9BC42DB2A4FF9B4AE /* SerialsUserStoryStoryboard.storyboard in Resources */,
 				62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */,
 				62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */,
 			);
@@ -895,6 +745,12 @@
 				62B7835BA7672CAFD42F9767 /* ServiceComponentsAssembly.m in Sources */,
 				62B7888B7E4B7765D4594E29 /* СoreLayerConstants.m in Sources */,
 				62B78CF7FDDBDD6F46ED0D75 /* KeychainServiceImpl.m in Sources */,
+				62B781A35779FF35A686CDFA /* ModuleAssemblyBase.m in Sources */,
+				62B78166F5B62D034994E445 /* StoryboardAssembly.m in Sources */,
+				62B78DF0AFD20A9A4F74786A /* UserAuthenticationAssembly.m in Sources */,
+				62B78AF0EF15136040F120AE /* UserAuthenticationRouter.m in Sources */,
+				62B78DB7958BF5DA00344954 /* UserAuthenticationViewController.m in Sources */,
+				62B783AFBF549C571F9D4C5F /* UserAuthenticationViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,25 +771,6 @@
 			targetProxy = B77EE21C1D9A8AC8006FB640 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		74AD33A1E6FB1958A96CC03A /* SerialsUserStoryStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74AD31CEA66E17DE07503F5B /* Base */,
-			);
-			name = SerialsUserStoryStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		74AD3C290B07602F9E0F9FE2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74AD3177A0F557B2A2F54915 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B77EE2221D9A8AC8006FB640 /* Debug */ = {

@@ -4,8 +4,9 @@
 //
 
 #import <Typhoon/TyphoonAssembly.h>
+#import <RamblerTyphoonUtils/RamblerInitialAssembly.h>
 #import "CoreComponentsFactory.h"
 
-@interface CoreComponentsAssembly : TyphoonAssembly <CoreComponentsFactory>
+@interface CoreComponentsAssembly : TyphoonAssembly <CoreComponentsFactory, RamblerInitialAssembly>
 
 @end

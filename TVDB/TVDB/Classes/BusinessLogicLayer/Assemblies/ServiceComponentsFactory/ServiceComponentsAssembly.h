@@ -4,11 +4,12 @@
 //
 
 #import <Typhoon/TyphoonAssembly.h>
+#import <RamblerTyphoonUtils/RamblerInitialAssembly.h>
 #import "ServiceComponentsFactory.h"
 
 @protocol CoreComponentsFactory;
 
-@interface ServiceComponentsAssembly : TyphoonAssembly <ServiceComponentsFactory>
+@interface ServiceComponentsAssembly : TyphoonAssembly <ServiceComponentsFactory, RamblerInitialAssembly>
 
 @property (strong, nonatomic, readonly) TyphoonAssembly <CoreComponentsFactory> *coreComponents;
 

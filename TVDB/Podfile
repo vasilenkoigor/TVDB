@@ -12,6 +12,7 @@ pod 'MTLManagedObjectAdapter'
 pod 'Nimbus/Models', :git => 'https://github.com/rambler-ios/nimbus'
 pod 'SVProgressHUD'
 pod 'UICKeyChainStore'
+pod 'RamblerTyphoonUtils/AssemblyCollector'
 end
 
 target :TVDBTests do    
