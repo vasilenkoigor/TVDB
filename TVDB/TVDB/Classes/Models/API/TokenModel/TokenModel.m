@@ -4,6 +4,7 @@
 //
 
 #import "TokenModel.h"
+#import "SessionModel.h"
 
 @implementation TokenModel
 

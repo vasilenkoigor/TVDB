@@ -6,8 +6,11 @@
 #import <Foundation/Foundation.h>
 
 @protocol AuthenticationService;
+@protocol KeychainService;
 
 @protocol ServiceComponentsFactory <NSObject>
+
+- (id <KeychainService>)keychainService;
 
 - (id <AuthenticationService>)authenticationService;
 

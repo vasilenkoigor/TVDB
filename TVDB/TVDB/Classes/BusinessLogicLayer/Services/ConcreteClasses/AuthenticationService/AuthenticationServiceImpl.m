@@ -4,12 +4,12 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import <UICKeyChainStore/UICKeyChainStore.h>
 #import "AuthenticationServiceImpl.h"
 #import "NetworkClient.h"
 #import "TokenModel.h"
 #import "SessionModel.h"
-#import "StringConstants.h"
+#import "СoreLayerConstants.h"
+#import "KeychainService.h"
 
 static NSString *const kRequestTokenURLAPIPath = @"authentication/token/new";
 static NSString *const kValidateRequestTokenURLAPIPath = @"authentication/token/validate_with_login";
@@ -18,19 +18,19 @@ static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
 @interface AuthenticationServiceImpl ()
 
 @property (strong, nonatomic, readwrite) id <NetworkClient> networkClient;
-@property (strong, nonatomic, readwrite) UICKeyChainStore *keyChainStore;
+@property (strong, nonatomic, readwrite) id <KeychainService> keychainService;
 
 @end
 
 @implementation AuthenticationServiceImpl
 
 - (instancetype)initWithNetworkClient:(id <NetworkClient>)networkClient
-                        keychainStore:(UICKeyChainStore *)keyChainStore
+                      keychainService:(id <KeychainService>)keychainService
 {
     self = [super init];
     if (self) {
         self.networkClient = networkClient;
-        self.keyChainStore = keyChainStore;
+        self.keychainService = keychainService;
     }
     return self;
 }
@@ -47,7 +47,8 @@ static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
             return [self rac_createSessionWithValidatedToken:validatedToken];
         }] flattenMap:^RACStream *(SessionModel *sessionModel) {
             if (sessionModel.success) {
-                [self saveAuthenticationToKeychainServiceWithToken:tokenModel session:sessionModel];
+                [self.keychainService saveToken:tokenModel session:sessionModel];
+                [self.keychainService setAuthenticated:YES];
                 return [RACSignal return:@(YES)];
             } else {
                 return [RACSignal return:@(NO)];
@@ -57,15 +58,6 @@ static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
 }
 
 #pragma mark - Private
-
-- (void)saveAuthenticationToKeychainServiceWithToken:(TokenModel *)tokenModel session:(SessionModel *)sessionModel
-{
-    NSData *tokenData = [NSKeyedArchiver archivedDataWithRootObject:tokenModel];
-    [self.keyChainStore setData:tokenData forKey:kTokenKeychainKey];
-
-    NSData *sessionData = [NSKeyedArchiver archivedDataWithRootObject:sessionModel];
-    [self.keyChainStore setData:sessionData forKey:kSessionKeychainKey];
-}
 
 - (RACSignal *)rac_createRequestToken
 {

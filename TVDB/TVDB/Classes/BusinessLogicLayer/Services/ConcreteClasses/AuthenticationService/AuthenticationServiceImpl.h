@@ -6,14 +6,14 @@
 #import "AuthenticationService.h"
 
 @protocol NetworkClient;
-@class UICKeyChainStore;
+@protocol KeychainService;
 
 @interface AuthenticationServiceImpl : NSObject <AuthenticationService>
 
 @property (strong, nonatomic, readonly) id <NetworkClient> networkClient;
-@property (strong, nonatomic, readonly) UICKeyChainStore *keyChainStore;
+@property (strong, nonatomic, readonly) id <KeychainService> keychainService;
 
 - (instancetype)initWithNetworkClient:(id <NetworkClient>)networkClient
-                        keychainStore:(UICKeyChainStore *)keyChainStore;
+                      keychainService:(id <KeychainService>)keychainService;
 
 @end

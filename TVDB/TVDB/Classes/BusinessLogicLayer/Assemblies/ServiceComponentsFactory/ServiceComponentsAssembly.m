@@ -9,29 +9,28 @@
 #import "ServiceComponentsAssembly.h"
 #import "CoreComponentsFactory.h"
 #import "AuthenticationServiceImpl.h"
+#import "KeychainServiceImpl.h"
 
 static NSString *const kServiceComponentsResourceFile = @"ServiceComponentsResource.plist";
-static NSString *const kServiceComponentsKeychainService = @"TheMovieDB";
+static NSString *const kServiceComponentsKeychainServiceKey = @"KeychainService";
 
 @implementation ServiceComponentsAssembly
 
-- (id <AuthenticationService>)authenticationService
+- (id <KeychainService>)keychainService
 {
-    return [TyphoonDefinition withClass:[AuthenticationServiceImpl class] configuration:^(TyphoonDefinition *definition) {
-        [definition useInitializer:@selector(initWithNetworkClient:keychainStore:) parameters:^(TyphoonMethod *initializer) {
-            [initializer injectParameterWith:[self.coreComponents networkClient]];
+    return [TyphoonDefinition withClass:[KeychainServiceImpl class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithKeychainStore:) parameters:^(TyphoonMethod *initializer) {
             [initializer injectParameterWith:[self keychainStore]];
         }];
     }];
 }
 
-#pragma mark - Private services
-
-- (UICKeyChainStore *)keychainStore
+- (id <AuthenticationService>)authenticationService
 {
-    return [TyphoonDefinition withClass:[UICKeyChainStore class] configuration:^(TyphoonDefinition *definition) {
-        [definition useInitializer:@selector(keyChainStoreWithService:) parameters:^(TyphoonMethod *initializer) {
-            [initializer injectParameterWith:TyphoonConfig(kServiceComponentsKeychainService)];
+    return [TyphoonDefinition withClass:[AuthenticationServiceImpl class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithNetworkClient:keychainService:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:[self.coreComponents networkClient]];
+            [initializer injectParameterWith:[self keychainService]];
         }];
     }];
 }
@@ -41,6 +40,17 @@ static NSString *const kServiceComponentsKeychainService = @"TheMovieDB";
 - (id)config
 {
     return [TyphoonDefinition withConfigName:kServiceComponentsResourceFile];
+}
+
+#pragma mark - Private
+
+- (UICKeyChainStore *)keychainStore
+{
+    return [TyphoonDefinition withClass:[UICKeyChainStore class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(keyChainStoreWithService:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:TyphoonConfig(kServiceComponentsKeychainServiceKey)];
+        }];
+    }];
 }
 
 @end

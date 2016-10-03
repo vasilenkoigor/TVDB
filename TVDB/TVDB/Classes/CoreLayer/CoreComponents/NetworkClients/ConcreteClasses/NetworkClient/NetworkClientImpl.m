@@ -31,7 +31,7 @@
 
 #pragma mark - Requests data tasks
 
-- (NSURLSessionDataTask *)method:(VASHTTPMethod)method
+- (NSURLSessionDataTask *)method:(HTTPMethod)method
                        URLString:(NSString *)URLString
                       parameters:(id)parameters
                          success:(NetworkClientCompletionBlockWithSuccess)success
@@ -44,7 +44,7 @@
                             failure:failure];
 }
 
-- (NSURLSessionDataTask *)method:(VASHTTPMethod)method
+- (NSURLSessionDataTask *)method:(HTTPMethod)method
                        URLString:(NSString *)URLString
                       parameters:(id)parameters
                      resultClass:(Class)resultClass
@@ -67,7 +67,7 @@
                 } failure:failure];
 }
 
-- (RACSignal *)rac_method:(VASHTTPMethod)method
+- (RACSignal *)rac_method:(HTTPMethod)method
                 URLString:(NSString *)URLString
                parameters:(id)parameters
 {
@@ -84,7 +84,7 @@
     }];
 }
 
-- (RACSignal *)rac_method:(VASHTTPMethod)method
+- (RACSignal *)rac_method:(HTTPMethod)method
                 URLString:(NSString *)URLString
                parameters:(id)parameters
               resultClass:(Class)resultClass
@@ -108,7 +108,7 @@
 
 #pragma mark - HTTP Methods Data Tasks
 
-- (NSURLSessionDataTask *)dataTaskWithMethod:(VASHTTPMethod)method
+- (NSURLSessionDataTask *)dataTaskWithMethod:(HTTPMethod)method
                                    URLString:(NSString *)URLString
                                   parameters:(id)parameters
                                      success:(NetworkClientCompletionBlockWithSuccess)success
@@ -119,31 +119,31 @@
     NSString *requestURLString = requestURL.absoluteString;
 
     switch (method) {
-        case VASHTTPMethodGET:
+        case HTTPMethodGET:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET"
                                                                        URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
-        case VASHTTPMethodPOST:
+        case HTTPMethodPOST:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST"
                                                                        URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
-        case VASHTTPMethodPUT:
+        case HTTPMethodPUT:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"PUT"
                                                                        URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
-        case VASHTTPMethodPATCH:
+        case HTTPMethodPATCH:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"PATCH"
                                                                        URLString:requestURLString
                                                                       parameters:parameters
                                                                            error:NULL];
             break;
-        case VASHTTPMethodDELETE:
+        case HTTPMethodDELETE:
             urlRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"DELETE"
                                                                        URLString:requestURLString
                                                                       parameters:parameters

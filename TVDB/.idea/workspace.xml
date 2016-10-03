@@ -14,7 +14,7 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_b08c9ed9bc7560bd70c08e3696f378945d36c47e" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
   <component name="FavoritesManager">
     <favorites_list name="TVDB" />
   </component>
@@ -23,8 +23,8 @@
       <file leaf-file-name="AuthenticationServiceImpl.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="600">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="e#110#149#0" expanded="true" />
               </folding>
@@ -32,34 +32,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringConstants.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TVDB/Classes/Constants/StringConstants/StringConstants.h">
+      <file leaf-file-name="NetworkClient.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClient.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="615">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoreComponentsAssembly.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsAssembly.m">
+      <file leaf-file-name="NetworkClientImpl.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClientImpl.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="59" />
+            <state relative-caret-position="210">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetworkClientImpl.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClientImpl.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1995">
+              <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
               <folding>
-                <element signature="e#110#154#0" expanded="true" />
+                <element signature="e#140#179#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoreComponentsResource.plist" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsResource.plist">
+      <file leaf-file-name="ServiceComponentsAssembly.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsAssembly.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="61" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="61" />
-              <folding />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#110#145#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,56 +86,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticationService.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationService.h">
+      <file leaf-file-name="KeychainService.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainService.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="270">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceComponentsFactory.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsFactory.h">
+      <file leaf-file-name="AuthenticationService.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationService.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeychainServiceImpl.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainServiceImpl.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeychainServiceImpl.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainServiceImpl.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceComponentsResource.plist" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsResource.plist">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceComponentsAssembly.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsAssembly.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="e#110#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceComponentsAssembly.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsAssembly.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#110#145#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -151,21 +149,26 @@
         <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsFactory.h" />
         <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsResource.plist" />
         <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsAssembly.m" />
-        <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClientImpl.m" />
-        <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClient.h" />
         <option value="$PROJECT_DIR$/TVDB/Classes/Models/API/TokenModel/TokenModel.h" />
         <option value="$PROJECT_DIR$/TVDB/Classes/Models/API/TokenModel/TokenModel.m" />
         <option value="$PROJECT_DIR$/TVDB/Classes/Models/API/SessionModel/SessionModel.h" />
         <option value="$PROJECT_DIR$/TVDB/Classes/Models/API/SessionModel/SessionModel.m" />
-        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.h" />
         <option value="$PROJECT_DIR$/TVDB/Classes/Constants/StringConstants/StringConstants.m" />
         <option value="$PROJECT_DIR$/TVDB/Classes/Constants/StringConstants/StringConstants.h" />
-        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.m" />
         <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationService.h" />
         <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsAssembly.h" />
-        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsFactory.h" />
         <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsResource.plist" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainServiceImpl.h" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/Constants/СoreLayerConstants.m" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/Constants/СoreLayerConstants.h" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.h" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsFactory.h" />
         <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsAssembly.m" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainService.h" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainServiceImpl.m" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.m" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClient.h" />
+        <option value="$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClientImpl.m" />
       </list>
     </option>
   </component>
@@ -253,6 +256,148 @@
               <option name="myItemId" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreLayer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreComponents" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetworkClients" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConcreteClasses" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreLayer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreComponents" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetworkClients" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConcreteClasses" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetworkClient" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreLayer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BusinessLogicLayer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TVDB" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BusinessLogicLayer" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assemblies" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -302,19 +447,20 @@
       <workItem from="1475052224125" duration="1648000" />
       <workItem from="1475175375069" duration="1976000" />
       <workItem from="1475427566085" duration="1118000" />
-      <workItem from="1475428723384" duration="3857000" />
+      <workItem from="1475428723384" duration="4028000" />
+      <workItem from="1475475750245" duration="1825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10378000" />
+    <option name="totallyTimeSpent" value="12374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33164063" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33164063" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -349,33 +495,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8280">
-          <caret line="552" column="37" selection-start-line="552" selection-start-column="37" selection-end-line="552" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredentialStorage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="134" column="59" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClientResponseSerializer/NetworkClientResponseSerializerImpl.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -383,7 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -416,14 +538,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/Constants/StringConstants/StringConstants.m">
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Constants/СoreLayerConstants.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/Constants/StringConstants/StringConstants.h">
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Constants/СoreLayerConstants.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -481,20 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/ApplicationLayer/AppDelegate/AppDelegate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/ApplicationLayer/AppDelegate/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2010">
@@ -506,7 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1335">
           <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -523,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,45 +660,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="480" column="11" selection-start-line="480" selection-start-column="11" selection-end-line="480" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/Models/API/TokenModel/TokenModel.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsAssembly.h">
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsResource.plist">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="74" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="74" />
-          <folding>
-            <element signature="e#110#145#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClientImpl.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
-          <folding>
-            <element signature="e#140#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClientImpl.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#140#165#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClient.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="12" column="61" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -609,15 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/Models/API/TokenModel/TokenModel.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,54 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/Constants/StringConstants/StringConstants.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/Constants/StringConstants/StringConstants.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationService.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsFactory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsResource.plist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="61" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -687,28 +711,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.m">
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Assemblies/CoreComponentsFactory/CoreComponentsAssembly.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="e#110#149#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="74" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/ApplicationLayer/AppDelegate/AppDelegate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/ApplicationLayer/AppDelegate/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Constants/СoreLayerConstants.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/Constants/СoreLayerConstants.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsResource.plist">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="165">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsFactory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsAssembly.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="630">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="e#110#154#0" expanded="true" />
           </folding>
@@ -717,11 +779,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Assemblies/ServiceComponentsFactory/ServiceComponentsAssembly.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#110#145#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationService.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainService.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainServiceImpl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/KeychainService/KeychainServiceImpl.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/BusinessLogicLayer/Services/ConcreteClasses/AuthenticationService/AuthenticationServiceImpl.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#110#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClientImpl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClientImpl.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
+          <folding>
+            <element signature="e#140#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TVDB/Classes/CoreLayer/CoreComponents/NetworkClients/ConcreteClasses/NetworkClient/NetworkClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

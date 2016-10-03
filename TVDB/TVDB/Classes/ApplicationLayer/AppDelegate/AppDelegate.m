@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "StringConstants.h"
+#import "СoreLayerConstants.h"
 
 @interface AppDelegate ()
 

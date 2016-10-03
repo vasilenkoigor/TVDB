@@ -6,6 +6,3 @@
 #import <Foundation/Foundation.h>
 
 extern NSString *const kTheMovieDBAPIKey;
-
-extern NSString *const kTokenKeychainKey;
-extern NSString *const kSessionKeychainKey;

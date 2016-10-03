@@ -10,23 +10,23 @@
 typedef void(^NetworkClientCompletionBlockWithSuccess)(NSURLSessionDataTask *task, id responseObject);
 typedef void(^NetworkClientCompletionBlockWithFailure)(NSURLSessionDataTask *task, NSError *error);
 
-typedef NS_ENUM(NSUInteger, VASHTTPMethod) {
-    VASHTTPMethodGET,
-    VASHTTPMethodPOST,
-    VASHTTPMethodPUT,
-    VASHTTPMethodPATCH,
-    VASHTTPMethodDELETE
+typedef NS_ENUM(NSUInteger, HTTPMethod) {
+    HTTPMethodGET,
+    HTTPMethodPOST,
+    HTTPMethodPUT,
+    HTTPMethodPATCH,
+    HTTPMethodDELETE
 };
 
 @protocol NetworkClient <NSObject>
 
-- (NSURLSessionDataTask *)method:(VASHTTPMethod)method
+- (NSURLSessionDataTask *)method:(HTTPMethod)method
                        URLString:(NSString *)URLString
                       parameters:(id)parameters
                          success:(NetworkClientCompletionBlockWithSuccess)success
                          failure:(NetworkClientCompletionBlockWithFailure)failure;
 
-- (NSURLSessionDataTask *)method:(VASHTTPMethod)method
+- (NSURLSessionDataTask *)method:(HTTPMethod)method
                        URLString:(NSString *)URLString
                       parameters:(id)parameters
                      resultClass:(Class)resultClass
@@ -40,11 +40,11 @@ typedef NS_ENUM(NSUInteger, VASHTTPMethod) {
  * Note: RACSignal is immediately resume data task.
  */
 
-- (RACSignal *)rac_method:(VASHTTPMethod)method
+- (RACSignal *)rac_method:(HTTPMethod)method
                 URLString:(NSString *)URLString
                parameters:(id)parameters;
 
-- (RACSignal *)rac_method:(VASHTTPMethod)method
+- (RACSignal *)rac_method:(HTTPMethod)method
                 URLString:(NSString *)URLString
                parameters:(id)parameters
               resultClass:(Class)resultClass
