@@ -11,5 +11,6 @@
 @interface StoryboardAssembly : TyphoonAssembly <RamblerInitialAssembly>
 
 - (TyphoonStoryboard *)authenticationUserStoryStoryboard;
+- (TyphoonStoryboard *)tvShowsDiscoverUserStoryStoryboard;
 
 @end

@@ -61,7 +61,7 @@ static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
 
 - (RACSignal *)rac_createRequestToken
 {
-    return [self.networkClient rac_method:VASHTTPMethodGET
+    return [self.networkClient rac_method:HTTPMethodGET
                                 URLString:kRequestTokenURLAPIPath
                                parameters:
                                        @{
@@ -75,7 +75,7 @@ static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
                                userName:(NSString *)userName
                                password:(NSString *)password
 {
-    return [self.networkClient rac_method:VASHTTPMethodGET
+    return [self.networkClient rac_method:HTTPMethodGET
                                 URLString:kValidateRequestTokenURLAPIPath
                                parameters:
                                        @{
@@ -90,7 +90,7 @@ static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
 
 - (RACSignal *)rac_createSessionWithValidatedToken:(TokenModel *)tokenModel
 {
-    return [self.networkClient rac_method:VASHTTPMethodGET
+    return [self.networkClient rac_method:HTTPMethodGET
                                 URLString:kCreateSessionURLAPIPath
                                parameters:
                                        @{

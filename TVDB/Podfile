@@ -1,21 +1,15 @@
 platform :ios, '10.0'
 inhibit_all_warnings!
-use_frameworks!
 
 target :TVDB do
 pod 'AFNetworking'
 pod 'ReactiveCocoa', '2.5'
 pod 'Typhoon'
-pod 'ViperMcFlurry'
+pod 'ViperMcFlurry', '1.3.1'
 pod 'Mantle'
 pod 'MTLManagedObjectAdapter'
 pod 'Nimbus/Models', :git => 'https://github.com/rambler-ios/nimbus'
 pod 'SVProgressHUD'
 pod 'UICKeyChainStore'
 pod 'RamblerTyphoonUtils/AssemblyCollector'
-end
-
-target :TVDBTests do    
-    pod 'OCMock'    
-    pod 'RamblerTyphoonUtils/AssemblyTesting'
 end

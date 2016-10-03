@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '33A0E109AA701F04D34E2EACC2CEF88E'
+               BlueprintIdentifier = '41CB40350D17783A488EEA1EF8FF7A6C'
                BlueprintName = 'Pods-TVDB'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-TVDB.framework'>
+               BuildableName = 'libPods-TVDB.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

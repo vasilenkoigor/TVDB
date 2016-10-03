@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F33ADAD0926848DDAF4A85E /* Pods_TVDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4464E42BC1B11FC6705DB2 /* Pods_TVDB.framework */; };
 		62B7808116B07BDDFE115471 /* TokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78C19DB8B459B030C25FE /* TokenModel.m */; };
 		62B78166F5B62D034994E445 /* StoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */; };
 		62B781A35779FF35A686CDFA /* ModuleAssemblyBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */; };
 		62B782286D9815A367C9D1DB /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */; };
 		62B7835BA7672CAFD42F9767 /* ServiceComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */; };
-		62B783AFBF549C571F9D4C5F /* UserAuthenticationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780028422E3D32C04DE46 /* UserAuthenticationViewModel.m */; };
 		62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */; };
 		62B7888B7E4B7765D4594E29 /* СoreLayerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78305738685B06AC86076 /* СoreLayerConstants.m */; };
+		62B7890E7A5B05AF3197014D /* UserAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78DC9C6E5CD929B696EEE /* UserAuthenticationViewController.m */; };
+		62B789AD61B760C8EDA075F2 /* UserAuthenticationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B784B024A6E7EF8FE88294 /* UserAuthenticationViewModel.m */; };
 		62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */; };
 		62B78A217EC7801E85F16706 /* AuthenticationServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */; };
-		62B78AF0EF15136040F120AE /* UserAuthenticationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78298CA1EDF7DDB4B7767 /* UserAuthenticationRouter.m */; };
+		62B78AEC65209659C28B5B3C /* UserAuthenticationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78EC6BE0D557CE3396DE0 /* UserAuthenticationRouter.m */; };
 		62B78BF4B95887944CFE4E60 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */; };
 		62B78CF7FDDBDD6F46ED0D75 /* KeychainServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A2FC4E3959F6E42B1BE /* KeychainServiceImpl.m */; };
-		62B78DB7958BF5DA00344954 /* UserAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B782C2FEDFB7621F6BEDAD /* UserAuthenticationViewController.m */; };
-		62B78DF0AFD20A9A4F74786A /* UserAuthenticationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78BCAA9C9964B775BCF94 /* UserAuthenticationAssembly.m */; };
+		62B78DA7A7B8E353341C13FD /* TVShowsDiscoverUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B78AE4EFD378BC953F380B /* TVShowsDiscoverUserStoryStoryboard.storyboard */; };
+		62B78F0EBFE2765487DAFC58 /* UserAuthenticationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7886391D9D0601859CD96 /* UserAuthenticationAssembly.m */; };
+		62B78FF89404422F56FF7070 /* SegueIdentifiersConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78694DA7D2C99F1043DBB /* SegueIdentifiersConstants.m */; };
 		74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389C497C9C32E509D13B /* AppDelegate.m */; };
 		74AD366EB96040FFC655746E /* NetworkClientResponseSerializerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD35EC7F1FA31EFE480321 /* NetworkClientResponseSerializerImpl.m */; };
 		74AD380EB8C003CE78166B0A /* NetworkClientImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD33E634506C3C1611C714 /* NetworkClientImpl.m */; };
 		74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3EAC61E28FF0DA25F82C /* Assets.xcassets */; };
-		B3EBA5D00AD52ED3D87C1463 /* Pods_TVDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CC7E985ACC0E80C1EE27D7 /* Pods_TVDBTests.framework */; };
+		9C6FE0B47A8E28CE275B1A75 /* libPods-TVDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0375AF4AFEC73F1342472498 /* libPods-TVDB.a */; };
 		B77EE2041D9A8AC8006FB640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE2031D9A8AC8006FB640 /* main.m */; };
 		B77EE2201D9A8AC8006FB640 /* TVDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */; };
 		B7B160EC1D9B1DB900F68B90 /* AuthenticationUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B160EB1D9B1DB900F68B90 /* AuthenticationUserStoryStoryboard.storyboard */; };
@@ -44,30 +45,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		174868A93D24E936CCE693B8 /* Pods-TVDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.debug.xcconfig"; sourceTree = "<group>"; };
-		62B780028422E3D32C04DE46 /* UserAuthenticationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewModel.m; sourceTree = "<group>"; };
+		0375AF4AFEC73F1342472498 /* libPods-TVDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABBC0EB1F89DEF3F3D1F22C /* libPods-TVDBTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVDBTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B780103E319EB17673F5CC /* KeychainServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainServiceImpl.h; sourceTree = "<group>"; };
 		62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreComponentsAssembly.m; sourceTree = "<group>"; };
 		62B7814594B047926FE69FEB /* StoryboardAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardAssembly.h; sourceTree = "<group>"; };
-		62B781993F225E8622E86A02 /* UserAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewController.h; sourceTree = "<group>"; };
 		62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = ServiceComponentsResource.plist; sourceTree = "<group>"; };
-		62B78298CA1EDF7DDB4B7767 /* UserAuthenticationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationRouter.m; sourceTree = "<group>"; };
-		62B782C2FEDFB7621F6BEDAD /* UserAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewController.m; sourceTree = "<group>"; };
 		62B78305738685B06AC86076 /* СoreLayerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "СoreLayerConstants.m"; sourceTree = "<group>"; };
-		62B7837A4EE4D757223E306C /* UserAuthenticationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationAssembly.h; sourceTree = "<group>"; };
+		62B78321C0936258E24C3BDB /* UserAuthenticationRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouter.h; sourceTree = "<group>"; };
 		62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = CoreComponentsResource.plist; sourceTree = "<group>"; };
+		62B784B024A6E7EF8FE88294 /* UserAuthenticationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewModel.m; sourceTree = "<group>"; };
 		62B785240689C18E82C523F0 /* ModuleAssemblyBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleAssemblyBase.h; sourceTree = "<group>"; };
+		62B7854BA5823126DFF05D31 /* UserAuthenticationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationAssembly.h; sourceTree = "<group>"; };
+		62B78603A4406E90F47066F9 /* UserAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewController.h; sourceTree = "<group>"; };
+		62B78694DA7D2C99F1043DBB /* SegueIdentifiersConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueIdentifiersConstants.m; sourceTree = "<group>"; };
 		62B786C0B1186D15221FC7D6 /* СoreLayerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "СoreLayerConstants.h"; sourceTree = "<group>"; };
 		62B786D4799C75A2F6C44A30 /* KeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainService.h; sourceTree = "<group>"; };
-		62B78771E87B1B923E84D102 /* UserAuthenticationRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouter.h; sourceTree = "<group>"; };
 		62B78803986AF287B567EF50 /* CoreComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsFactory.h; sourceTree = "<group>"; };
+		62B7886391D9D0601859CD96 /* UserAuthenticationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationAssembly.m; sourceTree = "<group>"; };
 		62B788F1E60E30117465EC4C /* TokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenModel.h; sourceTree = "<group>"; };
 		62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleAssemblyBase.m; sourceTree = "<group>"; };
 		62B78A2FC4E3959F6E42B1BE /* KeychainServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainServiceImpl.m; sourceTree = "<group>"; };
 		62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceComponentsAssembly.m; sourceTree = "<group>"; };
-		62B78B3347C8038018764F3F /* UserAuthenticationViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModelInput.h; sourceTree = "<group>"; };
+		62B78AE105F0F09307FFD9BB /* UserAuthenticationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModel.h; sourceTree = "<group>"; };
+		62B78AE4EFD378BC953F380B /* TVShowsDiscoverUserStoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVShowsDiscoverUserStoryStoryboard.storyboard; sourceTree = "<group>"; };
 		62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardAssembly.m; sourceTree = "<group>"; };
-		62B78BCAA9C9964B775BCF94 /* UserAuthenticationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationAssembly.m; sourceTree = "<group>"; };
 		62B78C19DB8B459B030C25FE /* TokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenModel.m; sourceTree = "<group>"; };
 		62B78C9254153E87FEDA544A /* ServiceComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsFactory.h; sourceTree = "<group>"; };
 		62B78C98AD4E5494CD9C18CB /* CoreComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssembly.h; sourceTree = "<group>"; };
@@ -75,11 +77,13 @@
 		62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationServiceImpl.m; sourceTree = "<group>"; };
 		62B78D7B8CDDA4B8EADECC7A /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
 		62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
+		62B78DC9C6E5CD929B696EEE /* UserAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewController.m; sourceTree = "<group>"; };
 		62B78E53DD2347C94B8C748B /* AuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationService.h; sourceTree = "<group>"; };
-		62B78E68079398A22EA84237 /* UserAuthenticationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModel.h; sourceTree = "<group>"; };
-		62B78F9581E943C3D2967504 /* UserAuthenticationRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouterInput.h; sourceTree = "<group>"; };
+		62B78EC6BE0D557CE3396DE0 /* UserAuthenticationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationRouter.m; sourceTree = "<group>"; };
+		62B78EE48986A36F2D84459C /* SegueIdentifiersConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueIdentifiersConstants.h; sourceTree = "<group>"; };
+		62B78F269A81D139555CA644 /* UserAuthenticationViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModelInput.h; sourceTree = "<group>"; };
+		62B78F9F87F4BE56E1458FFD /* UserAuthenticationRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouterInput.h; sourceTree = "<group>"; };
 		62B78FA9FC2E704587231E1B /* ServiceComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsAssembly.h; sourceTree = "<group>"; };
-		6B4464E42BC1B11FC6705DB2 /* Pods_TVDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AD312AFC195273E65DC6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		74AD3235268D60C8EE3A99DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74AD33E634506C3C1611C714 /* NetworkClientImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClientImpl.m; sourceTree = "<group>"; };
@@ -99,8 +103,6 @@
 		B77EE21F1D9A8AC8006FB640 /* TVDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVDBTests.m; sourceTree = "<group>"; };
 		B77EE2211D9A8AC8006FB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7B160EB1D9B1DB900F68B90 /* AuthenticationUserStoryStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthenticationUserStoryStoryboard.storyboard; sourceTree = "<group>"; };
-		D7CC7E985ACC0E80C1EE27D7 /* Pods_TVDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5FE473AFA8B9CD38D0189BC /* Pods-TVDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EBA5D00AD52ED3D87C1463 /* Pods_TVDBTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,13 +117,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F33ADAD0926848DDAF4A85E /* Pods_TVDB.framework in Frameworks */,
+				9C6FE0B47A8E28CE275B1A75 /* libPods-TVDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62B780840430DB49DC393EBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62B78DC9C6E5CD929B696EEE /* UserAuthenticationViewController.m */,
+				62B78603A4406E90F47066F9 /* UserAuthenticationViewController.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62B7809856184E90C3985018 /* RecentsTVShowsModule */ = {
+			isa = PBXGroup;
+			children = (
+				62B7883CCFADF56AAE969458 /* View */,
+				62B78C8FCEC7F25B690A691C /* ViewModel */,
+				62B78B36CB4EED4280147139 /* Router */,
+				62B7834C2A8886E127A7EAD4 /* Assembly */,
+			);
+			path = RecentsTVShowsModule;
+			sourceTree = "<group>";
+		};
 		62B78111E6CF0C35E5D6632C /* SessionModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,13 +153,18 @@
 			path = SessionModel;
 			sourceTree = "<group>";
 		};
-		62B78124FCC7D44BB36BE6B5 /* Assembly */ = {
+		62B78147935A14D70B8549BF /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				62B78BCAA9C9964B775BCF94 /* UserAuthenticationAssembly.m */,
-				62B7837A4EE4D757223E306C /* UserAuthenticationAssembly.h */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		62B781DF73D6CDBC4A0455C2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		62B781ECD053D4F3CDD8CA4C /* Services */ = {
@@ -147,6 +173,31 @@
 				62B78721571E9AEB77C38B40 /* ConcreteClasses */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		62B782D8A9035980705752DB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				62B786521F2E69B50BC2F94C /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		62B7834C2A8886E127A7EAD4 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		62B783933B0A3706264C0E47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62B78F269A81D139555CA644 /* UserAuthenticationViewModelInput.h */,
+				62B784B024A6E7EF8FE88294 /* UserAuthenticationViewModel.m */,
+				62B78AE105F0F09307FFD9BB /* UserAuthenticationViewModel.h */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		62B783A3B9DC6DB33E74DBC8 /* Assemblies */ = {
@@ -167,13 +218,58 @@
 			path = KeychainService;
 			sourceTree = "<group>";
 		};
-		62B783E39651BED624827B9A /* View */ = {
+		62B783D407445102F4CC782A /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				62B782C2FEDFB7621F6BEDAD /* UserAuthenticationViewController.m */,
-				62B781993F225E8622E86A02 /* UserAuthenticationViewController.h */,
 			);
-			path = View;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		62B783EA1C0CF759171482C1 /* UserAuthenticationModule */ = {
+			isa = PBXGroup;
+			children = (
+				62B787F9ACE5D7AEDD5182C6 /* Assembly */,
+				62B780840430DB49DC393EBC /* View */,
+				62B783933B0A3706264C0E47 /* ViewModel */,
+				62B78591E9372B6DA3ED68C1 /* Router */,
+			);
+			path = UserAuthenticationModule;
+			sourceTree = "<group>";
+		};
+		62B783F73EF89AA16F9E9ED2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				62B78AE4EFD378BC953F380B /* TVShowsDiscoverUserStoryStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		62B78591E9372B6DA3ED68C1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				62B78F9F87F4BE56E1458FFD /* UserAuthenticationRouterInput.h */,
+				62B78EC6BE0D557CE3396DE0 /* UserAuthenticationRouter.m */,
+				62B78321C0936258E24C3BDB /* UserAuthenticationRouter.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		62B785CB2A665BD761C8D194 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62B78626B36B0D22A50EAAAB /* FavoritesTVShowsModule */ = {
+			isa = PBXGroup;
+			children = (
+				62B78A464C15C4CBA10726CE /* View */,
+				62B785CB2A665BD761C8D194 /* ViewModel */,
+				62B783D407445102F4CC782A /* Router */,
+				62B78147935A14D70B8549BF /* Assembly */,
+			);
+			path = FavoritesTVShowsModule;
 			sourceTree = "<group>";
 		};
 		62B786402BD9F6522DA866D3 /* Models */ = {
@@ -182,6 +278,15 @@
 				62B78E3596AD15AAFBA179CB /* API */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		62B786521F2E69B50BC2F94C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				62B78694DA7D2C99F1043DBB /* SegueIdentifiersConstants.m */,
+				62B78EE48986A36F2D84459C /* SegueIdentifiersConstants.h */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		62B7865E79084B350E83539D /* BusinessLogicLayer */ = {
@@ -193,14 +298,13 @@
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
 		};
-		62B786C76EFE453B4378C305 /* ViewModel */ = {
+		62B786846CC5A79628700D71 /* TVShowsDiscoverUserStory */ = {
 			isa = PBXGroup;
 			children = (
-				62B78B3347C8038018764F3F /* UserAuthenticationViewModelInput.h */,
-				62B780028422E3D32C04DE46 /* UserAuthenticationViewModel.m */,
-				62B78E68079398A22EA84237 /* UserAuthenticationViewModel.h */,
+				62B783F73EF89AA16F9E9ED2 /* Storyboard */,
+				62B78A1E49789CE40B09ACB1 /* Modules */,
 			);
-			path = ViewModel;
+			path = TVShowsDiscoverUserStory;
 			sourceTree = "<group>";
 		};
 		62B78721571E9AEB77C38B40 /* ConcreteClasses */ = {
@@ -212,15 +316,59 @@
 			path = ConcreteClasses;
 			sourceTree = "<group>";
 		};
-		62B7896CEEDE653A0D9124F5 /* UserAuthenticationModule */ = {
+		62B787F9ACE5D7AEDD5182C6 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				62B78124FCC7D44BB36BE6B5 /* Assembly */,
-				62B783E39651BED624827B9A /* View */,
-				62B786C76EFE453B4378C305 /* ViewModel */,
-				62B78BCD11B5E0200184FDB3 /* Router */,
+				62B7886391D9D0601859CD96 /* UserAuthenticationAssembly.m */,
+				62B7854BA5823126DFF05D31 /* UserAuthenticationAssembly.h */,
 			);
-			path = UserAuthenticationModule;
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		62B7883CCFADF56AAE969458 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62B788FA3B27A127B3046E59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				62B783EA1C0CF759171482C1 /* UserAuthenticationModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		62B7890F41AC130B7C26B4CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62B789A4D39F12020FFB57C8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		62B78A1E49789CE40B09ACB1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				62B7809856184E90C3985018 /* RecentsTVShowsModule */,
+				62B78E244FF102CA7DC7262B /* DiscoverTVShowModule */,
+				62B78626B36B0D22A50EAAAB /* FavoritesTVShowsModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		62B78A464C15C4CBA10726CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		62B78B1183D0589083045D8B /* TokenModel */ = {
@@ -230,6 +378,13 @@
 				62B788F1E60E30117465EC4C /* TokenModel.h */,
 			);
 			path = TokenModel;
+			sourceTree = "<group>";
+		};
+		62B78B36CB4EED4280147139 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		62B78B4593877D415074C02D /* AuthenticationService */ = {
@@ -242,16 +397,6 @@
 			path = AuthenticationService;
 			sourceTree = "<group>";
 		};
-		62B78BCD11B5E0200184FDB3 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				62B78F9581E943C3D2967504 /* UserAuthenticationRouterInput.h */,
-				62B78298CA1EDF7DDB4B7767 /* UserAuthenticationRouter.m */,
-				62B78771E87B1B923E84D102 /* UserAuthenticationRouter.h */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		62B78C3849A868FEEEC2DE5E /* ModuleAssemblyBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +404,13 @@
 				62B785240689C18E82C523F0 /* ModuleAssemblyBase.h */,
 			);
 			path = ModuleAssemblyBase;
+			sourceTree = "<group>";
+		};
+		62B78C8FCEC7F25B690A691C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		62B78CEEE18C143F518BCB76 /* Constants */ = {
@@ -292,6 +444,17 @@
 			path = ServiceComponentsFactory;
 			sourceTree = "<group>";
 		};
+		62B78E244FF102CA7DC7262B /* DiscoverTVShowModule */ = {
+			isa = PBXGroup;
+			children = (
+				62B7890F41AC130B7C26B4CE /* View */,
+				62B78E9D44B54920E955C92A /* ViewModel */,
+				62B781DF73D6CDBC4A0455C2 /* Router */,
+				62B789A4D39F12020FFB57C8 /* Assembly */,
+			);
+			path = DiscoverTVShowModule;
+			sourceTree = "<group>";
+		};
 		62B78E3596AD15AAFBA179CB /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +471,13 @@
 				62B7814594B047926FE69FEB /* StoryboardAssembly.h */,
 			);
 			path = StoryboardAssembly;
+			sourceTree = "<group>";
+		};
+		62B78E9D44B54920E955C92A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		62B78EF1D4C5FDEE360C9713 /* Assemblies */ = {
@@ -359,6 +529,7 @@
 			children = (
 				74AD3ABC52596F7DFA439FF6 /* UserStories */,
 				62B78F2F62A27A65B91AC00B /* Assemblies */,
+				62B782D8A9035980705752DB /* Common */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -383,6 +554,7 @@
 			isa = PBXGroup;
 			children = (
 				74AD3ED47618CCEAE2EB8FC5 /* AuthenticationUserStory */,
+				62B786846CC5A79628700D71 /* TVShowsDiscoverUserStory */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -448,7 +620,7 @@
 			isa = PBXGroup;
 			children = (
 				74AD3B4F70D09FFE1AE99313 /* Storyboard */,
-				62B7896CEEDE653A0D9124F5 /* UserAuthenticationModule */,
+				62B788FA3B27A127B3046E59 /* Modules */,
 			);
 			path = AuthenticationUserStory;
 			sourceTree = "<group>";
@@ -507,8 +679,6 @@
 			children = (
 				AF8A3D2FE7F5E41ABBF0987E /* Pods-TVDB.debug.xcconfig */,
 				93D6DEC1423CD8FC9ABE72F8 /* Pods-TVDB.release.xcconfig */,
-				174868A93D24E936CCE693B8 /* Pods-TVDBTests.debug.xcconfig */,
-				F5FE473AFA8B9CD38D0189BC /* Pods-TVDBTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -516,8 +686,8 @@
 		E800AFAA6ACC5B136CE3B77A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B4464E42BC1B11FC6705DB2 /* Pods_TVDB.framework */,
-				D7CC7E985ACC0E80C1EE27D7 /* Pods_TVDBTests.framework */,
+				0375AF4AFEC73F1342472498 /* libPods-TVDB.a */,
+				5ABBC0EB1F89DEF3F3D1F22C /* libPods-TVDBTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -549,12 +719,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B77EE2271D9A8AC8006FB640 /* Build configuration list for PBXNativeTarget "TVDBTests" */;
 			buildPhases = (
-				0A191C33D7EF1C278915EAF8 /* [CP] Check Pods Manifest.lock */,
 				B77EE2171D9A8AC8006FB640 /* Sources */,
 				B77EE2181D9A8AC8006FB640 /* Frameworks */,
 				B77EE2191D9A8AC8006FB640 /* Resources */,
-				8F3DE7B106F9CF083C3E2CE8 /* [CP] Embed Pods Frameworks */,
-				AA0171E67600AD1E0A0DB36E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -624,6 +791,7 @@
 				74AD3C43F87FF2D85E0B7153 /* Assets.xcassets in Resources */,
 				62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */,
 				62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */,
+				62B78DA7A7B8E353341C13FD /* TVShowsDiscoverUserStoryStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,21 +805,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A191C33D7EF1C278915EAF8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		34AA85BD85329DCA65FC0664 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -665,36 +818,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDB/Pods-TVDB-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F3DE7B106F9CF083C3E2CE8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA0171E67600AD1E0A0DB36E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVDBTests/Pods-TVDBTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E51377B05836F99262D9ECB5 /* [CP] Check Pods Manifest.lock */ = {
@@ -747,10 +870,11 @@
 				62B78CF7FDDBDD6F46ED0D75 /* KeychainServiceImpl.m in Sources */,
 				62B781A35779FF35A686CDFA /* ModuleAssemblyBase.m in Sources */,
 				62B78166F5B62D034994E445 /* StoryboardAssembly.m in Sources */,
-				62B78DF0AFD20A9A4F74786A /* UserAuthenticationAssembly.m in Sources */,
-				62B78AF0EF15136040F120AE /* UserAuthenticationRouter.m in Sources */,
-				62B78DB7958BF5DA00344954 /* UserAuthenticationViewController.m in Sources */,
-				62B783AFBF549C571F9D4C5F /* UserAuthenticationViewModel.m in Sources */,
+				62B78F0EBFE2765487DAFC58 /* UserAuthenticationAssembly.m in Sources */,
+				62B7890E7A5B05AF3197014D /* UserAuthenticationViewController.m in Sources */,
+				62B789AD61B760C8EDA075F2 /* UserAuthenticationViewModel.m in Sources */,
+				62B78AEC65209659C28B5B3C /* UserAuthenticationRouter.m in Sources */,
+				62B78FF89404422F56FF7070 /* SegueIdentifiersConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -893,7 +1017,6 @@
 		};
 		B77EE2281D9A8AC8006FB640 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 174868A93D24E936CCE693B8 /* Pods-TVDBTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = XQ9P3KDDUW;
@@ -907,7 +1030,6 @@
 		};
 		B77EE2291D9A8AC8006FB640 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5FE473AFA8B9CD38D0189BC /* Pods-TVDBTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = XQ9P3KDDUW;

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '472966819A5D1DBB45D3883577234752'
+               BlueprintIdentifier = '8FF76BC1BA84A4ADAF072F792EB48F6D'
                BlueprintName = 'MTLManagedObjectAdapter'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'MTLManagedObjectAdapter.framework'>
+               BuildableName = 'libMTLManagedObjectAdapter.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

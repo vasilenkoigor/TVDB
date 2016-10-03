@@ -1,6 +1,0 @@
-framework module Pods_TVDBTests {
-  umbrella header "Pods-TVDBTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
