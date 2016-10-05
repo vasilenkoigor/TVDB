@@ -5,5 +5,8 @@
 
 #import "CoreDataStack.h"
 
+@class NSPersistentContainer;
+
 @interface CoreDataStackImpl : NSObject <CoreDataStack>
+
 @end

@@ -7,11 +7,15 @@
 
 @protocol AuthenticationService;
 @protocol KeychainService;
+@protocol TVShowsService;
+@protocol FavoritesTVShowsService;
 
 @protocol ServiceComponentsFactory <NSObject>
 
 - (id <KeychainService>)keychainService;
 
 - (id <AuthenticationService>)authenticationService;
+- (id <TVShowsService>)tvShowsService;
+- (id <FavoritesTVShowsService>)favoritesTVShowsService;
 
 @end

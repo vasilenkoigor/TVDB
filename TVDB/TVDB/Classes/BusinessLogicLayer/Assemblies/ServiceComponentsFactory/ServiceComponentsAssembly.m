@@ -10,6 +10,10 @@
 #import "CoreComponentsFactory.h"
 #import "AuthenticationServiceImpl.h"
 #import "KeychainServiceImpl.h"
+#import "TVShowsService.h"
+#import "TVShowsServiceImpl.h"
+#import "FavoritesTVShowsService.h"
+#import "FavoritesTVShowsServiceImpl.h"
 
 static NSString *const kServiceComponentsResourceFile = @"ServiceComponentsResource.plist";
 static NSString *const kServiceComponentsKeychainServiceKey = @"KeychainService";
@@ -34,6 +38,29 @@ static NSString *const kServiceComponentsKeychainServiceKey = @"KeychainService"
         }];
     }];
 }
+
+- (id <TVShowsService>)tvShowsService
+{
+    return [TyphoonDefinition withClass:[TVShowsServiceImpl class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithNetworkClient:keychainService:coreDataStack:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:[self.coreComponents networkClient]];
+            [initializer injectParameterWith:[self keychainService]];
+            [initializer injectParameterWith:[self.coreComponents coreDataStack]];
+        }];
+    }];
+}
+
+- (id <FavoritesTVShowsService>)favoritesTVShowsService
+{
+    return [TyphoonDefinition withClass:[FavoritesTVShowsServiceImpl class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithNetworkClient:coreDataStack:keychainService:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:[self.coreComponents networkClient]];
+            [initializer injectParameterWith:[self.coreComponents coreDataStack]];
+            [initializer injectParameterWith:[self keychainService]];
+        }];
+    }];
+}
+
 
 #pragma mark - Config
 

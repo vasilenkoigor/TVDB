@@ -30,6 +30,8 @@
 
 - (void)typhoonDidInject
 {
+    [self.keychainService deleteAuthenticationData];
+
     self.authenticationProcessSubject = [RACSubject subject];
     self.isAuthenticated = self.keychainService.isAuthenticated;
     self.signInButtonEnabledSignal = [RACSignal combineLatest:@[RACObserve(self, loginTextFieldText), RACObserve(self, passwordTextFieldText)] reduce:^id(NSString *login, NSString *password) {
@@ -48,6 +50,7 @@
                 [self.authenticationProcessSubject sendNext:@(YES)];
             }] doNext:^(id x) {
                 [self.authenticationProcessSubject sendNext:@(NO)];
+                [self.router openDiscoverSerialsUserStory];
             }] doError:^(NSError *error) {
                 [self.authenticationProcessSubject sendError:error];
             }];

@@ -7,3 +7,4 @@
 
 extern NSString *const kTVShowsDiscoverUserStorySegueID;
 extern NSString *const kDiscoverTVShowSegueID;
+extern NSString *const kDicoverEpisodesSegueID;

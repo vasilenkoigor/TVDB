@@ -9,7 +9,7 @@
 @interface Cast : MTLModel <MTLJSONSerializing>
 
 @property (copy, nonatomic) NSString *character;
-@property (copy, nonatomic) NSString *uid;
+@property (assign, nonatomic) NSUInteger uid;
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSURL *profileSmallImageURL;
 @property (copy, nonatomic) NSURL *profileMediumImageURL;

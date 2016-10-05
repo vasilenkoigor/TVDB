@@ -5,6 +5,7 @@
 
 #import "TokenModel.h"
 #import "SessionModel.h"
+#import "Account.h"
 
 @implementation TokenModel
 

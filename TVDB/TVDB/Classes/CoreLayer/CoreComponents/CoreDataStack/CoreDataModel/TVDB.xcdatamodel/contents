@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TVShow" syncable="YES">
+        <attribute name="casts" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="genres" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="homepage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mediumPosterImageURL" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="networks" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="numberOfEpisodes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfSeasons" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="originalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productionCompanies" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="seasons" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="smallPosterImageURL" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TVShow" positionX="-63" positionY="-18" width="128" height="285"/>
+    </elements>
+</model>

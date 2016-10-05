@@ -9,7 +9,7 @@
         <!--Favorites TV Shows-->
         <scene sceneID="3fX-r5-XSx">
             <objects>
-                <viewController id="Pdg-tW-WvM" sceneMemberID="viewController">
+                <viewController id="Pdg-tW-WvM" customClass="FavoritesTVShowsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qto-HU-0Q9"/>
                         <viewControllerLayoutGuide type="bottom" id="W2i-YB-g8g"/>
@@ -20,48 +20,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bnY-Ts-Kgc">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="khT-LB-8cO">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="khT-LB-8cO" id="KIq-6M-5pc">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xMd-EI-hsS">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xMd-EI-hsS" id="Hky-aI-l5n">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="AN4-ea-Tpq">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AN4-ea-Tpq" id="vzr-Nr-LVm">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EwD-0S-Six">
-                                        <rect key="frame" x="0.0" y="224" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EwD-0S-Six" id="yhq-rz-mL6">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SoF-gm-nRa">
-                                        <rect key="frame" x="0.0" y="268" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SoF-gm-nRa" id="eEQ-Mu-m7a">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,17 +33,18 @@
                     <navigationItem key="navigationItem" title="Favorites TV Shows" id="xxy-lN-7PO"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <segue destination="01l-Xm-la1" kind="show" identifier="DiscoverSerialSegue" id="Ygb-Zl-nQe"/>
+                        <outlet property="tableView" destination="bnY-Ts-Kgc" id="ZIl-B0-zdg"/>
+                        <segue destination="01l-Xm-la1" kind="show" identifier="DiscoverTVShowSegueID" id="Ygb-Zl-nQe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWh-uH-ecJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="908" y="65.217391304347828"/>
         </scene>
-        <!--Recents TV Shows-->
+        <!--Popular TV Shows-->
         <scene sceneID="0z3-7u-yet">
             <objects>
-                <viewController id="1JK-fT-P4z" sceneMemberID="viewController">
+                <viewController id="1JK-fT-P4z" customClass="PopularTVShowsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ji8-Ev-PKU"/>
                         <viewControllerLayoutGuide type="bottom" id="kIq-ir-WiT"/>
@@ -96,136 +55,84 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ui1-s5-L70">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8Zt-Tr-0Ws">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Zt-Tr-0Ws" id="fEq-d1-a9W">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bsi-jb-HnZ">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bsi-jb-HnZ" id="QEB-tI-gHW">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vP7-TI-Hwx">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vP7-TI-Hwx" id="3BM-FV-ZPN">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0fm-WA-pBX">
-                                        <rect key="frame" x="0.0" y="224" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0fm-WA-pBX" id="Wf5-vN-3Zl">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zsL-iD-yvo">
-                                        <rect key="frame" x="0.0" y="268" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zsL-iD-yvo" id="o6g-a9-ftF">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="AuK-4F-CCq">
-                                        <rect key="frame" x="0.0" y="312" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AuK-4F-CCq" id="eRt-xs-51f">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qXB-Q5-T91">
-                                        <rect key="frame" x="0.0" y="356" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qXB-Q5-T91" id="toj-MM-Sod">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="54x-SE-Tso">
-                                        <rect key="frame" x="0.0" y="400" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="54x-SE-Tso" id="aff-aM-KT6">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8IL-1o-XYv">
-                                        <rect key="frame" x="0.0" y="444" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8IL-1o-XYv" id="11Y-ng-c5P">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Czu-uD-By5">
-                                        <rect key="frame" x="0.0" y="488" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Czu-uD-By5" id="WXY-Ui-lvg">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ui1-s5-L70" firstAttribute="top" secondItem="jhD-mU-zFu" secondAttribute="top" id="Hpu-B6-VH1"/>
                             <constraint firstAttribute="trailing" secondItem="Ui1-s5-L70" secondAttribute="trailing" id="Oo1-O9-J2S"/>
-                            <constraint firstItem="kIq-ir-WiT" firstAttribute="top" secondItem="Ui1-s5-L70" secondAttribute="bottom" id="Q3K-lz-vWq"/>
+                            <constraint firstItem="kIq-ir-WiT" firstAttribute="top" secondItem="Ui1-s5-L70" secondAttribute="bottom" constant="-49" id="Q3K-lz-vWq"/>
                             <constraint firstItem="Ui1-s5-L70" firstAttribute="leading" secondItem="jhD-mU-zFu" secondAttribute="leading" id="vHQ-gL-lyc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Recents TV Shows" id="eZB-Gf-n1S"/>
+                    <navigationItem key="navigationItem" title="Popular TV Shows" id="eZB-Gf-n1S">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="loR-R5-PvS">
+                            <connections>
+                                <action selector="logOutButtonTapped:" destination="1JK-fT-P4z" id="7Uf-7L-Uas"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="tableView" destination="Ui1-s5-L70" id="haS-E2-L0x"/>
                         <segue destination="01l-Xm-la1" kind="show" identifier="DiscoverTVShowSegueID" id="7Zk-nC-ASP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1G-8o-Fcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="-590"/>
+            <point key="canvasLocation" x="908" y="-590.55472263868069"/>
         </scene>
-        <!--Table View Controller-->
+        <!--DiscoverTV Show View Controller-->
         <scene sceneID="mPt-LM-OhJ">
             <objects>
-                <tableViewController id="01l-Xm-la1" sceneMemberID="viewController">
+                <tableViewController id="01l-Xm-la1" customClass="DiscoverTVShowViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eBL-sn-dIL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vEs-EC-nrr">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vEs-EC-nrr" id="bg6-SD-h2v">
-                                    <frame key="frameInset" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="01l-Xm-la1" id="LzK-ju-jMC"/>
                             <outlet property="delegate" destination="01l-Xm-la1" id="QKt-nh-Jwi"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="flP-uL-0nF" kind="show" identifier="DiscoverEpisodesSegueID" id="ull-kf-PSS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cm3-ny-kjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2058" y="-206"/>
+        </scene>
+        <!--DiscoverTV Episodes View Controller-->
+        <scene sceneID="Rj0-9n-i9O">
+            <objects>
+                <tableViewController id="flP-uL-0nF" customClass="DiscoverTVEpisodesViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QCu-mT-KM4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="smM-rA-hea">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="smM-rA-hea" id="6xi-J6-cB0">
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="flP-uL-0nF" id="FC6-r7-NOO"/>
+                            <outlet property="delegate" destination="flP-uL-0nF" id="Dt5-Hg-OeJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N5c-Ze-Ixf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2823" y="-206"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="C6p-OT-Dor">
@@ -244,11 +151,11 @@
             </objects>
             <point key="canvasLocation" x="-983" y="-261"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Popular-->
         <scene sceneID="aof-NT-tEj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b1p-QH-bUU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="recents" id="yd6-0C-Hpd"/>
+                    <tabBarItem key="tabBarItem" title="Popular" image="list" id="yd6-0C-Hpd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AWx-JW-IzT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -263,11 +170,11 @@
             </objects>
             <point key="canvasLocation" x="-31.199999999999999" y="-589.65517241379314"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Favorites-->
         <scene sceneID="jMr-pG-Flp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fcv-dV-a5g" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="tNt-dN-YCg"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favourite" id="tNt-dN-YCg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ovX-04-e6b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -283,7 +190,11 @@
             <point key="canvasLocation" x="-31.199999999999999" y="65.217391304347828"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="favourite" width="15" height="15"/>
+        <image name="list" width="15" height="15"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Zk-nC-ASP"/>
+        <segue reference="Ygb-Zl-nQe"/>
     </inferredMetricsTieBreakers>
 </document>

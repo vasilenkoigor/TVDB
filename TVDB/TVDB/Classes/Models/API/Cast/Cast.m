@@ -25,14 +25,16 @@
 + (NSValueTransformer *)profileSmallImageURLJSONTransformer
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *path, BOOL *success, NSError **error) {
-        return [[NSURL alloc] initWithString:path relativeToURL:kTheMovieDBSmallImageBasePath];
+        if (!path) return nil;
+        return [[NSURL alloc] initWithString:[kTheMovieDBSmallImageBasePath stringByAppendingString:path]];
     }];
 }
 
 + (NSValueTransformer *)profileMediumImageURLJSONTransformer
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *path, BOOL *success, NSError **error) {
-        return [[NSURL alloc] initWithString:path relativeToURL:kTheMovieDBMediumImageBasePath];
+        if (!path) return nil;
+        return [[NSURL alloc] initWithString:[kTheMovieDBMediumImageBasePath stringByAppendingString:path]];
     }];
 }
 

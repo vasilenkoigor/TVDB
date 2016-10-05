@@ -16,7 +16,7 @@
 - (UserAuthenticationViewController *)userAuthenticationView
 {
     return [TyphoonDefinition withClass:[UserAuthenticationViewController class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(viewModel) with:[self userAuthenticationViewModel]];
+        [definition injectProperty:@selector(output) with:[self userAuthenticationViewModel]];
     }];
 }
 

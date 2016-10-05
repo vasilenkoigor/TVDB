@@ -5,5 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class TVShow;
+
 @protocol PopularTVShowsRouterInput <NSObject>
+
+- (void)openDiscoverTVShowWithTVShow:(TVShow *)tvShow;
+- (void)closeCurrentModule;
+
 @end

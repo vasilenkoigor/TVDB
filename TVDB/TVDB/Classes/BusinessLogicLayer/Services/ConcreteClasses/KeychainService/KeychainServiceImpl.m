@@ -9,6 +9,7 @@
 NSString *const kTokenKeychainServiceKey = @"keychain_token_the_movie_db";
 NSString *const kSessionKeychainServiceKey = @"keychain_session_the_movie_db";
 NSString *const kIsAuthenticatedKeychainServiceKey = @"is_authenticated_the_movie_db";
+NSString *const kAccountKeychainServiceKey = @"account_the_movie_db";
 
 @interface KeychainServiceImpl ()
 
@@ -51,6 +52,30 @@ NSString *const kIsAuthenticatedKeychainServiceKey = @"is_authenticated_the_movi
 {
     NSData *authenticatedData = [NSKeyedArchiver archivedDataWithRootObject:@(authenticated)];
     [self.keyChainStore setData:authenticatedData forKey:kIsAuthenticatedKeychainServiceKey];
+}
+
+- (void)saveAccount:(Account *)account
+{
+    NSData *accountData = [NSKeyedArchiver archivedDataWithRootObject:account];
+    [self.keyChainStore setData:accountData forKey:kAccountKeychainServiceKey];
+}
+
+- (void)deleteAuthenticationData
+{
+    [self.keyChainStore setData:nil forKey:kIsAuthenticatedKeychainServiceKey];
+    [self.keyChainStore setData:nil forKey:kTokenKeychainServiceKey];
+    [self.keyChainStore setData:nil forKey:kSessionKeychainServiceKey];
+}
+
+- (Account *)requestAccount
+{
+    NSData *accountData = [self.keyChainStore dataForKey:kAccountKeychainServiceKey];
+    if (accountData) {
+        Account *account = [NSKeyedUnarchiver unarchiveObjectWithData:accountData];
+        return account;
+    } else {
+        return nil;
+    }
 }
 
 - (TokenModel *)requestToken

@@ -7,12 +7,17 @@
 
 @class TokenModel;
 @class SessionModel;
+@class Account;
 
 @protocol KeychainService <NSObject>
 
 @property (assign, nonatomic, getter=isAuthenticated) BOOL authenticated;
 
 - (void)saveToken:(TokenModel *)tokenModel session:(SessionModel *)sessionModel;
+- (void)saveAccount:(Account *)account;
+- (void)deleteAuthenticationData;
+
+- (Account *)requestAccount;
 - (TokenModel *)requestToken;
 - (SessionModel *)requestSession;
 

@@ -5,9 +5,23 @@
 
 #import "PopularTVShowsRouter.h"
 #import "RamblerViperModuleTransitionHandlerProtocol.h"
+#import "SegueIdentifiersConstants.h"
+#import "RamblerViperOpenModulePromise.h"
+#import "DiscoverTVShowModuleInput.h"
 
+@implementation PopularTVShowsRouter
 
-@implementation PopularTVShowsRouter {
-
+- (void)openDiscoverTVShowWithTVShow:(TVShow *)tvShow
+{
+    [[self.transitionHandler openModuleUsingSegue:kDiscoverTVShowSegueID] thenChainUsingBlock:^id <RamblerViperModuleOutput>(id <DiscoverTVShowModuleInput> moduleInput) {
+        [moduleInput configureDiscoverTVShowModuleWithTVShow:tvShow];
+        return nil;
+    }];
 }
+
+- (void)closeCurrentModule
+{
+    [self.transitionHandler closeCurrentModule:YES];
+}
+
 @end

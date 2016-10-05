@@ -10,13 +10,13 @@
 
 @interface TVSeason : MTLModel <MTLJSONSerializing>
 
-@property (copy, nonatomic) NSString *uid;
+@property (assign, nonatomic) NSUInteger uid;
 @property (strong, nonatomic) NSDate *airDate;
 @property (strong, nonatomic) NSArray <TVEpisode *> *episodes;
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *overview;
-@property (copy, nonatomic) NSString *posterSmallImageURL;
-@property (copy, nonatomic) NSString *posterMediumImageURL;
+@property (copy, nonatomic) NSURL *posterSmallImageURL;
+@property (copy, nonatomic) NSURL *posterMediumImageURL;
 @property (assign, nonatomic) NSInteger seasonNumber;
 
 @end

@@ -21,8 +21,8 @@
                     NSStringFromSelector(@selector(episodes)) : @"episodes",
                     NSStringFromSelector(@selector(name)) : @"name",
                     NSStringFromSelector(@selector(overview)) : @"overview",
-                    NSStringFromSelector(@selector(posterSmallImageURL)) : @"profile_path",
-                    NSStringFromSelector(@selector(posterMediumImageURL)) : @"profile_path",
+                    NSStringFromSelector(@selector(posterSmallImageURL)) : @"poster_path",
+                    NSStringFromSelector(@selector(posterMediumImageURL)) : @"poster_path",
                     NSStringFromSelector(@selector(seasonNumber)) : @"season_number"
             };
 }
@@ -44,15 +44,16 @@
 + (NSValueTransformer *)posterSmallImageURLJSONTransformer
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *path, BOOL *success, NSError **error) {
-        return [[NSURL alloc] initWithString:path relativeToURL:kTheMovieDBSmallImageBasePath];
+        if (!path) return nil;
+        return [[NSURL alloc] initWithString:[kTheMovieDBSmallImageBasePath stringByAppendingString:path]];
     }];
 }
 
 + (NSValueTransformer *)posterMediumImageURLJSONTransformer
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *path, BOOL *success, NSError **error) {
-        return [[NSURL alloc] initWithString:path relativeToURL:kTheMovieDBMediumImageBasePath];
+        if (!path) return nil;
+        return [[NSURL alloc] initWithString:[kTheMovieDBMediumImageBasePath stringByAppendingString:path]];
     }];
 }
-
 @end

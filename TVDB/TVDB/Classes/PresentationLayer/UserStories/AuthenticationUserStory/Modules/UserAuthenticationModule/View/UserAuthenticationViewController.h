@@ -9,6 +9,6 @@
 
 @interface UserAuthenticationViewController : UIViewController
 
-@property (strong, nonatomic, readonly) id <UserAuthenticationViewModelInput> viewModel;
+@property (strong, nonatomic, readonly) id <UserAuthenticationViewModelInput> output;
 
 @end

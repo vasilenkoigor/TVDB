@@ -4,11 +4,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TVShowsDataDisplayManager.h"
 
 @protocol PopularTVShowsViewModelInput;
 
-@interface PopularTVShowsViewController : UIViewController
+@interface PopularTVShowsViewController : UIViewController <TVShowsDataDisplayManagerDelegate>
 
-@property (strong, nonatomic, readonly) id <PopularTVShowsViewModelInput> viewModel;
+@property (strong, nonatomic, readonly) id <PopularTVShowsViewModelInput> output;
+@property (strong, nonatomic, readonly) TVShowsDataDisplayManager *dataDisplayManager;
 
 @end

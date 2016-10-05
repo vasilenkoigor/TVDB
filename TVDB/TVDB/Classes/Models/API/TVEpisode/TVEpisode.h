@@ -12,7 +12,7 @@
 @property (assign, nonatomic) NSUInteger episodeNumber;
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *overview;
-@property (copy, nonatomic) NSString *uid;
+@property (assign, nonatomic) NSUInteger uid;
 @property (copy, nonatomic) NSURL *stillSmallImageURL;
 @property (copy, nonatomic) NSURL *stillMediumImageURL;
 

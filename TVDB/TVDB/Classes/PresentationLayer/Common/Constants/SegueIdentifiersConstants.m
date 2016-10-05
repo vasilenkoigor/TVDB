@@ -7,3 +7,4 @@
 
 NSString *const kTVShowsDiscoverUserStorySegueID = @"TVShowsDiscoverUserStorySegueID";
 NSString *const kDiscoverTVShowSegueID = @"DiscoverTVShowSegueID";
+NSString *const kDicoverEpisodesSegueID = @"DiscoverEpisodesSegueID";

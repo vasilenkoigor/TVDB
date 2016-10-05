@@ -5,5 +5,18 @@
 
 #import <Foundation/Foundation.h>
 
+@class RACSignal;
+@class TVShow;
+@class TVShowCellObject;
+
 @protocol PopularTVShowsViewModelInput <NSObject>
+
+@property (strong, nonatomic, readonly) NSArray *tvShows;
+@property (strong, nonatomic, readonly) RACSignal *loadTVShowsErrorSignal;
+
+- (void)reloadTVShows;
+
+- (void)discoverTVShow:(TVShowCellObject *)tvShowCellObject;
+- (void)logOutFromAccount;
+
 @end

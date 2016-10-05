@@ -6,9 +6,13 @@
 #import "PopularTVShowsViewModelInput.h"
 
 @protocol TVShowsService;
+@protocol PopularTVShowsRouterInput;
+@protocol KeychainService;
 
 @interface PopularTVShowsViewModel : NSObject <PopularTVShowsViewModelInput>
 
-@property (strong, nonatomic, readonly) id <TVShowsService>
+@property (strong, nonatomic, readonly) id <TVShowsService> tvShowsService;
+@property (strong, nonatomic, readonly) id <KeychainService> keychainService;
+@property (strong, nonatomic, readonly) id <PopularTVShowsRouterInput> router;
 
 @end

@@ -48,7 +48,7 @@
 {
     dispatch_async(self.dispatch_queue, ^{
         NSError *error;
-        id model = [self parseJSON:JSON forKey:key resultClass:resultClass error:error];
+        id model = [self parseJSON:JSON forKey:key resultClass:resultClass error:&error];
 
         dispatch_async(dispatch_get_main_queue(), ^{
             completion(model, error);
@@ -59,18 +59,18 @@
 - (id)parseJSON:(id)JSON
          forKey:(NSString *)key
     resultClass:(Class)resultClass
-          error:(NSError *)error
+          error:(NSError **)error
 {
     if (key) {
         if ([JSON[key] isKindOfClass:[NSArray class]]) {
-            return [MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:JSON[key] error:&error];
+            return [MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:JSON[key] error:error];
         }
     }
     if ([JSON isKindOfClass:[NSArray class]]) {
-        return [MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:JSON error:&error];
+        return [MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:JSON error:error];
     }
 
-    return [MTLJSONAdapter modelOfClass:resultClass fromJSONDictionary:JSON error:&error];
+    return [MTLJSONAdapter modelOfClass:resultClass fromJSONDictionary:JSON error:error];
 }
 
 #pragma mark - Perform block

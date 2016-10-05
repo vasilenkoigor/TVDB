@@ -3,8 +3,13 @@
 // Copyright (c) 2016 Igor Vasilenko. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ModuleAssemblyBase.h"
+#import "RamblerInitialAssembly.h"
 
+@class CellObjectsBuildersAssembly;
 
-@interface PopularTVShowsAssembly : NSObject
+@interface PopularTVShowsAssembly : ModuleAssemblyBase <RamblerInitialAssembly>
+
+@property (strong, nonatomic, readonly) CellObjectsBuildersAssembly *cellObjectsBuildersAssembly;
+
 @end

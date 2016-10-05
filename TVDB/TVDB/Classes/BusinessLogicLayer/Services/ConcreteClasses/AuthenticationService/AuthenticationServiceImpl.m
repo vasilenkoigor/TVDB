@@ -10,10 +10,12 @@
 #import "SessionModel.h"
 #import "СoreLayerConstants.h"
 #import "KeychainService.h"
+#import "Account.h"
 
 static NSString *const kRequestTokenURLAPIPath = @"authentication/token/new";
 static NSString *const kValidateRequestTokenURLAPIPath = @"authentication/token/validate_with_login";
 static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
+static NSString *const kAccountURLAPIPath = @"account";
 
 @interface AuthenticationServiceImpl ()
 
@@ -46,13 +48,16 @@ static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
                                        password:password] flattenMap:^RACStream *(TokenModel *validatedToken) {
             return [self rac_createSessionWithValidatedToken:validatedToken];
         }] flattenMap:^RACStream *(SessionModel *sessionModel) {
-            if (sessionModel.success) {
-                [self.keychainService saveToken:tokenModel session:sessionModel];
-                [self.keychainService setAuthenticated:YES];
-                return [RACSignal return:@(YES)];
-            } else {
-                return [RACSignal return:@(NO)];
-            }
+            return [[self rac_requestAccountDetailsWithSession:sessionModel] flattenMap:^RACStream *(Account *account) {
+                if (sessionModel.success) {
+                    [self.keychainService saveToken:tokenModel session:sessionModel];
+                    [self.keychainService saveAccount:account];
+                    [self.keychainService setAuthenticated:YES];
+                    return [RACSignal return:@(YES)];
+                } else {
+                    return [RACSignal return:@(NO)];
+                }
+            }];
         }];
     }];
 }
@@ -98,6 +103,19 @@ static NSString *const kCreateSessionURLAPIPath = @"authentication/session/new";
                                                @"request_token" : tokenModel.requestToken
                                        }
                               resultClass:[SessionModel class]
+                                   forKey:nil];
+}
+
+- (RACSignal *)rac_requestAccountDetailsWithSession:(SessionModel *)sessionModel
+{
+    return [self.networkClient rac_method:HTTPMethodGET
+                                URLString:kAccountURLAPIPath
+                               parameters:
+                                       @{
+                                               @"api_key" : kTheMovieDBAPIKey,
+                                               @"session_id" : sessionModel.uid
+                                       }
+                              resultClass:[Account class]
                                    forKey:nil];
 }
 

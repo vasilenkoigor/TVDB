@@ -8,7 +8,7 @@
 
 @interface Creator : MTLModel <MTLJSONSerializing>
 
-@property (copy, nonatomic) NSString *uid;
+@property (assign, nonatomic) NSUInteger uid;
 @property (copy, nonatomic) NSString *name;
 
 @end

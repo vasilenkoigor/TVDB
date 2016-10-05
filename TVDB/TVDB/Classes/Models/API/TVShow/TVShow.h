@@ -5,6 +5,7 @@
 
 #import "MTLModel.h"
 #import "MTLJSONAdapter.h"
+#import "MTLManagedObjectAdapter.h"
 
 @class TVSeason;
 @class ProductionCompany;
@@ -13,13 +14,13 @@
 @class Creator;
 @class Cast;
 
-@interface TVShow : MTLModel <MTLJSONSerializing>
+@interface TVShow : MTLModel <MTLJSONSerializing, MTLManagedObjectSerializing>
 
 @property (strong, nonatomic) NSArray <Creator *> *createdBy;
 @property (strong, nonatomic) NSArray <Genre *> *genres;
 @property (strong, nonatomic) NSArray <Cast *> *casts;
 @property (copy, nonatomic) NSString *homepage;
-@property (copy, nonatomic) NSString *uid;
+@property (assign, nonatomic) NSUInteger uid;
 @property (copy, nonatomic) NSString *name;
 @property (strong, nonatomic) NSArray <Network *> *networks;
 @property (assign, nonatomic) NSUInteger numberOfSeasons;
@@ -30,5 +31,6 @@
 @property (copy, nonatomic) NSURL *mediumPosterImageURL;
 @property (strong, nonatomic) NSArray <ProductionCompany *> *productionCompanies;
 @property (strong, nonatomic) NSArray <TVSeason *> *seasons;
+@property (assign, nonatomic) BOOL isFavorite;
 
 @end

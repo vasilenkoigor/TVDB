@@ -8,36 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		62B78075C78602FEB8C7B793 /* PopularTVShowsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78E14E717EC969B12A153 /* PopularTVShowsViewModel.m */; };
-		62B7808116B07BDDFE115471 /* TokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78C19DB8B459B030C25FE /* TokenModel.m */; };
-		62B780B1E8109786A7213D6F /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780DD05A7B5316B5F8F89 /* Genre.m */; };
+		62B7810FB62B4A178AB2A602 /* TVShowAccountStates.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7807D6CCE44A7B96F5F2E /* TVShowAccountStates.m */; };
 		62B7813EE12974A8E157CC76 /* TVShowsServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78001EC199DB14C325ACB /* TVShowsServiceImpl.m */; };
 		62B78166F5B62D034994E445 /* StoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */; };
 		62B781A35779FF35A686CDFA /* ModuleAssemblyBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */; };
-		62B781D0463CD42767CB115F /* TVDiscoverResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78CD6E9A7631E451CFEE6 /* TVDiscoverResult.m */; };
-		62B781F9CC7C340DA83EB19E /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78FBA925C019E15B79146 /* Network.m */; };
+		62B78221EAD6AB0BC169ABB0 /* TVShowEpisodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78E1F5AD4B2A286D0ACB3 /* TVShowEpisodeCell.m */; };
 		62B782286D9815A367C9D1DB /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */; };
+		62B782FCDAA2B42882AF4D7A /* TVShowCredits.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7847FAC0B469010A46C02 /* TVShowCredits.m */; };
+		62B78305EBABA6957189D8CA /* FavoritesTVShowsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78001ABF3BC690A0EC6BC /* FavoritesTVShowsAssembly.m */; };
+		62B7830CDF48976F814411AE /* DiscoverTVEpisodesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B64977D71B432D01400 /* DiscoverTVEpisodesViewModel.m */; };
+		62B78320E858843A9BE37C15 /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78F4D5D123E21911A1D00 /* Genre.m */; };
 		62B7835BA7672CAFD42F9767 /* ServiceComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */; };
-		62B78403F63170FF97E4123F /* Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78F726F41AE386615A3BA /* Cast.m */; };
+		62B7837275209971703C5CDA /* TVShowGenresCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78022D2160C0F0ABB7A1C /* TVShowGenresCellObject.m */; };
+		62B783AB2624EF1274C73BBA /* DiscoverTVShowRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D56B5A709A93E570DCF /* DiscoverTVShowRouter.m */; };
+		62B783D5B77AED585DE5D39E /* TVDiscoverResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D3FA22411BD6713F94B /* TVDiscoverResult.m */; };
+		62B783DAC6F62FA4C5165236 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78CABCF4C404EEAFACDEF /* SessionModel.m */; };
+		62B7840BCF54F992DA0ECE70 /* TVShowSeasonCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78CFFE3DC43E0895340AD /* TVShowSeasonCellObject.m */; };
+		62B7841F41765A380F5461A7 /* ProductionCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B4C8A093E79BC722A4B /* ProductionCompany.m */; };
+		62B78463CFB471C3D1942818 /* TVShowSeasonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78F216F0F5D7765EE6103 /* TVShowSeasonCell.m */; };
 		62B784AA70AEAB7ABA1E38DD /* CoreDataStackImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7838ADC0EE64EB74BA48D /* CoreDataStackImpl.m */; };
-		62B787670BCB962A8E0B8602 /* ProductionCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B780758F4646207B1BB0F2 /* ProductionCompany.m */; };
-		62B7880ADF924C6AA84035E8 /* TVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78596AAC0E5C02AF38ED6 /* TVShow.m */; };
+		62B784B5BC2F2FD4510B842E /* DiscoverTVShowAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D3900F25E01FB64D472 /* DiscoverTVShowAssembly.m */; };
+		62B784DCF149BF754A588B25 /* DiscoverTVShowDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B784B3FEDC26B306DF58DF /* DiscoverTVShowDataDisplayManager.m */; };
+		62B784E162C292583DEEAD87 /* TVShowCastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B78222048828D7083C61B7 /* TVShowCastCell.xib */; };
+		62B784EF0D33EF72A0983FA1 /* FavoritesTVShowsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78523D9CCBFBE4811423C /* FavoritesTVShowsRouter.m */; };
+		62B7855F7A825C746F8A5A03 /* DiscoverTVShowViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78E4DFDB2D5F42A30CE8F /* DiscoverTVShowViewModel.m */; };
+		62B785A3A7CAF7BDB38A8972 /* DiscoverTVEpisodesRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78762D2667BA85398D69A /* DiscoverTVEpisodesRouter.m */; };
+		62B7861430595382FDF884C8 /* DiscoverTVEpisodesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78BE2DAC971632F55BBCD /* DiscoverTVEpisodesAssembly.m */; };
+		62B78632806E5FA022C1E4A9 /* TVShowCellSummaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78606081831C4B7C785E4 /* TVShowCellSummaryObject.m */; };
+		62B786698B412CA62677D843 /* TVShowSeasonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B7880826945B162ED05FAB /* TVShowSeasonCell.xib */; };
+		62B78826E5A94D3828B721D4 /* FavoritesTVShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B782436AEFBFD81B80BAB9 /* FavoritesTVShowsViewController.m */; };
+		62B7884A5EF8097EDBD5AEB6 /* TVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B788AE51799322B1D0A74E /* TVShow.m */; };
+		62B7884E569467EFCC6997AE /* TVShowEpisodeCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B2FD87F557D8E82D4E0 /* TVShowEpisodeCellObject.m */; };
 		62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */; };
 		62B7888B7E4B7765D4594E29 /* СoreLayerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78305738685B06AC86076 /* СoreLayerConstants.m */; };
+		62B788EB265F224A1C21C933 /* FavoritesTVShowsServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78F65F3B031953C8384F6 /* FavoritesTVShowsServiceImpl.m */; };
+		62B78903A54F4D2AF0704DAF /* Creator.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78392C60EAD5A5C10F536 /* Creator.m */; };
 		62B7890E7A5B05AF3197014D /* UserAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78DC9C6E5CD929B696EEE /* UserAuthenticationViewController.m */; };
+		62B7899FB185CE14C542A814 /* TVShowCellSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78C9C712DAC08A51875B4 /* TVShowCellSummary.m */; };
+		62B789A52CAD3C13FF51476B /* TVShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B78A2C41D5271693AAD7B2 /* TVShowCell.xib */; };
 		62B789AD61B760C8EDA075F2 /* UserAuthenticationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B784B024A6E7EF8FE88294 /* UserAuthenticationViewModel.m */; };
 		62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */; };
+		62B789FB323AB69A040BF3A5 /* TVEpisodeCellObjectsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78EE41C533B64C1199EA4 /* TVEpisodeCellObjectsBuilder.m */; };
+		62B78A1A564E735FBB911401 /* CellObjectsBuildersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B786A4B7CC706AA8332F7D /* CellObjectsBuildersAssembly.m */; };
 		62B78A217EC7801E85F16706 /* AuthenticationServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */; };
+		62B78A3697ABE5A8268A7CD0 /* TVSeason.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B784E8EDBBBA1C7E699C99 /* TVSeason.m */; };
+		62B78AC416147D53D68241D0 /* TVShowGenresCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78AA445A7F921E19305B6 /* TVShowGenresCell.m */; };
 		62B78AEC65209659C28B5B3C /* UserAuthenticationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78EC6BE0D557CE3396DE0 /* UserAuthenticationRouter.m */; };
-		62B78B88327519EE8D567819 /* Creator.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78752C3D1415AB851BA5A /* Creator.m */; };
-		62B78BF4B95887944CFE4E60 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */; };
+		62B78B15A84080C98DC83C7E /* Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78BFDA60B3DC32C116687 /* Cast.m */; };
+		62B78B47BEF616DC6633806B /* TokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B5EAC5181D2CD1DBCA2 /* TokenModel.m */; };
+		62B78B8C728644CC08642E47 /* DiscoverTVEpisodesDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78E1D91F85A24ED183AE6 /* DiscoverTVEpisodesDataDisplayManager.m */; };
 		62B78C53696B7DCFCDEEE5E9 /* PopularTVShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78963CF86DE713E22CE19 /* PopularTVShowsViewController.m */; };
-		62B78C68635D62BDF58BF0EB /* TVSeason.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78B6FF3EBD26243E755BB /* TVSeason.m */; };
-		62B78C78CAE36C113872F94B /* TVEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B783801491A388307B5A66 /* TVEpisode.m */; };
+		62B78C9BC47C6AEA98E82C4C /* TVShowCastCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7827AFF1780ACB79B39BB /* TVShowCastCellObject.m */; };
+		62B78CEB09CA7CCF877DC927 /* TVShowCellObjectsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B788AB4D5B55947C916773 /* TVShowCellObjectsBuilder.m */; };
 		62B78CF7FDDBDD6F46ED0D75 /* KeychainServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A2FC4E3959F6E42B1BE /* KeychainServiceImpl.m */; };
+		62B78D1834C37AA4F5761580 /* TVShowCastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78F393AA742C652E80D3C /* TVShowCastCell.m */; };
 		62B78D5663AEB6A505EB7889 /* PopularTVShowsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7807B2CD55EAD2EE168FC /* PopularTVShowsAssembly.m */; };
+		62B78D9371212B9E6654E3F6 /* TVShowCellSummary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B78029943DAF05B88D2C34 /* TVShowCellSummary.xib */; };
+		62B78DA4E901818CB0503591 /* TVShowCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B789C5980F6005B4962A61 /* TVShowCellObject.m */; };
 		62B78DA7A7B8E353341C13FD /* TVShowsDiscoverUserStoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B78AE4EFD378BC953F380B /* TVShowsDiscoverUserStoryStoryboard.storyboard */; };
+		62B78E13910ACBB4C4A52847 /* DiscoverTVShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B786C4E311957071A92790 /* DiscoverTVShowViewController.m */; };
+		62B78E39A9461C79F06D8E3F /* TVShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B785973D35574C4E78EB51 /* TVShowCell.m */; };
 		62B78E3DD03AD9E0046642C8 /* PopularTVShowsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A1ACD1E43E4E504B7C9 /* PopularTVShowsRouter.m */; };
+		62B78E5693903D2958D9E13E /* TVDB.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 62B78A66ADA860B10459003D /* TVDB.xcdatamodel */; };
+		62B78E6D650EB9D799A47FF2 /* TVShowEpisodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B7849CE8D211C1C544E741 /* TVShowEpisodeCell.xib */; };
+		62B78EE3F3D35A51BF03C35C /* FavoritesTVShowsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78782F4B437F6B82EAC15 /* FavoritesTVShowsViewModel.m */; };
+		62B78EF8305151937E62FEF5 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7809C36803E92F560E841 /* Account.m */; };
+		62B78F0A52CFB708EAF7B772 /* DiscoverTVEpisodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B786A5AB15E69CF1CCE003 /* DiscoverTVEpisodesViewController.m */; };
 		62B78F0EBFE2765487DAFC58 /* UserAuthenticationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7886391D9D0601859CD96 /* UserAuthenticationAssembly.m */; };
+		62B78F1AB0E69BDB6C1C56E8 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78AAD953DC10494298B23 /* Network.m */; };
+		62B78F1E12F8A4E4CDAE5D8A /* DiscoverTVShowCellObjectsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78005386668D833827156 /* DiscoverTVShowCellObjectsBuilder.m */; };
+		62B78F3C647D35A4818FAED8 /* TVEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7886D324E1E151F79C0B2 /* TVEpisode.m */; };
+		62B78FF818139270ECDC3AA6 /* TVShowsDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78E23AC913C60F8E75095 /* TVShowsDataDisplayManager.m */; };
 		62B78FF89404422F56FF7070 /* SegueIdentifiersConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B78694DA7D2C99F1043DBB /* SegueIdentifiersConstants.m */; };
 		74AD33EA5708F194101E6CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389C497C9C32E509D13B /* AppDelegate.m */; };
 		74AD366EB96040FFC655746E /* NetworkClientResponseSerializerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD35EC7F1FA31EFE480321 /* NetworkClientResponseSerializerImpl.m */; };
@@ -62,77 +103,163 @@
 /* Begin PBXFileReference section */
 		0375AF4AFEC73F1342472498 /* libPods-TVDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABBC0EB1F89DEF3F3D1F22C /* libPods-TVDBTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVDBTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B78001ABF3BC690A0EC6BC /* FavoritesTVShowsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTVShowsAssembly.m; sourceTree = "<group>"; };
 		62B78001EC199DB14C325ACB /* TVShowsServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowsServiceImpl.m; sourceTree = "<group>"; };
+		62B78005386668D833827156 /* DiscoverTVShowCellObjectsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVShowCellObjectsBuilder.m; sourceTree = "<group>"; };
 		62B780103E319EB17673F5CC /* KeychainServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainServiceImpl.h; sourceTree = "<group>"; };
+		62B78022D2160C0F0ABB7A1C /* TVShowGenresCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowGenresCellObject.m; sourceTree = "<group>"; };
+		62B78029943DAF05B88D2C34 /* TVShowCellSummary.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowCellSummary.xib; sourceTree = "<group>"; };
 		62B7804FBEC4FF8C7D3DD371 /* PopularTVShowsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTVShowsViewModel.h; sourceTree = "<group>"; };
 		62B780507BE6F4C55E4C3765 /* CoreComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreComponentsAssembly.m; sourceTree = "<group>"; };
-		62B780758F4646207B1BB0F2 /* ProductionCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductionCompany.m; sourceTree = "<group>"; };
+		62B780692DAFC577BFFBA19C /* TVShowSeasonCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowSeasonCellObject.h; sourceTree = "<group>"; };
 		62B7807B2CD55EAD2EE168FC /* PopularTVShowsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularTVShowsAssembly.m; sourceTree = "<group>"; };
-		62B780C6EC081B00A58462A9 /* Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cast.h; sourceTree = "<group>"; };
-		62B780DD05A7B5316B5F8F89 /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		62B7807D6CCE44A7B96F5F2E /* TVShowAccountStates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowAccountStates.m; sourceTree = "<group>"; };
+		62B7809C36803E92F560E841 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		62B780E5425923B2C12CF1A3 /* CoreDataStackImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStackImpl.h; sourceTree = "<group>"; };
 		62B7814594B047926FE69FEB /* StoryboardAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardAssembly.h; sourceTree = "<group>"; };
+		62B7817521A0059515605392 /* TVShowCredits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowCredits.h; sourceTree = "<group>"; };
+		62B781ADAE449D654FA2744C /* FavoritesTVShowsServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVShowsServiceImpl.h; sourceTree = "<group>"; };
 		62B782070CB2A42B5F5DDB1A /* PopularTVShowsViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTVShowsViewModelInput.h; sourceTree = "<group>"; };
+		62B78222048828D7083C61B7 /* TVShowCastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowCastCell.xib; sourceTree = "<group>"; };
+		62B7822B99B4FE7B5DDAF996 /* TVShowAccountStates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowAccountStates.h; sourceTree = "<group>"; };
+		62B782436AEFBFD81B80BAB9 /* FavoritesTVShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTVShowsViewController.m; sourceTree = "<group>"; };
 		62B7826D286009D734087449 /* PopularTVShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTVShowsViewController.h; sourceTree = "<group>"; };
+		62B78273DA2A2620488D6404 /* TVShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShow.h; sourceTree = "<group>"; };
+		62B78276A5EF97199D7C3321 /* TVEpisodeCellObjectsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVEpisodeCellObjectsBuilder.h; sourceTree = "<group>"; };
+		62B7827AFF1780ACB79B39BB /* TVShowCastCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowCastCellObject.m; sourceTree = "<group>"; };
+		62B7828051517F9C81CA7785 /* DiscoverTVShowRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowRouterInput.h; sourceTree = "<group>"; };
 		62B7828E4A484077A91947B3 /* ServiceComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = ServiceComponentsResource.plist; sourceTree = "<group>"; };
+		62B782FD58F8EDA43E56C08B /* DataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataDisplayManager.h; sourceTree = "<group>"; };
 		62B78305738685B06AC86076 /* СoreLayerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "СoreLayerConstants.m"; sourceTree = "<group>"; };
 		62B78321C0936258E24C3BDB /* UserAuthenticationRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouter.h; sourceTree = "<group>"; };
-		62B783801491A388307B5A66 /* TVEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVEpisode.m; sourceTree = "<group>"; };
+		62B7832476584FD8FA42742E /* TVShowSeasonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowSeasonCell.h; sourceTree = "<group>"; };
+		62B783310FB8DE04B0E546C5 /* TokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenModel.h; sourceTree = "<group>"; };
+		62B7837B7407E7327FD96036 /* TVDiscoverResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVDiscoverResult.h; sourceTree = "<group>"; };
+		62B783806825AADC9108DB74 /* DiscoverTVShowModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowModuleInput.h; sourceTree = "<group>"; };
 		62B7838ADC0EE64EB74BA48D /* CoreDataStackImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStackImpl.m; sourceTree = "<group>"; };
+		62B78392C60EAD5A5C10F536 /* Creator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creator.m; sourceTree = "<group>"; };
+		62B783A130F42148C7AE09AB /* TVShowCastCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowCastCellObject.h; sourceTree = "<group>"; };
+		62B783C9CE859893CF656E7E /* DiscoverTVShowViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowViewModel.h; sourceTree = "<group>"; };
 		62B78402A0DB4478D01566FA /* PopularTVShowsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTVShowsAssembly.h; sourceTree = "<group>"; };
+		62B7840BC09A368BAD2CF679 /* DiscoverTVEpisodesModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVEpisodesModuleInput.h; sourceTree = "<group>"; };
 		62B78449FAB2C6AA9CF3436F /* CoreComponentsResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = CoreComponentsResource.plist; sourceTree = "<group>"; };
 		62B784534D141EF1C6FB6133 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		62B784630BB0A164850522CA /* DiscoverTVEpisodesRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVEpisodesRouterInput.h; sourceTree = "<group>"; };
+		62B7846879B863BAD500929C /* DiscoverTVEpisodesAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVEpisodesAssembly.h; sourceTree = "<group>"; };
+		62B7847FAC0B469010A46C02 /* TVShowCredits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowCredits.m; sourceTree = "<group>"; };
+		62B7849CE8D211C1C544E741 /* TVShowEpisodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowEpisodeCell.xib; sourceTree = "<group>"; };
 		62B784B024A6E7EF8FE88294 /* UserAuthenticationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewModel.m; sourceTree = "<group>"; };
-		62B784B24075EB50121D6E40 /* Creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creator.h; sourceTree = "<group>"; };
+		62B784B3FEDC26B306DF58DF /* DiscoverTVShowDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVShowDataDisplayManager.m; sourceTree = "<group>"; };
+		62B784E8EDBBBA1C7E699C99 /* TVSeason.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSeason.m; sourceTree = "<group>"; };
+		62B7850824D9F1FEAE23E1B5 /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
+		62B7851E5926B9014DEA81FE /* DiscoverTVEpisodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVEpisodesViewController.h; sourceTree = "<group>"; };
+		62B78523D9CCBFBE4811423C /* FavoritesTVShowsRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTVShowsRouter.m; sourceTree = "<group>"; };
 		62B785240689C18E82C523F0 /* ModuleAssemblyBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleAssemblyBase.h; sourceTree = "<group>"; };
 		62B7854BA5823126DFF05D31 /* UserAuthenticationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationAssembly.h; sourceTree = "<group>"; };
-		62B78596AAC0E5C02AF38ED6 /* TVShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShow.m; sourceTree = "<group>"; };
+		62B785973D35574C4E78EB51 /* TVShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowCell.m; sourceTree = "<group>"; };
+		62B785AA1AD857CEBD1E32CA /* TVShowCellSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowCellSummary.h; sourceTree = "<group>"; };
 		62B785AF5EFA7BA5F8D0C908 /* PopularTVShowsRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTVShowsRouter.h; sourceTree = "<group>"; };
+		62B785B8575D973E31CFCF41 /* DiscoverTVShowRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowRouter.h; sourceTree = "<group>"; };
+		62B785D21E761ED9FDA40389 /* DiscoverTVShowDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowDataDisplayManager.h; sourceTree = "<group>"; };
+		62B785E053168EF8EAD46F35 /* DiscoverTVEpisodesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVEpisodesViewModel.h; sourceTree = "<group>"; };
 		62B78603A4406E90F47066F9 /* UserAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewController.h; sourceTree = "<group>"; };
+		62B78606081831C4B7C785E4 /* TVShowCellSummaryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowCellSummaryObject.m; sourceTree = "<group>"; };
+		62B78613596A0E48E8874973 /* FavoritesTVShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVShowsViewController.h; sourceTree = "<group>"; };
+		62B78619E1E1CF6C4DCACC30 /* TVShowGenresCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowGenresCell.h; sourceTree = "<group>"; };
+		62B78655D0159FBC85103F15 /* TVShowCastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowCastCell.h; sourceTree = "<group>"; };
+		62B7867576D7691B414EF17E /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		62B78677097A7364AA75C36C /* DiscoverTVShowAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowAssembly.h; sourceTree = "<group>"; };
 		62B78694DA7D2C99F1043DBB /* SegueIdentifiersConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueIdentifiersConstants.m; sourceTree = "<group>"; };
 		62B786A3A74A3403B3E74194 /* TVShowsServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowsServiceImpl.h; sourceTree = "<group>"; };
-		62B786B8437DE9BC829CC8B7 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		62B786A4B7CC706AA8332F7D /* CellObjectsBuildersAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellObjectsBuildersAssembly.m; sourceTree = "<group>"; };
+		62B786A5AB15E69CF1CCE003 /* DiscoverTVEpisodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVEpisodesViewController.m; sourceTree = "<group>"; };
+		62B786B62D687A101EAFC5D6 /* DiscoverTVEpisodesViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVEpisodesViewModelInput.h; sourceTree = "<group>"; };
 		62B786C0B1186D15221FC7D6 /* СoreLayerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "СoreLayerConstants.h"; sourceTree = "<group>"; };
+		62B786C4E311957071A92790 /* DiscoverTVShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVShowViewController.m; sourceTree = "<group>"; };
 		62B786D4799C75A2F6C44A30 /* KeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainService.h; sourceTree = "<group>"; };
-		62B78752C3D1415AB851BA5A /* Creator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creator.m; sourceTree = "<group>"; };
+		62B786FDFD17F5E638D3DDCC /* ProductionCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductionCompany.h; sourceTree = "<group>"; };
+		62B787472FF729D8B32F4C73 /* FavoritesTVShowsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVShowsService.h; sourceTree = "<group>"; };
+		62B78762D2667BA85398D69A /* DiscoverTVEpisodesRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVEpisodesRouter.m; sourceTree = "<group>"; };
+		62B78782F4B437F6B82EAC15 /* FavoritesTVShowsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTVShowsViewModel.m; sourceTree = "<group>"; };
+		62B787F47BAD34BD0121D3CE /* DiscoverTVShowCellObjectsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowCellObjectsBuilder.h; sourceTree = "<group>"; };
 		62B78803986AF287B567EF50 /* CoreComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsFactory.h; sourceTree = "<group>"; };
-		62B7883072D674B59DA6549F /* TVSeason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSeason.h; sourceTree = "<group>"; };
+		62B7880826945B162ED05FAB /* TVShowSeasonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowSeasonCell.xib; sourceTree = "<group>"; };
 		62B7886391D9D0601859CD96 /* UserAuthenticationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationAssembly.m; sourceTree = "<group>"; };
-		62B788CCBFD6EF65058B5BA0 /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
-		62B788DA430EC69E41449443 /* ProductionCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductionCompany.h; sourceTree = "<group>"; };
-		62B788F1E60E30117465EC4C /* TokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenModel.h; sourceTree = "<group>"; };
+		62B7886D324E1E151F79C0B2 /* TVEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVEpisode.m; sourceTree = "<group>"; };
+		62B788AB4D5B55947C916773 /* TVShowCellObjectsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowCellObjectsBuilder.m; sourceTree = "<group>"; };
+		62B788AE51799322B1D0A74E /* TVShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShow.m; sourceTree = "<group>"; };
+		62B788BA4D3FE5C7B9194DD9 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		62B788C1DB9655B7FF45DA95 /* TVShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowCell.h; sourceTree = "<group>"; };
+		62B788D02EF0370955A25A0D /* Creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creator.h; sourceTree = "<group>"; };
+		62B788DA63E3FF0C2317BFFE /* CellObjectsBuildersAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellObjectsBuildersAssembly.h; sourceTree = "<group>"; };
+		62B788E5ECBEF9BC6CB3D32A /* DiscoverTVEpisodesRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVEpisodesRouter.h; sourceTree = "<group>"; };
+		62B789146D0D0AA82C5811DA /* FavoritesTVShowsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVShowsViewModel.h; sourceTree = "<group>"; };
+		62B7892B191AA7B890E26AA7 /* TVEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVEpisode.h; sourceTree = "<group>"; };
 		62B78963CF86DE713E22CE19 /* PopularTVShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularTVShowsViewController.m; sourceTree = "<group>"; };
+		62B78974CBDF44218DDA2303 /* TVShowEpisodeCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowEpisodeCellObject.h; sourceTree = "<group>"; };
 		62B789C1E51A3D82EAA94E42 /* ModuleAssemblyBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleAssemblyBase.m; sourceTree = "<group>"; };
-		62B789CAEB7AB2420AC00A9E /* TVShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShow.h; sourceTree = "<group>"; };
+		62B789C5980F6005B4962A61 /* TVShowCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowCellObject.m; sourceTree = "<group>"; };
+		62B78A14AC78251D64809319 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		62B78A14E5EB18E57F8E033E /* FavoritesTVShowsViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVShowsViewModelInput.h; sourceTree = "<group>"; };
 		62B78A1ACD1E43E4E504B7C9 /* PopularTVShowsRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularTVShowsRouter.m; sourceTree = "<group>"; };
+		62B78A2C41D5271693AAD7B2 /* TVShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowCell.xib; sourceTree = "<group>"; };
 		62B78A2FC4E3959F6E42B1BE /* KeychainServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainServiceImpl.m; sourceTree = "<group>"; };
 		62B78A3554D06A9ACA39B70B /* ServiceComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceComponentsAssembly.m; sourceTree = "<group>"; };
+		62B78A66ADA860B10459003D /* TVDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TVDB.xcdatamodel; sourceTree = "<group>"; };
+		62B78A768855FA50F0187F85 /* DiscoverTVShowViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowViewModelInput.h; sourceTree = "<group>"; };
+		62B78AA445A7F921E19305B6 /* TVShowGenresCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowGenresCell.m; sourceTree = "<group>"; };
+		62B78AAD953DC10494298B23 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		62B78AE105F0F09307FFD9BB /* UserAuthenticationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModel.h; sourceTree = "<group>"; };
 		62B78AE4EFD378BC953F380B /* TVShowsDiscoverUserStoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVShowsDiscoverUserStoryStoryboard.storyboard; sourceTree = "<group>"; };
+		62B78B150F188245E760EA46 /* TVShowEpisodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowEpisodeCell.h; sourceTree = "<group>"; };
+		62B78B1805AB8F7B2FEACAAF /* DiscoverTVShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVShowViewController.h; sourceTree = "<group>"; };
+		62B78B1B8811EEAB47B0179D /* TVShowsDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowsDataDisplayManager.h; sourceTree = "<group>"; };
+		62B78B2FD87F557D8E82D4E0 /* TVShowEpisodeCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowEpisodeCellObject.m; sourceTree = "<group>"; };
+		62B78B4C8A093E79BC722A4B /* ProductionCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductionCompany.m; sourceTree = "<group>"; };
+		62B78B530464BCC3D44DC7F4 /* TVShowCellObjectsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowCellObjectsBuilder.h; sourceTree = "<group>"; };
+		62B78B5EAC5181D2CD1DBCA2 /* TokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenModel.m; sourceTree = "<group>"; };
+		62B78B64977D71B432D01400 /* DiscoverTVEpisodesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVEpisodesViewModel.m; sourceTree = "<group>"; };
 		62B78B65F03966A8375AA2B0 /* StoryboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardAssembly.m; sourceTree = "<group>"; };
-		62B78B6FF3EBD26243E755BB /* TVSeason.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSeason.m; sourceTree = "<group>"; };
 		62B78B85C46F40D12642F903 /* TVShowsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowsService.h; sourceTree = "<group>"; };
-		62B78C19DB8B459B030C25FE /* TokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenModel.m; sourceTree = "<group>"; };
+		62B78B98433AD524B31C6A08 /* TVShowCellSummaryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowCellSummaryObject.h; sourceTree = "<group>"; };
+		62B78BB95498344C87A5E7BA /* FavoritesTVShowsRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVShowsRouter.h; sourceTree = "<group>"; };
+		62B78BE2DAC971632F55BBCD /* DiscoverTVEpisodesAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVEpisodesAssembly.m; sourceTree = "<group>"; };
+		62B78BF0E552FE032BBC94F3 /* TVShowCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowCellObject.h; sourceTree = "<group>"; };
+		62B78BFDA60B3DC32C116687 /* Cast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cast.m; sourceTree = "<group>"; };
 		62B78C8D58A95900CE0E0E90 /* PopularTVShowsRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularTVShowsRouterInput.h; sourceTree = "<group>"; };
 		62B78C9254153E87FEDA544A /* ServiceComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsFactory.h; sourceTree = "<group>"; };
 		62B78C98AD4E5494CD9C18CB /* CoreComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssembly.h; sourceTree = "<group>"; };
+		62B78C9C712DAC08A51875B4 /* TVShowCellSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowCellSummary.m; sourceTree = "<group>"; };
 		62B78CA4EF5126F3A7233C23 /* AuthenticationServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationServiceImpl.h; sourceTree = "<group>"; };
-		62B78CD6E9A7631E451CFEE6 /* TVDiscoverResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVDiscoverResult.m; sourceTree = "<group>"; };
+		62B78CABCF4C404EEAFACDEF /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
+		62B78CCDA434D137FF5383F0 /* Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cast.h; sourceTree = "<group>"; };
+		62B78CFFE3DC43E0895340AD /* TVShowSeasonCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowSeasonCellObject.m; sourceTree = "<group>"; };
 		62B78D1EB1EAD0DB523D0233 /* AuthenticationServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationServiceImpl.m; sourceTree = "<group>"; };
-		62B78D7413C22BD68E3BAC90 /* TVEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVEpisode.h; sourceTree = "<group>"; };
-		62B78D7B8CDDA4B8EADECC7A /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
-		62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
+		62B78D3900F25E01FB64D472 /* DiscoverTVShowAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVShowAssembly.m; sourceTree = "<group>"; };
+		62B78D3FA22411BD6713F94B /* TVDiscoverResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVDiscoverResult.m; sourceTree = "<group>"; };
+		62B78D56B5A709A93E570DCF /* DiscoverTVShowRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVShowRouter.m; sourceTree = "<group>"; };
+		62B78D6287C90ADF09D60E45 /* FavoritesTVShowsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVShowsAssembly.h; sourceTree = "<group>"; };
 		62B78DC9C6E5CD929B696EEE /* UserAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationViewController.m; sourceTree = "<group>"; };
+		62B78DF9B5345EC855B47055 /* TVShowGenresCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowGenresCellObject.h; sourceTree = "<group>"; };
 		62B78E14E717EC969B12A153 /* PopularTVShowsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularTVShowsViewModel.m; sourceTree = "<group>"; };
+		62B78E1D91F85A24ED183AE6 /* DiscoverTVEpisodesDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVEpisodesDataDisplayManager.m; sourceTree = "<group>"; };
+		62B78E1F5AD4B2A286D0ACB3 /* TVShowEpisodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowEpisodeCell.m; sourceTree = "<group>"; };
+		62B78E23AC913C60F8E75095 /* TVShowsDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowsDataDisplayManager.m; sourceTree = "<group>"; };
+		62B78E4DFDB2D5F42A30CE8F /* DiscoverTVShowViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVShowViewModel.m; sourceTree = "<group>"; };
 		62B78E53DD2347C94B8C748B /* AuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationService.h; sourceTree = "<group>"; };
+		62B78EB3C2B419E3C1DA6F00 /* DiscoverTVEpisodesDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVEpisodesDataDisplayManager.h; sourceTree = "<group>"; };
+		62B78EC009C805B4794122E3 /* FavoritesTVShowsRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVShowsRouterInput.h; sourceTree = "<group>"; };
 		62B78EC6BE0D557CE3396DE0 /* UserAuthenticationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthenticationRouter.m; sourceTree = "<group>"; };
+		62B78EE41C533B64C1199EA4 /* TVEpisodeCellObjectsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVEpisodeCellObjectsBuilder.m; sourceTree = "<group>"; };
 		62B78EE48986A36F2D84459C /* SegueIdentifiersConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueIdentifiersConstants.h; sourceTree = "<group>"; };
+		62B78F216F0F5D7765EE6103 /* TVShowSeasonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowSeasonCell.m; sourceTree = "<group>"; };
 		62B78F269A81D139555CA644 /* UserAuthenticationViewModelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationViewModelInput.h; sourceTree = "<group>"; };
-		62B78F5443D767C42266D422 /* TVDiscoverResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVDiscoverResult.h; sourceTree = "<group>"; };
-		62B78F726F41AE386615A3BA /* Cast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cast.m; sourceTree = "<group>"; };
+		62B78F393AA742C652E80D3C /* TVShowCastCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowCastCell.m; sourceTree = "<group>"; };
+		62B78F4D5D123E21911A1D00 /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		62B78F65F3B031953C8384F6 /* FavoritesTVShowsServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTVShowsServiceImpl.m; sourceTree = "<group>"; };
+		62B78F6696E7E0291AED61D9 /* TVSeason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSeason.h; sourceTree = "<group>"; };
 		62B78F9F87F4BE56E1458FFD /* UserAuthenticationRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthenticationRouterInput.h; sourceTree = "<group>"; };
 		62B78FA9FC2E704587231E1B /* ServiceComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsAssembly.h; sourceTree = "<group>"; };
-		62B78FBA925C019E15B79146 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		74AD312AFC195273E65DC6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		74AD3235268D60C8EE3A99DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74AD33E634506C3C1611C714 /* NetworkClientImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClientImpl.m; sourceTree = "<group>"; };
@@ -193,34 +320,81 @@
 			path = PopularTVShowsModule;
 			sourceTree = "<group>";
 		};
-		62B78111E6CF0C35E5D6632C /* SessionModel */ = {
+		62B781146C079C820CF06FDF /* TVShowAccountStates */ = {
 			isa = PBXGroup;
 			children = (
-				62B78D7DBE6ED08527FF0FE6 /* SessionModel.m */,
-				62B78D7B8CDDA4B8EADECC7A /* SessionModel.h */,
+				62B7807D6CCE44A7B96F5F2E /* TVShowAccountStates.m */,
+				62B7822B99B4FE7B5DDAF996 /* TVShowAccountStates.h */,
 			);
-			path = SessionModel;
+			path = TVShowAccountStates;
+			sourceTree = "<group>";
+		};
+		62B781234EF608B23884C7F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62B786A5AB15E69CF1CCE003 /* DiscoverTVEpisodesViewController.m */,
+				62B7851E5926B9014DEA81FE /* DiscoverTVEpisodesViewController.h */,
+				62B7839AC01D331E966CD625 /* DataDisplayManager */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		62B78147935A14D70B8549BF /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				62B78001ABF3BC690A0EC6BC /* FavoritesTVShowsAssembly.m */,
+				62B78D6287C90ADF09D60E45 /* FavoritesTVShowsAssembly.h */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
 		};
-		62B78160C010104C4C9D2C79 /* TVSeason */ = {
+		62B7816620B24CAE63FC4AA7 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				62B78B6FF3EBD26243E755BB /* TVSeason.m */,
-				62B7883072D674B59DA6549F /* TVSeason.h */,
+				62B78B56EB44DE9230821FDD /* TokenModel */,
+				62B78EC06B0672589382562F /* SessionModel */,
+				62B78B8A558F6F2F122CF02C /* TVShow */,
+				62B78BC59FB4B9C0A2BD8583 /* TVSeason */,
+				62B78FBF2AFCB32854CFBA6F /* Genre */,
+				62B78EB42DE52ED4C26E4867 /* ProductionCompany */,
+				62B785274D09BEBB16A6164D /* Creator */,
+				62B788AA955A137DCCA96ADD /* Cast */,
+				62B783D5CF646698CCA510AC /* TVDiscoverResult */,
+				62B78E29AC371C159BA42E56 /* TVEpisode */,
+				62B78F2EEABF8CF9C5DB9AB7 /* TVShowCredits */,
+				62B781146C079C820CF06FDF /* TVShowAccountStates */,
+				62B783FE016FC53474D3A192 /* Network */,
+				62B78D317BEAC440568890A4 /* Account */,
 			);
-			path = TVSeason;
+			path = API;
+			sourceTree = "<group>";
+		};
+		62B781887A0E94C94F233157 /* TVShowCellSummary */ = {
+			isa = PBXGroup;
+			children = (
+				62B785AA1AD857CEBD1E32CA /* TVShowCellSummary.h */,
+				62B78C9C712DAC08A51875B4 /* TVShowCellSummary.m */,
+				62B78029943DAF05B88D2C34 /* TVShowCellSummary.xib */,
+			);
+			path = TVShowCellSummary;
+			sourceTree = "<group>";
+		};
+		62B78199627A1A32CA42A22B /* TVShowEpisodeCell */ = {
+			isa = PBXGroup;
+			children = (
+				62B78E1F5AD4B2A286D0ACB3 /* TVShowEpisodeCell.m */,
+				62B78B150F188245E760EA46 /* TVShowEpisodeCell.h */,
+				62B7849CE8D211C1C544E741 /* TVShowEpisodeCell.xib */,
+			);
+			path = TVShowEpisodeCell;
 			sourceTree = "<group>";
 		};
 		62B781DF73D6CDBC4A0455C2 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				62B7828051517F9C81CA7785 /* DiscoverTVShowRouterInput.h */,
+				62B78D56B5A709A93E570DCF /* DiscoverTVShowRouter.m */,
+				62B785B8575D973E31CFCF41 /* DiscoverTVShowRouter.h */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -233,10 +407,42 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		62B7825042EAF2ACC3DEBBD9 /* TVShowCellSummaryObject */ = {
+			isa = PBXGroup;
+			children = (
+				62B78606081831C4B7C785E4 /* TVShowCellSummaryObject.m */,
+				62B78B98433AD524B31C6A08 /* TVShowCellSummaryObject.h */,
+			);
+			path = TVShowCellSummaryObject;
+			sourceTree = "<group>";
+		};
+		62B7828080B6485A9C112BB6 /* TVShowGenresCellObject */ = {
+			isa = PBXGroup;
+			children = (
+				62B78022D2160C0F0ABB7A1C /* TVShowGenresCellObject.m */,
+				62B78DF9B5345EC855B47055 /* TVShowGenresCellObject.h */,
+			);
+			path = TVShowGenresCellObject;
+			sourceTree = "<group>";
+		};
+		62B782AF15023BA8D248A8ED /* CellObjectsBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				62B789D6BAB5F9670E394C31 /* CellObjectsBuildersFactory */,
+				62B787C5301FF1C1CCE5D8A5 /* ConcreteClasses */,
+			);
+			path = CellObjectsBuilders;
+			sourceTree = "<group>";
+		};
 		62B782D8A9035980705752DB /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				62B786521F2E69B50BC2F94C /* Constants */,
+				62B78D7A28667C35EBEA3C56 /* Cells */,
+				62B783D557627D8B5D99B176 /* Protocols */,
+				62B782AF15023BA8D248A8ED /* CellObjectsBuilders */,
+				62B786021FCF6E483CC8832E /* DataDisplayManagers */,
+				62B78FCE819E8B553A166197 /* CellObjects */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -260,6 +466,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		62B7839AC01D331E966CD625 /* DataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				62B78E1D91F85A24ED183AE6 /* DiscoverTVEpisodesDataDisplayManager.m */,
+				62B78EB3C2B419E3C1DA6F00 /* DiscoverTVEpisodesDataDisplayManager.h */,
+			);
+			path = DataDisplayManager;
+			sourceTree = "<group>";
+		};
 		62B783A3B9DC6DB33E74DBC8 /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +496,28 @@
 		62B783D407445102F4CC782A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				62B78EC009C805B4794122E3 /* FavoritesTVShowsRouterInput.h */,
+				62B78523D9CCBFBE4811423C /* FavoritesTVShowsRouter.m */,
+				62B78BB95498344C87A5E7BA /* FavoritesTVShowsRouter.h */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		62B783D557627D8B5D99B176 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				62B78E36BA8E12FDD153E80A /* DataDisplayManager */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		62B783D5CF646698CCA510AC /* TVDiscoverResult */ = {
+			isa = PBXGroup;
+			children = (
+				62B78D3FA22411BD6713F94B /* TVDiscoverResult.m */,
+				62B7837B7407E7327FD96036 /* TVDiscoverResult.h */,
+			);
+			path = TVDiscoverResult;
 			sourceTree = "<group>";
 		};
 		62B783EA1C0CF759171482C1 /* UserAuthenticationModule */ = {
@@ -304,13 +539,57 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		62B784FEF140D25E34E51140 /* Network */ = {
+		62B783FE016FC53474D3A192 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				62B78FBA925C019E15B79146 /* Network.m */,
-				62B786B8437DE9BC829CC8B7 /* Network.h */,
+				62B78AAD953DC10494298B23 /* Network.m */,
+				62B78A14AC78251D64809319 /* Network.h */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		62B78410D8D74D3F62CA1D88 /* ConcreteClasses */ = {
+			isa = PBXGroup;
+			children = (
+				62B789F1801A44F4F38A81BF /* TVShowsDataDisplayManager */,
+			);
+			path = ConcreteClasses;
+			sourceTree = "<group>";
+		};
+		62B78445EE51E91C6C961978 /* DiscoverTVShowCellObjectsBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				62B78005386668D833827156 /* DiscoverTVShowCellObjectsBuilder.m */,
+				62B787F47BAD34BD0121D3CE /* DiscoverTVShowCellObjectsBuilder.h */,
+			);
+			path = DiscoverTVShowCellObjectsBuilder;
+			sourceTree = "<group>";
+		};
+		62B7844FF2328A0E04B18247 /* TVShowGenresCell */ = {
+			isa = PBXGroup;
+			children = (
+				62B78AA445A7F921E19305B6 /* TVShowGenresCell.m */,
+				62B78619E1E1CF6C4DCACC30 /* TVShowGenresCell.h */,
+			);
+			path = TVShowGenresCell;
+			sourceTree = "<group>";
+		};
+		62B785274D09BEBB16A6164D /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				62B78392C60EAD5A5C10F536 /* Creator.m */,
+				62B788D02EF0370955A25A0D /* Creator.h */,
+			);
+			path = Creator;
+			sourceTree = "<group>";
+		};
+		62B78585CE57F628C3379F3A /* TVShowCellObject */ = {
+			isa = PBXGroup;
+			children = (
+				62B789C5980F6005B4962A61 /* TVShowCellObject.m */,
+				62B78BF0E552FE032BBC94F3 /* TVShowCellObject.h */,
+			);
+			path = TVShowCellObject;
 			sourceTree = "<group>";
 		};
 		62B78591E9372B6DA3ED68C1 /* Router */ = {
@@ -326,17 +605,29 @@
 		62B785CB2A665BD761C8D194 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				62B789146D0D0AA82C5811DA /* FavoritesTVShowsViewModel.h */,
+				62B78A14E5EB18E57F8E033E /* FavoritesTVShowsViewModelInput.h */,
+				62B78782F4B437F6B82EAC15 /* FavoritesTVShowsViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		62B7860F283AA79BE687D119 /* Creator */ = {
+		62B785DAB6F498BAE379A02E /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				62B78752C3D1415AB851BA5A /* Creator.m */,
-				62B784B24075EB50121D6E40 /* Creator.h */,
+				62B78762D2667BA85398D69A /* DiscoverTVEpisodesRouter.m */,
+				62B788E5ECBEF9BC6CB3D32A /* DiscoverTVEpisodesRouter.h */,
+				62B784630BB0A164850522CA /* DiscoverTVEpisodesRouterInput.h */,
 			);
-			path = Creator;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		62B786021FCF6E483CC8832E /* DataDisplayManagers */ = {
+			isa = PBXGroup;
+			children = (
+				62B78410D8D74D3F62CA1D88 /* ConcreteClasses */,
+			);
+			path = DataDisplayManagers;
 			sourceTree = "<group>";
 		};
 		62B786205A7CA630391FA55E /* CoreDataStack */ = {
@@ -345,6 +636,7 @@
 				62B784534D141EF1C6FB6133 /* CoreDataStack.h */,
 				62B7838ADC0EE64EB74BA48D /* CoreDataStackImpl.m */,
 				62B780E5425923B2C12CF1A3 /* CoreDataStackImpl.h */,
+				62B78C140D936856515414FA /* CoreDataModel */,
 			);
 			path = CoreDataStack;
 			sourceTree = "<group>";
@@ -360,14 +652,6 @@
 			path = FavoritesTVShowsModule;
 			sourceTree = "<group>";
 		};
-		62B786402BD9F6522DA866D3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				62B78E3596AD15AAFBA179CB /* API */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		62B786521F2E69B50BC2F94C /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,15 +659,6 @@
 				62B78EE48986A36F2D84459C /* SegueIdentifiersConstants.h */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		62B7865418BBDC5730048233 /* Genre */ = {
-			isa = PBXGroup;
-			children = (
-				62B780DD05A7B5316B5F8F89 /* Genre.m */,
-				62B788CCBFD6EF65058B5BA0 /* Genre.h */,
-			);
-			path = Genre;
 			sourceTree = "<group>";
 		};
 		62B7865E79084B350E83539D /* BusinessLogicLayer */ = {
@@ -410,17 +685,9 @@
 				62B78B4593877D415074C02D /* AuthenticationService */,
 				62B783A6D4998347E968A888 /* KeychainService */,
 				62B787670D5B0B29F18D14FF /* TVShowsService */,
+				62B788A00D1FBAB9C621AB26 /* FavoritesTVShowsService */,
 			);
 			path = ConcreteClasses;
-			sourceTree = "<group>";
-		};
-		62B787254BC630964F3A7898 /* TVDiscoverResult */ = {
-			isa = PBXGroup;
-			children = (
-				62B78CD6E9A7631E451CFEE6 /* TVDiscoverResult.m */,
-				62B78F5443D767C42266D422 /* TVDiscoverResult.h */,
-			);
-			path = TVDiscoverResult;
 			sourceTree = "<group>";
 		};
 		62B787670D5B0B29F18D14FF /* TVShowsService */ = {
@@ -433,6 +700,16 @@
 			path = TVShowsService;
 			sourceTree = "<group>";
 		};
+		62B787C5301FF1C1CCE5D8A5 /* ConcreteClasses */ = {
+			isa = PBXGroup;
+			children = (
+				62B78AC6B29287100636C7F1 /* TVShowCellObjectsBuilder */,
+				62B78445EE51E91C6C961978 /* DiscoverTVShowCellObjectsBuilder */,
+				62B78ADCAF30CD45E286CF8E /* TVEpisodeCellObjectsBuilder */,
+			);
+			path = ConcreteClasses;
+			sourceTree = "<group>";
+		};
 		62B787F9ACE5D7AEDD5182C6 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,15 +719,6 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
-		62B78833F688593C572DF200 /* Cast */ = {
-			isa = PBXGroup;
-			children = (
-				62B78F726F41AE386615A3BA /* Cast.m */,
-				62B780C6EC081B00A58462A9 /* Cast.h */,
-			);
-			path = Cast;
-			sourceTree = "<group>";
-		};
 		62B7883CCFADF56AAE969458 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +726,44 @@
 				62B7826D286009D734087449 /* PopularTVShowsViewController.h */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		62B788A00D1FBAB9C621AB26 /* FavoritesTVShowsService */ = {
+			isa = PBXGroup;
+			children = (
+				62B787472FF729D8B32F4C73 /* FavoritesTVShowsService.h */,
+				62B78F65F3B031953C8384F6 /* FavoritesTVShowsServiceImpl.m */,
+				62B781ADAE449D654FA2744C /* FavoritesTVShowsServiceImpl.h */,
+			);
+			path = FavoritesTVShowsService;
+			sourceTree = "<group>";
+		};
+		62B788AA955A137DCCA96ADD /* Cast */ = {
+			isa = PBXGroup;
+			children = (
+				62B78BFDA60B3DC32C116687 /* Cast.m */,
+				62B78CCDA434D137FF5383F0 /* Cast.h */,
+			);
+			path = Cast;
+			sourceTree = "<group>";
+		};
+		62B788B1947FA6BE94EAB999 /* TVShowEpisodeCellObject */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B2FD87F557D8E82D4E0 /* TVShowEpisodeCellObject.m */,
+				62B78974CBDF44218DDA2303 /* TVShowEpisodeCellObject.h */,
+			);
+			path = TVShowEpisodeCellObject;
+			sourceTree = "<group>";
+		};
+		62B788CD3E8FDC3D1C2F05C8 /* TVShowSeasonCell */ = {
+			isa = PBXGroup;
+			children = (
+				62B78F216F0F5D7765EE6103 /* TVShowSeasonCell.m */,
+				62B7832476584FD8FA42742E /* TVShowSeasonCell.h */,
+				62B7880826945B162ED05FAB /* TVShowSeasonCell.xib */,
+			);
+			path = TVShowSeasonCell;
 			sourceTree = "<group>";
 		};
 		62B788FA3B27A127B3046E59 /* Modules */ = {
@@ -471,15 +777,55 @@
 		62B7890F41AC130B7C26B4CE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62B786C4E311957071A92790 /* DiscoverTVShowViewController.m */,
+				62B78B1805AB8F7B2FEACAAF /* DiscoverTVShowViewController.h */,
+				62B78F99E6BE36D391D34A8E /* DataDisplayManager */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		62B789468F1C0113412914FD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				62B78BE2DAC971632F55BBCD /* DiscoverTVEpisodesAssembly.m */,
+				62B7846879B863BAD500929C /* DiscoverTVEpisodesAssembly.h */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		62B789A4D39F12020FFB57C8 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				62B78D3900F25E01FB64D472 /* DiscoverTVShowAssembly.m */,
+				62B78677097A7364AA75C36C /* DiscoverTVShowAssembly.h */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		62B789D6BAB5F9670E394C31 /* CellObjectsBuildersFactory */ = {
+			isa = PBXGroup;
+			children = (
+				62B786A4B7CC706AA8332F7D /* CellObjectsBuildersAssembly.m */,
+				62B788DA63E3FF0C2317BFFE /* CellObjectsBuildersAssembly.h */,
+			);
+			path = CellObjectsBuildersFactory;
+			sourceTree = "<group>";
+		};
+		62B789F1801A44F4F38A81BF /* TVShowsDataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B1B8811EEAB47B0179D /* TVShowsDataDisplayManager.h */,
+				62B78E23AC913C60F8E75095 /* TVShowsDataDisplayManager.m */,
+			);
+			path = TVShowsDataDisplayManager;
+			sourceTree = "<group>";
+		};
+		62B789F58C2A5C70E3BEFD2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62B7816620B24CAE63FC4AA7 /* API */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		62B78A1E49789CE40B09ACB1 /* Modules */ = {
@@ -495,26 +841,55 @@
 		62B78A464C15C4CBA10726CE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62B782436AEFBFD81B80BAB9 /* FavoritesTVShowsViewController.m */,
+				62B78613596A0E48E8874973 /* FavoritesTVShowsViewController.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		62B78B1183D0589083045D8B /* TokenModel */ = {
+		62B78A7608967A19082CE899 /* ModuleInput */ = {
 			isa = PBXGroup;
 			children = (
-				62B78C19DB8B459B030C25FE /* TokenModel.m */,
-				62B788F1E60E30117465EC4C /* TokenModel.h */,
+				62B783806825AADC9108DB74 /* DiscoverTVShowModuleInput.h */,
 			);
-			path = TokenModel;
+			path = ModuleInput;
 			sourceTree = "<group>";
 		};
-		62B78B2E0B97A12A99DD04FF /* TVEpisode */ = {
+		62B78AC40D193B08A4CBDCAC /* TVShowSeasonCellObject */ = {
 			isa = PBXGroup;
 			children = (
-				62B783801491A388307B5A66 /* TVEpisode.m */,
-				62B78D7413C22BD68E3BAC90 /* TVEpisode.h */,
+				62B78CFFE3DC43E0895340AD /* TVShowSeasonCellObject.m */,
+				62B780692DAFC577BFFBA19C /* TVShowSeasonCellObject.h */,
 			);
-			path = TVEpisode;
+			path = TVShowSeasonCellObject;
+			sourceTree = "<group>";
+		};
+		62B78AC6B29287100636C7F1 /* TVShowCellObjectsBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				62B788AB4D5B55947C916773 /* TVShowCellObjectsBuilder.m */,
+				62B78B530464BCC3D44DC7F4 /* TVShowCellObjectsBuilder.h */,
+			);
+			path = TVShowCellObjectsBuilder;
+			sourceTree = "<group>";
+		};
+		62B78ADCAF30CD45E286CF8E /* TVEpisodeCellObjectsBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				62B78EE41C533B64C1199EA4 /* TVEpisodeCellObjectsBuilder.m */,
+				62B78276A5EF97199D7C3321 /* TVEpisodeCellObjectsBuilder.h */,
+			);
+			path = TVEpisodeCellObjectsBuilder;
+			sourceTree = "<group>";
+		};
+		62B78B284AD6DBC271970836 /* TVShowCell */ = {
+			isa = PBXGroup;
+			children = (
+				62B785973D35574C4E78EB51 /* TVShowCell.m */,
+				62B788C1DB9655B7FF45DA95 /* TVShowCell.h */,
+				62B78A2C41D5271693AAD7B2 /* TVShowCell.xib */,
+			);
+			path = TVShowCell;
 			sourceTree = "<group>";
 		};
 		62B78B36CB4EED4280147139 /* Router */ = {
@@ -537,6 +912,51 @@
 			path = AuthenticationService;
 			sourceTree = "<group>";
 		};
+		62B78B56EB44DE9230821FDD /* TokenModel */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B5EAC5181D2CD1DBCA2 /* TokenModel.m */,
+				62B783310FB8DE04B0E546C5 /* TokenModel.h */,
+			);
+			path = TokenModel;
+			sourceTree = "<group>";
+		};
+		62B78B8A558F6F2F122CF02C /* TVShow */ = {
+			isa = PBXGroup;
+			children = (
+				62B788AE51799322B1D0A74E /* TVShow.m */,
+				62B78273DA2A2620488D6404 /* TVShow.h */,
+			);
+			path = TVShow;
+			sourceTree = "<group>";
+		};
+		62B78BC59FB4B9C0A2BD8583 /* TVSeason */ = {
+			isa = PBXGroup;
+			children = (
+				62B784E8EDBBBA1C7E699C99 /* TVSeason.m */,
+				62B78F6696E7E0291AED61D9 /* TVSeason.h */,
+			);
+			path = TVSeason;
+			sourceTree = "<group>";
+		};
+		62B78C140D936856515414FA /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				62B78A66ADA860B10459003D /* TVDB.xcdatamodel */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		62B78C164E70E1E8A33330D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62B785E053168EF8EAD46F35 /* DiscoverTVEpisodesViewModel.h */,
+				62B786B62D687A101EAFC5D6 /* DiscoverTVEpisodesViewModelInput.h */,
+				62B78B64977D71B432D01400 /* DiscoverTVEpisodesViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		62B78C3849A868FEEEC2DE5E /* ModuleAssemblyBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,6 +974,25 @@
 				62B782070CB2A42B5F5DDB1A /* PopularTVShowsViewModelInput.h */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62B78CA3B199A6092962647C /* DiscoverTVShowDataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				62B784B3FEDC26B306DF58DF /* DiscoverTVShowDataDisplayManager.m */,
+				62B785D21E761ED9FDA40389 /* DiscoverTVShowDataDisplayManager.h */,
+			);
+			path = DiscoverTVShowDataDisplayManager;
+			sourceTree = "<group>";
+		};
+		62B78CC7DACFFAC0B4400600 /* TVShowCastCell */ = {
+			isa = PBXGroup;
+			children = (
+				62B78F393AA742C652E80D3C /* TVShowCastCell.m */,
+				62B78655D0159FBC85103F15 /* TVShowCastCell.h */,
+				62B78222048828D7083C61B7 /* TVShowCastCell.xib */,
+			);
+			path = TVShowCastCell;
 			sourceTree = "<group>";
 		};
 		62B78CEEE18C143F518BCB76 /* Constants */ = {
@@ -576,6 +1015,49 @@
 			path = CoreComponentsFactory;
 			sourceTree = "<group>";
 		};
+		62B78D317BEAC440568890A4 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				62B7809C36803E92F560E841 /* Account.m */,
+				62B788BA4D3FE5C7B9194DD9 /* Account.h */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		62B78D7A28667C35EBEA3C56 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				62B781887A0E94C94F233157 /* TVShowCellSummary */,
+				62B7844FF2328A0E04B18247 /* TVShowGenresCell */,
+				62B78CC7DACFFAC0B4400600 /* TVShowCastCell */,
+				62B788CD3E8FDC3D1C2F05C8 /* TVShowSeasonCell */,
+				62B78199627A1A32CA42A22B /* TVShowEpisodeCell */,
+				62B78B284AD6DBC271970836 /* TVShowCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		62B78DA3FBEF2E620F367BBD /* DiscoverTVEpisodesSubModule */ = {
+			isa = PBXGroup;
+			children = (
+				62B789468F1C0113412914FD /* Assembly */,
+				62B781234EF608B23884C7F0 /* View */,
+				62B78C164E70E1E8A33330D8 /* ViewModel */,
+				62B785DAB6F498BAE379A02E /* Router */,
+				62B78FAFF194CFE4C5B6DD3F /* ModuleInput */,
+			);
+			path = DiscoverTVEpisodesSubModule;
+			sourceTree = "<group>";
+		};
+		62B78DE0B4B323BD738A8FAB /* TVShowCastCellObject */ = {
+			isa = PBXGroup;
+			children = (
+				62B7827AFF1780ACB79B39BB /* TVShowCastCellObject.m */,
+				62B783A130F42148C7AE09AB /* TVShowCastCellObject.h */,
+			);
+			path = TVShowCastCellObject;
+			sourceTree = "<group>";
+		};
 		62B78E1F2E8D1EE803EDAD6D /* ServiceComponentsFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,35 +1076,27 @@
 				62B78E9D44B54920E955C92A /* ViewModel */,
 				62B781DF73D6CDBC4A0455C2 /* Router */,
 				62B789A4D39F12020FFB57C8 /* Assembly */,
+				62B78A7608967A19082CE899 /* ModuleInput */,
+				62B78F4A5CC6E73CC7562D85 /* Submodules */,
 			);
 			path = DiscoverTVShowModule;
 			sourceTree = "<group>";
 		};
-		62B78E3596AD15AAFBA179CB /* API */ = {
+		62B78E29AC371C159BA42E56 /* TVEpisode */ = {
 			isa = PBXGroup;
 			children = (
-				62B78B1183D0589083045D8B /* TokenModel */,
-				62B78111E6CF0C35E5D6632C /* SessionModel */,
-				62B78E4C18CBDCF2C4E10008 /* TVShow */,
-				62B78160C010104C4C9D2C79 /* TVSeason */,
-				62B78B2E0B97A12A99DD04FF /* TVEpisode */,
-				62B784FEF140D25E34E51140 /* Network */,
-				62B7865418BBDC5730048233 /* Genre */,
-				62B78FD7FC1D2C7D63B9C3EF /* ProductionCompany */,
-				62B7860F283AA79BE687D119 /* Creator */,
-				62B78833F688593C572DF200 /* Cast */,
-				62B787254BC630964F3A7898 /* TVDiscoverResult */,
+				62B7886D324E1E151F79C0B2 /* TVEpisode.m */,
+				62B7892B191AA7B890E26AA7 /* TVEpisode.h */,
 			);
-			path = API;
+			path = TVEpisode;
 			sourceTree = "<group>";
 		};
-		62B78E4C18CBDCF2C4E10008 /* TVShow */ = {
+		62B78E36BA8E12FDD153E80A /* DataDisplayManager */ = {
 			isa = PBXGroup;
 			children = (
-				62B78596AAC0E5C02AF38ED6 /* TVShow.m */,
-				62B789CAEB7AB2420AC00A9E /* TVShow.h */,
+				62B782FD58F8EDA43E56C08B /* DataDisplayManager.h */,
 			);
-			path = TVShow;
+			path = DataDisplayManager;
 			sourceTree = "<group>";
 		};
 		62B78E8F5660EA12ADE41F27 /* StoryboardAssembly */ = {
@@ -637,8 +1111,29 @@
 		62B78E9D44B54920E955C92A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				62B78E4DFDB2D5F42A30CE8F /* DiscoverTVShowViewModel.m */,
+				62B783C9CE859893CF656E7E /* DiscoverTVShowViewModel.h */,
+				62B78A768855FA50F0187F85 /* DiscoverTVShowViewModelInput.h */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62B78EB42DE52ED4C26E4867 /* ProductionCompany */ = {
+			isa = PBXGroup;
+			children = (
+				62B78B4C8A093E79BC722A4B /* ProductionCompany.m */,
+				62B786FDFD17F5E638D3DDCC /* ProductionCompany.h */,
+			);
+			path = ProductionCompany;
+			sourceTree = "<group>";
+		};
+		62B78EC06B0672589382562F /* SessionModel */ = {
+			isa = PBXGroup;
+			children = (
+				62B78CABCF4C404EEAFACDEF /* SessionModel.m */,
+				62B7850824D9F1FEAE23E1B5 /* SessionModel.h */,
+			);
+			path = SessionModel;
 			sourceTree = "<group>";
 		};
 		62B78EF1D4C5FDEE360C9713 /* Assemblies */ = {
@@ -647,6 +1142,15 @@
 				62B78E1F2E8D1EE803EDAD6D /* ServiceComponentsFactory */,
 			);
 			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		62B78F2EEABF8CF9C5DB9AB7 /* TVShowCredits */ = {
+			isa = PBXGroup;
+			children = (
+				62B7847FAC0B469010A46C02 /* TVShowCredits.m */,
+				62B7817521A0059515605392 /* TVShowCredits.h */,
+			);
+			path = TVShowCredits;
 			sourceTree = "<group>";
 		};
 		62B78F2F62A27A65B91AC00B /* Assemblies */ = {
@@ -658,13 +1162,50 @@
 			path = Assemblies;
 			sourceTree = "<group>";
 		};
-		62B78FD7FC1D2C7D63B9C3EF /* ProductionCompany */ = {
+		62B78F4A5CC6E73CC7562D85 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
-				62B780758F4646207B1BB0F2 /* ProductionCompany.m */,
-				62B788DA430EC69E41449443 /* ProductionCompany.h */,
+				62B78DA3FBEF2E620F367BBD /* DiscoverTVEpisodesSubModule */,
 			);
-			path = ProductionCompany;
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		62B78F99E6BE36D391D34A8E /* DataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				62B78CA3B199A6092962647C /* DiscoverTVShowDataDisplayManager */,
+			);
+			path = DataDisplayManager;
+			sourceTree = "<group>";
+		};
+		62B78FAFF194CFE4C5B6DD3F /* ModuleInput */ = {
+			isa = PBXGroup;
+			children = (
+				62B7840BC09A368BAD2CF679 /* DiscoverTVEpisodesModuleInput.h */,
+			);
+			path = ModuleInput;
+			sourceTree = "<group>";
+		};
+		62B78FBF2AFCB32854CFBA6F /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				62B78F4D5D123E21911A1D00 /* Genre.m */,
+				62B7867576D7691B414EF17E /* Genre.h */,
+			);
+			path = Genre;
+			sourceTree = "<group>";
+		};
+		62B78FCE819E8B553A166197 /* CellObjects */ = {
+			isa = PBXGroup;
+			children = (
+				62B78585CE57F628C3379F3A /* TVShowCellObject */,
+				62B78DE0B4B323BD738A8FAB /* TVShowCastCellObject */,
+				62B7825042EAF2ACC3DEBBD9 /* TVShowCellSummaryObject */,
+				62B788B1947FA6BE94EAB999 /* TVShowEpisodeCellObject */,
+				62B7828080B6485A9C112BB6 /* TVShowGenresCellObject */,
+				62B78AC40D193B08A4CBDCAC /* TVShowSeasonCellObject */,
+			);
+			path = CellObjects;
 			sourceTree = "<group>";
 		};
 		74AD34F5261A2435715959FE /* AppDelegate */ = {
@@ -736,8 +1277,8 @@
 				74AD3ABB17AE3E58D56919DD /* ApplicationLayer */,
 				74AD3696AAF7EA9524307CCB /* CoreLayer */,
 				74AD36B5AE57D218D0A82FC0 /* PresentationLayer */,
-				62B786402BD9F6522DA866D3 /* Models */,
 				62B7865E79084B350E83539D /* BusinessLogicLayer */,
+				62B789F58C2A5C70E3BEFD2A /* Models */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -963,6 +1504,11 @@
 				62B788678295B0CD734F2C37 /* CoreComponentsResource.plist in Resources */,
 				62B789D0449E5FFB7AE85BCF /* ServiceComponentsResource.plist in Resources */,
 				62B78DA7A7B8E353341C13FD /* TVShowsDiscoverUserStoryStoryboard.storyboard in Resources */,
+				62B784E162C292583DEEAD87 /* TVShowCastCell.xib in Resources */,
+				62B78D9371212B9E6654E3F6 /* TVShowCellSummary.xib in Resources */,
+				62B78E6D650EB9D799A47FF2 /* TVShowEpisodeCell.xib in Resources */,
+				62B786698B412CA62677D843 /* TVShowSeasonCell.xib in Resources */,
+				62B789A52CAD3C13FF51476B /* TVShowCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1034,8 +1580,6 @@
 				74AD366EB96040FFC655746E /* NetworkClientResponseSerializerImpl.m in Sources */,
 				62B782286D9815A367C9D1DB /* CoreComponentsAssembly.m in Sources */,
 				62B78A217EC7801E85F16706 /* AuthenticationServiceImpl.m in Sources */,
-				62B7808116B07BDDFE115471 /* TokenModel.m in Sources */,
-				62B78BF4B95887944CFE4E60 /* SessionModel.m in Sources */,
 				62B7835BA7672CAFD42F9767 /* ServiceComponentsAssembly.m in Sources */,
 				62B7888B7E4B7765D4594E29 /* СoreLayerConstants.m in Sources */,
 				62B78CF7FDDBDD6F46ED0D75 /* KeychainServiceImpl.m in Sources */,
@@ -1046,21 +1590,59 @@
 				62B789AD61B760C8EDA075F2 /* UserAuthenticationViewModel.m in Sources */,
 				62B78AEC65209659C28B5B3C /* UserAuthenticationRouter.m in Sources */,
 				62B78FF89404422F56FF7070 /* SegueIdentifiersConstants.m in Sources */,
-				62B7880ADF924C6AA84035E8 /* TVShow.m in Sources */,
-				62B78C68635D62BDF58BF0EB /* TVSeason.m in Sources */,
-				62B78C78CAE36C113872F94B /* TVEpisode.m in Sources */,
-				62B781F9CC7C340DA83EB19E /* Network.m in Sources */,
-				62B780B1E8109786A7213D6F /* Genre.m in Sources */,
-				62B787670BCB962A8E0B8602 /* ProductionCompany.m in Sources */,
-				62B78B88327519EE8D567819 /* Creator.m in Sources */,
-				62B78403F63170FF97E4123F /* Cast.m in Sources */,
 				62B7813EE12974A8E157CC76 /* TVShowsServiceImpl.m in Sources */,
 				62B784AA70AEAB7ABA1E38DD /* CoreDataStackImpl.m in Sources */,
-				62B781D0463CD42767CB115F /* TVDiscoverResult.m in Sources */,
 				62B78D5663AEB6A505EB7889 /* PopularTVShowsAssembly.m in Sources */,
 				62B78E3DD03AD9E0046642C8 /* PopularTVShowsRouter.m in Sources */,
 				62B78C53696B7DCFCDEEE5E9 /* PopularTVShowsViewController.m in Sources */,
 				62B78075C78602FEB8C7B793 /* PopularTVShowsViewModel.m in Sources */,
+				62B78A1A564E735FBB911401 /* CellObjectsBuildersAssembly.m in Sources */,
+				62B78CEB09CA7CCF877DC927 /* TVShowCellObjectsBuilder.m in Sources */,
+				62B78DA4E901818CB0503591 /* TVShowCellObject.m in Sources */,
+				62B78B47BEF616DC6633806B /* TokenModel.m in Sources */,
+				62B783DAC6F62FA4C5165236 /* SessionModel.m in Sources */,
+				62B7884A5EF8097EDBD5AEB6 /* TVShow.m in Sources */,
+				62B78A3697ABE5A8268A7CD0 /* TVSeason.m in Sources */,
+				62B78320E858843A9BE37C15 /* Genre.m in Sources */,
+				62B7841F41765A380F5461A7 /* ProductionCompany.m in Sources */,
+				62B78903A54F4D2AF0704DAF /* Creator.m in Sources */,
+				62B78B15A84080C98DC83C7E /* Cast.m in Sources */,
+				62B783D5B77AED585DE5D39E /* TVDiscoverResult.m in Sources */,
+				62B78F3C647D35A4818FAED8 /* TVEpisode.m in Sources */,
+				62B784B5BC2F2FD4510B842E /* DiscoverTVShowAssembly.m in Sources */,
+				62B783AB2624EF1274C73BBA /* DiscoverTVShowRouter.m in Sources */,
+				62B78E13910ACBB4C4A52847 /* DiscoverTVShowViewController.m in Sources */,
+				62B7855F7A825C746F8A5A03 /* DiscoverTVShowViewModel.m in Sources */,
+				62B788EB265F224A1C21C933 /* FavoritesTVShowsServiceImpl.m in Sources */,
+				62B78FF818139270ECDC3AA6 /* TVShowsDataDisplayManager.m in Sources */,
+				62B78F1E12F8A4E4CDAE5D8A /* DiscoverTVShowCellObjectsBuilder.m in Sources */,
+				62B78D1834C37AA4F5761580 /* TVShowCastCell.m in Sources */,
+				62B7899FB185CE14C542A814 /* TVShowCellSummary.m in Sources */,
+				62B78221EAD6AB0BC169ABB0 /* TVShowEpisodeCell.m in Sources */,
+				62B78AC416147D53D68241D0 /* TVShowGenresCell.m in Sources */,
+				62B78463CFB471C3D1942818 /* TVShowSeasonCell.m in Sources */,
+				62B78C9BC47C6AEA98E82C4C /* TVShowCastCellObject.m in Sources */,
+				62B78632806E5FA022C1E4A9 /* TVShowCellSummaryObject.m in Sources */,
+				62B7884E569467EFCC6997AE /* TVShowEpisodeCellObject.m in Sources */,
+				62B7837275209971703C5CDA /* TVShowGenresCellObject.m in Sources */,
+				62B7840BCF54F992DA0ECE70 /* TVShowSeasonCellObject.m in Sources */,
+				62B78E39A9461C79F06D8E3F /* TVShowCell.m in Sources */,
+				62B782FCDAA2B42882AF4D7A /* TVShowCredits.m in Sources */,
+				62B7810FB62B4A178AB2A602 /* TVShowAccountStates.m in Sources */,
+				62B789FB323AB69A040BF3A5 /* TVEpisodeCellObjectsBuilder.m in Sources */,
+				62B7861430595382FDF884C8 /* DiscoverTVEpisodesAssembly.m in Sources */,
+				62B785A3A7CAF7BDB38A8972 /* DiscoverTVEpisodesRouter.m in Sources */,
+				62B7830CDF48976F814411AE /* DiscoverTVEpisodesViewModel.m in Sources */,
+				62B78F0A52CFB708EAF7B772 /* DiscoverTVEpisodesViewController.m in Sources */,
+				62B784DCF149BF754A588B25 /* DiscoverTVShowDataDisplayManager.m in Sources */,
+				62B78B8C728644CC08642E47 /* DiscoverTVEpisodesDataDisplayManager.m in Sources */,
+				62B78305EBABA6957189D8CA /* FavoritesTVShowsAssembly.m in Sources */,
+				62B784EF0D33EF72A0983FA1 /* FavoritesTVShowsRouter.m in Sources */,
+				62B78EE3F3D35A51BF03C35C /* FavoritesTVShowsViewModel.m in Sources */,
+				62B78826E5A94D3828B721D4 /* FavoritesTVShowsViewController.m in Sources */,
+				62B78F1AB0E69BDB6C1C56E8 /* Network.m in Sources */,
+				62B78E5693903D2958D9E13E /* TVDB.xcdatamodel in Sources */,
+				62B78EF8305151937E62FEF5 /* Account.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

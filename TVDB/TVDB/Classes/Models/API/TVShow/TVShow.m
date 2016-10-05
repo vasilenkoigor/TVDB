@@ -9,11 +9,15 @@
 #import "ProductionCompany.h"
 #import "Network.h"
 #import "Genre.h"
+#import "TVShowCellObject.h"
 #import "Creator.h"
 #import "Cast.h"
+#import "TVShowCellObject.h"
 #import "СoreLayerConstants.h"
 
 @implementation TVShow
+
+#pragma mark - MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
@@ -51,23 +55,38 @@
     return [MTLJSONAdapter arrayTransformerWithModelClass:[Network class]];
 }
 
-+ (NSValueTransformer *)posterSmallImageURLJSONTransformer
++ (NSValueTransformer *)smallPosterImageURLJSONTransformer
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *path, BOOL *success, NSError **error) {
-        return [[NSURL alloc] initWithString:path relativeToURL:kTheMovieDBSmallImageBasePath];
+        if (!path) return nil;
+        return [[NSURL alloc] initWithString:[kTheMovieDBSmallImageBasePath stringByAppendingString:path]];
     }];
 }
 
-+ (NSValueTransformer *)posterMediumImageURLJSONTransformer
++ (NSValueTransformer *)mediumPosterImageURLJSONTransformer
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *path, BOOL *success, NSError **error) {
-        return [[NSURL alloc] initWithString:path relativeToURL:kTheMovieDBMediumImageBasePath];
+        if (!path) return nil;
+        return [[NSURL alloc] initWithString:[kTheMovieDBMediumImageBasePath stringByAppendingString:path]];
     }];
 }
 
 + (NSValueTransformer *)seasonsJSONTransformer
 {
     return [MTLJSONAdapter arrayTransformerWithModelClass:[TVSeason class]];
+}
+
+#pragma mark - MTLManagedObjectSerializing
+
++ (NSString *)managedObjectEntityName
+{
+    return NSStringFromClass([self class]);
+}
+
++ (NSDictionary *)managedObjectKeysByPropertyKey
+{
+    return @{NSStringFromSelector(@selector(name)) : @"name",
+            NSStringFromSelector(@selector(seasons)) : @"seasons"};
 }
 
 @end

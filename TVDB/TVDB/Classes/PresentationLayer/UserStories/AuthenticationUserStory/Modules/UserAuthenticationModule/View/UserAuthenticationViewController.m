@@ -10,7 +10,7 @@
 
 @interface UserAuthenticationViewController ()
 
-@property (strong, nonatomic, readwrite) id <UserAuthenticationViewModelInput> viewModel;
+@property (strong, nonatomic, readwrite) id <UserAuthenticationViewModelInput> output;
 
 @property (strong, nonatomic) UITapGestureRecognizer *tapGestureRecognizer;
 
@@ -47,9 +47,9 @@
 
 - (void)bindUI
 {
-    self.signInButton.rac_command = self.viewModel.signInButtonCommand;
+    self.signInButton.rac_command = self.output.signInButtonCommand;
 
-    [[self.viewModel.authenticationProcessSignal deliverOnMainThread] subscribeNext:^(NSNumber *inProgress) {
+    [[self.output.authenticationProcessSignal deliverOnMainThread] subscribeNext:^(NSNumber *inProgress) {
         if (inProgress.boolValue) {
             [SVProgressHUD show];
         } else {
@@ -59,17 +59,22 @@
         [SVProgressHUD showErrorWithStatus:@"Something went wrong"];
     }];
 
-    RAC(self.viewModel, loginTextFieldText) = [self.loginTextField rac_textSignal];
-    RAC(self.viewModel, passwordTextFieldText) = [self.passwordTextField rac_textSignal];
+    RAC(self.output, loginTextFieldText) = [self.loginTextField rac_textSignal];
+    RAC(self.output, passwordTextFieldText) = [self.passwordTextField rac_textSignal];
 
     @weakify(self)
     [[[[self rac_signalForSelector:@selector(viewDidAppear:)] take:1] delay:0.5f] subscribeNext:^(id x) {
         @strongify(self)
-        if (self.viewModel.isAuthenticated) {
-            [self.viewModel closeAuthentication];
+        if (self.output.isAuthenticated) {
+            [self.output closeAuthentication];
         } else {
             [self showSignInView];
         }
+    }];
+
+    [[[[self rac_signalForSelector:@selector(viewDidAppear:)] skip:1] delay:0.5f] subscribeNext:^(id x) {
+        @strongify(self)
+        [self showSignInView];
     }];
 
     [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIKeyboardWillShowNotification object:nil] takeUntil:[self rac_willDeallocSignal]] subscribeNext:^(id x) {

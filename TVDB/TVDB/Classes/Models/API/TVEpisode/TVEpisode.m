@@ -19,8 +19,8 @@
                     NSStringFromSelector(@selector(name)) : @"name",
                     NSStringFromSelector(@selector(overview)) : @"overview",
                     NSStringFromSelector(@selector(uid)) : @"id",
-                    NSStringFromSelector(@selector(stillSmallImageURL)) : @"profile_path",
-                    NSStringFromSelector(@selector(stillMediumImageURL)) : @"profile_path",
+                    NSStringFromSelector(@selector(stillSmallImageURL)) : @"still_path",
+                    NSStringFromSelector(@selector(stillMediumImageURL)) : @"still_path",
             };
 }
 
@@ -36,14 +36,16 @@
 + (NSValueTransformer *)stillSmallImageURLJSONTransformer
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *path, BOOL *success, NSError **error) {
-        return [[NSURL alloc] initWithString:path relativeToURL:kTheMovieDBSmallImageBasePath];
+        if (!path) return nil;
+        return [[NSURL alloc] initWithString:[kTheMovieDBSmallImageBasePath stringByAppendingString:path]];
     }];
 }
 
 + (NSValueTransformer *)stillMediumImageURLJSONTransformer
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *path, BOOL *success, NSError **error) {
-        return [[NSURL alloc] initWithString:path relativeToURL:kTheMovieDBMediumImageBasePath];
+        if (!path) return nil;
+        return [[NSURL alloc] initWithString:[kTheMovieDBMediumImageBasePath stringByAppendingString:path]];
     }];
 }
 
